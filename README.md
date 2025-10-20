@@ -1,91 +1,88 @@
-# 99x Engineering Excellence Framework — Website
+# 99x Engineering Excellence Framework — Legendary README
 
-A lightweight React site (Create React App) used to present the 99x Engineering Excellence Framework and detailed practice pages.
+![status](https://img.shields.io/badge/status-complete-brightgreen) ![license](https://img.shields.io/badge/license-proprietary-blue)
 
-This repository contains a site shell in `src/` and a set of static practice pages under `public/practices/` that are served directly by the web server.
+A beautifully simple website that documents the 99x Engineering Excellence Framework. This repository contains a minimal React app (Create React App) used as a shell and a collection of static, content-rich practice pages served from `public/practices/`.
 
-Why this repo exists
+Why this repo is legendary
 
-- Present the Engineering Excellence Framework in a simple, fast website.
-- Provide dedicated documentation pages for each engineering practice without requiring a heavier routing setup.
+- Crisp, focused content: each engineering practice gets its own static page for easy reading and sharing.
+- Minimal dependencies: static pages avoid a heavier routing or CMS setup.
+- Instant previews: open local dev server or browse static pages directly in `public/practices/`.
 
-Quick stats
+Legendary Quickstart (TL;DR)
 
-- Many static practice pages were created under `public/practices/`.
-- An illustrative framework image (`public/framework.jpg`) and an inline logo (`public/99xlogo.svg`) were added.
-
-Table of Contents
-
-- What’s included
-- Quickstart
-- Project structure
-- Notable changes made
-- Suggestions & next steps
-- License / Contact
-
-What’s included
-
-- `public/` — static assets and practice pages
-  - `public/practices/*.html` — static HTML pages for each practice
-  - `framework.jpg` — illustrative image used on the site
-  - `99xlogo.svg` — inline logo
-- `src/` — small React app used as the primary site shell
-  - `src/App.js` — main UI; practice cards now link to static pages
-  - `src/App.css` — styles
-- `package.json` — scripts and dependencies (use `npm start` to run)
-
-Legendary Quickstart
-
-1. Install dependencies
+1. Install
 
    ```bash
    npm install
    ```
 
-2. Start dev server
+2. Run locally
 
    ```bash
    npm start
    ```
 
-3. Open http://localhost:3000
+3. Build for production
 
-Build for production
+   ```bash
+   npm run build
+   ```
 
-```bash
-npm run build
-```
+Structure at a glance
 
-Project structure (short)
+- `public/`
+  - `practices/` — standalone HTML pages (e.g., `version-control.html`)
+  - `framework.jpg` — visual used across pages
+  - `99xlogo.svg` — inline logo used in the header
+- `src/`
+  - `App.js` — site shell and list of practice cards
+  - `App.css` — styles
+- `package.json` — scripts and dependencies
 
-- `public/index.html` — app shell
-- `public/practices/` — per-practice static pages created during this session
-- `src/App.js` — main UI and list of practice cards
-- `src/App.css` — styles
+What we changed in this fork
 
-Notable changes made in this branch
+- Added practice pages for many engineering practices and linked them from the main site.
+- Replaced lifecycle cards with an illustrative `framework.jpg`.
+- Added interactive UI polish (particle hover effects, ripple on clicks, hue accent animation).
+- Converted dozens of practice entries into anchor links that point to `public/practices/*.html` files.
 
-- Created many practice pages (see `public/practices/`), for example:
-  - `version-control.html`, `work-in-small-batches.html`, `limit-work-in-progress.html`, `continuous-integration.html`, `test-automation.html`, `test-data-management.html`, `deployment-automation.html`, `shift-left-on-quality.html`, `shift-left-security-privacy.html`, `lightweight-change-approval.html`, `proactive-notification-build-deploy.html`, `monitoring-and-feedback-production.html`, `visual-management-production-build-deployment.html`, `empowered-teams.html`, `team-experimentation.html`, `training-and-development.html`, `continuous-delivery.html`, `trunk-based-development.html`, and more.
-- Updated `src/App.js` to convert practice card elements into anchor links to these static pages.
-- Added `public/framework.jpg` and `public/99xlogo.svg`.
+How the practice pages are organized
 
-Design notes and rationale
+Each page in `public/practices/` is a simple, self-contained HTML document that includes:
 
-- Static HTML pages keep the content straightforward and easy to edit without adding client-side routing.
-- This is a pragmatic approach for documentation-style sites where each page is self-contained.
+- A short overview
+- Key aspects
+- Risks (with IDs)
+- PHR Guidelines / Work Instructions
 
-Suggestions & next steps
+Contributing
 
-- Optionally migrate practice pages to React routes if you want single-page navigation and history support.
-- Run `npm audit` and `npm audit fix` to inspect and fix npm security findings.
-- Add a small automated test or a GitHub Action to lint and build on PRs.
+This repo is maintained in `master`. To add or update practice pages:
 
-How I pushed these changes
+1. Create or edit `public/practices/<your-practice>.html`.
+2. Update `src/App.js` to add an anchor link to the practice card section.
+3. Commit and push. Open a PR if you want code review.
 
-- The local changes were committed and pushed to `https://github.com/DisanduP/99x-Engineering-Excellence-Framework-Website-Final.git` on branch `master`.
+Pro tip: keep practice pages self-contained and use consistent heading levels for readability.
 
-License / Contact
+Deployment
 
-- © 2025 99x Engineering Excellence Framework
-- If you want further edits, tell me which pages or content to add and I’ll create/update them.
+This is a static-friendly site. You can deploy the `build/` folder to GitHub Pages, Netlify, Vercel, or any static host.
+
+Security note
+
+Run `npm audit` to inspect reported vulnerabilities and `npm audit fix` to apply safe updates.
+
+Changelog (session highlights)
+
+- Many static practice pages added (see `public/practices/`).
+- `public/framework.jpg` and `public/99xlogo.svg` added.
+- `src/App.js` updated to link to many practice pages.
+
+Credits
+
+Prepared in-session via automated edits and manually curated content.
+
+© 2025 99x Engineering Excellence Framework
