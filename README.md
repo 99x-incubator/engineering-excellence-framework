@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# 99x Engineering Excellence Framework — Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A lightweight React site (Create React App) used to present the 99x Engineering Excellence Framework and detailed practice pages.
 
-## Available Scripts
+This repository contains a site shell in `src/` and a set of static practice pages under `public/practices/` that are served directly by the web server.
 
-In the project directory, you can run:
+Why this repo exists
 
-### `npm start`
+- Present the Engineering Excellence Framework in a simple, fast website.
+- Provide dedicated documentation pages for each engineering practice without requiring a heavier routing setup.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Quick stats
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Many static practice pages were created under `public/practices/`.
+- An illustrative framework image (`public/framework.jpg`) and an inline logo (`public/99xlogo.svg`) were added.
 
-### `npm test`
+Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- What’s included
+- Quickstart
+- Project structure
+- Notable changes made
+- Suggestions & next steps
+- License / Contact
 
-### `npm run build`
+What’s included
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `public/` — static assets and practice pages
+  - `public/practices/*.html` — static HTML pages for each practice
+  - `framework.jpg` — illustrative image used on the site
+  - `99xlogo.svg` — inline logo
+- `src/` — small React app used as the primary site shell
+  - `src/App.js` — main UI; practice cards now link to static pages
+  - `src/App.css` — styles
+- `package.json` — scripts and dependencies (use `npm start` to run)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Legendary Quickstart
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Install dependencies
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Start dev server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Open http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Build for production
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Project structure (short)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `public/index.html` — app shell
+- `public/practices/` — per-practice static pages created during this session
+- `src/App.js` — main UI and list of practice cards
+- `src/App.css` — styles
 
-### Code Splitting
+Notable changes made in this branch
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Created many practice pages (see `public/practices/`), for example:
+  - `version-control.html`, `work-in-small-batches.html`, `limit-work-in-progress.html`, `continuous-integration.html`, `test-automation.html`, `test-data-management.html`, `deployment-automation.html`, `shift-left-on-quality.html`, `shift-left-security-privacy.html`, `lightweight-change-approval.html`, `proactive-notification-build-deploy.html`, `monitoring-and-feedback-production.html`, `visual-management-production-build-deployment.html`, `empowered-teams.html`, `team-experimentation.html`, `training-and-development.html`, `continuous-delivery.html`, `trunk-based-development.html`, and more.
+- Updated `src/App.js` to convert practice card elements into anchor links to these static pages.
+- Added `public/framework.jpg` and `public/99xlogo.svg`.
 
-### Analyzing the Bundle Size
+Design notes and rationale
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Static HTML pages keep the content straightforward and easy to edit without adding client-side routing.
+- This is a pragmatic approach for documentation-style sites where each page is self-contained.
 
-### Making a Progressive Web App
+Suggestions & next steps
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Optionally migrate practice pages to React routes if you want single-page navigation and history support.
+- Run `npm audit` and `npm audit fix` to inspect and fix npm security findings.
+- Add a small automated test or a GitHub Action to lint and build on PRs.
 
-### Advanced Configuration
+How I pushed these changes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- The local changes were committed and pushed to `https://github.com/DisanduP/99x-Engineering-Excellence-Framework-Website-Final.git` on branch `master`.
 
-### Deployment
+License / Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- © 2025 99x Engineering Excellence Framework
+- If you want further edits, tell me which pages or content to add and I’ll create/update them.
