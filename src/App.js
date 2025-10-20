@@ -54,7 +54,7 @@ function App() {
       });
     }, observerOptions);
 
-    document.querySelectorAll(".glass-card, .lifecycle-item, .stat-card").forEach((el, index) => {
+  document.querySelectorAll(".glass-card, .lifecycle-item").forEach((el, index) => {
       el.style.opacity = "0";
       el.style.transform = "translateY(50px)";
       el.style.transition = "all 0.8s ease";
@@ -114,11 +114,14 @@ function App() {
       <div className="background-animation"></div>
       <div className="container">
         <nav>
-          <div className="logo">99x Engineering</div>
+          <div>
+            <div className="logo">Engineering Excellence Framework</div>
+            <div className="logo-subtext">
+              Built by <img src="/99xlogo.svg" alt="99x" className="logo-inline" />
+            </div>
+          </div>
           <div className="nav-links">
             <a href="#framework">Framework</a>
-            <a href="#performance">Performance</a>
-            <a href="#culture">Culture</a>
             <a href="#practices">Practices</a>
           </div>
         </nav>
@@ -142,60 +145,13 @@ function App() {
           </div>
         </header>
 
-        <div className="stats-section">
-          <div className="stat-card">
-            <div className="stat-number">8</div>
-            <div className="stat-label">Lifecycle Phases</div>
-          </div>
-          <div className="stat-card">
-            <div className="stat-number">3</div>
-            <div className="stat-label">Ways of DevOps</div>
-          </div>
-          <div className="stat-card">
-            <div className="stat-number">18+</div>
-            <div className="stat-label">Core Practices</div>
-          </div>
-          <div className="stat-card">
-            <div className="stat-number">6</div>
-            <div className="stat-label">Key Objectives</div>
-          </div>
-        </div>
+  {/* stats section removed as requested */}
 
         <section className="lifecycle-section" id="framework">
-          <h2 className="section-title">Engineering Lifecycle Phases</h2>
-          <div className="lifecycle">
-            <div className="lifecycle-item">
-              <span className="emoji-icon">🔍</span>
-              Explore
-            </div>
-            <div className="lifecycle-item">
-              <span className="emoji-icon">🎯</span>
-              Focus
-            </div>
-            <div className="lifecycle-item">
-              <span className="emoji-icon">💡</span>
-              Immerse
-            </div>
-            <div className="lifecycle-item">
-              <span className="emoji-icon">📋</span>
-              Plan
-            </div>
-            <div className="lifecycle-item">
-              <span className="emoji-icon">🔨</span>
-              Build
-            </div>
-            <div className="lifecycle-item">
-              <span className="emoji-icon">⚡</span>
-              Optimize
-            </div>
-            <div className="lifecycle-item">
-              <span className="emoji-icon">🌟</span>
-              Harvest
-            </div>
-            <div className="lifecycle-item">
-              <span className="emoji-icon">🔄</span>
-              Retire
-            </div>
+          <h2 className="section-title">Explore Our Framework</h2>
+          <div className="framework-image-container">
+            {/* Replace the lifecycle cards with an illustrative image. */}
+            <img src="/framework.jpg" alt="Framework illustration" className="framework-image" />
           </div>
         </section>
 
@@ -203,9 +159,68 @@ function App() {
           <div className="glass-card">
             <div className="card-header">
               <span className="card-icon">🚀</span>
-              <h2>Product Team Performance</h2>
+                <div>
+                  <h2>Practices</h2>
+                  <div className="card-subtitle">Engineering Excellence Framework</div>
+                </div>
+            </div>
+            {/* performance goals moved to culture card */}
+            <div className="practices-section" id="practices">
+              <div className="practice-category">
+                <div className="category-header">
+                  <span className="way-badge">FIRST WAY</span>
+                  <h3>of DevOps</h3>
+                </div>
+                <div className="practices-list">
+                  <a href="/practices/work-in-small-batches.html" className="practice-item practice-link">Work in Small Batches</a>
+                  <a href="/practices/limit-work-in-progress.html" className="practice-item practice-link">Limit Work in Progress (WIP)</a>
+                  <a href="/practices/version-control.html" className="practice-item practice-link">Version Control</a>
+                  <a href="/practices/continuous-integration.html" className="practice-item practice-link">Continuous Integration</a>
+                  <a href="/practices/loosely-coupled-architecture.html" className="practice-item practice-link">Loosely Coupled Architecture</a>
+                  <a href="/practices/test-automation.html" className="practice-item practice-link">Test Automation</a>
+                  <a href="/practices/test-data-management.html" className="practice-item practice-link">Test Data Management</a>
+                  <a href="/practices/trunk-based-development.html" className="practice-item practice-link">Trunk-Based Development</a>
+                  <a href="/practices/shift-left-security-privacy.html" className="practice-item practice-link">Shift Left on Privacy and Security</a>
+                  <a href="/practices/deployment-automation.html" className="practice-item practice-link">Deployment Automation</a>
+                  <a href="/practices/continuous-delivery.html" className="practice-item practice-link">Continuous Delivery</a>
+                  <a href="/practices/test-data-management.html" className="practice-item practice-link">Test Data Management</a>
+                  <a href="/practices/adhering-to-coding-standards.html" className="practice-item practice-link">Coding Standards</a>
+                  <a href="/practices/shift-left-on-quality.html" className="practice-item practice-link">Shift Left on Quality</a>
+                  <a href="/practices/lightweight-change-approval.html" className="practice-item practice-link">Lightweight Change Approval</a>
+                </div>
+              </div>
+              <div className="practice-category">
+                <div className="category-header">
+                  <span className="way-badge">SECOND WAY</span>
+                  <h3>of DevOps</h3>
+                </div>
+                <div className="practices-list">
+                  <a href="/practices/proactive-notification-build-deploy.html" className="practice-item practice-link">Proactive Notification on Build and Deployment Process</a>
+                  <a href="/practices/make-flow-of-work-visible.html" className="practice-item practice-link">Make Flow of Work Visible to Team and Customer</a>
+                  <a href="/practices/monitoring-and-feedback-production.html" className="practice-item practice-link">Monitoring and Obtaining Feedback from Production</a>
+                  <a href="/practices/visual-management-production-build-deployment.html" className="practice-item practice-link">Visual Management of current application production, build and deployment state</a>
+                </div>
+              </div>
+              <div className="practice-category">
+                <div className="category-header">
+                  <span className="way-badge">THIRD WAY</span>
+                  <h3>of DevOps</h3>
+                </div>
+                <div className="practices-list">
+                  <a href="/practices/empowered-teams.html" className="practice-item practice-link">Empowered Teams</a>
+                  <a href="/practices/team-experimentation.html" className="practice-item practice-link">Team Experimentation</a>
+                  <a href="/practices/training-and-development.html" className="practice-item practice-link">Training and Development</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="glass-card" id="culture">
+            <div className="card-header">
+              <span className="card-icon">💎</span>
+              <h2>Product Team Culture & Performance</h2>
             </div>
             <div className="goals-grid">
+              {/* moved from Product Team Performance */}
               <div className="goal-card">
                 <h3>🎯 Enhance Software Product Delivery Performance</h3>
               </div>
@@ -215,71 +230,16 @@ function App() {
               <div className="goal-card">
                 <h3>💰 Reduce the Cost of the Product Engineering Team</h3>
               </div>
-            </div>
-            <div className="practices-section" id="practices">
-              <div className="practice-category">
-                <div className="category-header">
-                  <span className="way-badge">FIRST WAY</span>
-                  <h3>of DevOps</h3>
-                </div>
-                <div className="practices-list">
-                  <div className="practice-item">Work in Small Batches</div>
-                  <div className="practice-item">Limit Work in Progress (WIP)</div>
-                  <div className="practice-item">Version Control</div>
-                  <div className="practice-item">Continuous Integration</div>
-                  <div className="practice-item">Loosely Coupled Architecture</div>
-                  <div className="practice-item">Test Automation</div>
-                  <div className="practice-item">Trunk-Based Development</div>
-                  <div className="practice-item">Shift Left on Privacy and Security</div>
-                  <div className="practice-item">Deployment Automation</div>
-                  <div className="practice-item">Continuous Delivery</div>
-                  <div className="practice-item">Test Data Management</div>
-                  <div className="practice-item">Coding Standards</div>
-                  <div className="practice-item">Shift Left on Quality</div>
-                  <div className="practice-item">Lightweight Change Approval</div>
-                </div>
-              </div>
-              <div className="practice-category">
-                <div className="category-header">
-                  <span className="way-badge">SECOND WAY</span>
-                  <h3>of DevOps</h3>
-                </div>
-                <div className="practices-list">
-                  <div className="practice-item">Proactive Notification on Build and Deployment Process</div>
-                  <div className="practice-item">Make Flow of Work Visible to Team and Customer</div>
-                  <div className="practice-item">Monitoring and Obtaining Feedback from Production</div>
-                  <div className="practice-item">Visual Management of current application production, build and deployment state</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="glass-card" id="culture">
-            <div className="card-header">
-              <span className="card-icon">💎</span>
-              <h2>Product Team Culture</h2>
-            </div>
-            <div className="goals-grid">
+
+              {/* existing culture goals */}
               <div className="goal-card">
-                <h3>😊 Reduce the Team Development Pain</h3>
+                <h3>😊 Reduce the Team Deployment Pain </h3>
               </div>
               <div className="goal-card">
                 <h3>🔥 Reduce the Team Burnout</h3>
               </div>
               <div className="goal-card">
                 <h3>✨ Improve 99x Employee Job Satisfaction</h3>
-              </div>
-            </div>
-            <div className="practices-section">
-              <div className="practice-category">
-                <div className="category-header">
-                  <span className="way-badge">THIRD WAY</span>
-                  <h3>of DevOps</h3>
-                </div>
-                <div className="practices-list">
-                  <div className="practice-item">Empowered Teams</div>
-                  <div className="practice-item">Team Experimentation</div>
-                  <div className="practice-item">Training and Development</div>
-                </div>
               </div>
             </div>
           </div>

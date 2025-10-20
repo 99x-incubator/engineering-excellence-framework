@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proactive Notification - Build & Deployment - 99x Engineering Excellence Framework</title>
+    <style>
+      body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #0a0a0a; color: #fff; padding: 40px; }
+      a { color: #9b8cf0; text-decoration: none; }
+      .container { max-width: 900px; margin: 0 auto; }
+      h1 { font-size: 2rem; margin-bottom: 8px; }
+      .meta { color: rgba(255,255,255,0.7); margin-bottom: 24px; }
+      section { background: rgba(255,255,255,0.02); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); margin-bottom: 16px; }
+      ul { margin-left: 20px; }
+      table { width: 100%; border-collapse: collapse; color: #fff; }
+      th, td { text-align: left; padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+      .back { display:inline-block; margin-bottom: 20px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a class="back" href="/">← Back to site</a>
+      <h1>Proactive Notification on Build & Deployment</h1>
+      <div class="meta">Notify stakeholders in real-time about build and deployment status to enable fast response and clear visibility.</div>
+
+      <section>
+        <h2>Key aspects</h2>
+        <ul>
+          <li><strong>Automated Build & Deployment:</strong> Use CI/CD pipelines that emit events and notifications.</li>
+          <li><strong>Real-time Updates:</strong> Provide live build status (started, succeeded, failed, deployed).</li>
+          <li><strong>Customizable Notifications:</strong> Tailor notifications per stakeholder role and channel.</li>
+          <li><strong>Event-driven Triggers:</strong> Notify at key pipeline stages and failures.</li>
+          <li><strong>Multi-channel Delivery:</strong> Use email, chat, dashboards and ticketing integrations.</li>
+          <li><strong>Reporting & Analytics:</strong> Track notification delivery and build metrics for continuous improvement.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Risks of not implementing</h2>
+        <table>
+          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>PNDBR-1</td><td>Lack of Visibility — teams are unaware of build/deploy outcomes.</td></tr>
+            <tr><td>PNDBR-3</td><td>Delayed Issue Identification — failures go unnoticed for longer.</td></tr>
+            <tr><td>PNDBR-4</td><td>Inefficient Problem Resolution — longer MTTR due to delayed alerts.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Guidelines / Work Instructions</h2>
+        <ol>
+          <li><strong>PNDBG-1 - Stakeholder Plan:</strong> Define who gets which notifications and when.</li>
+          <li><strong>PNDBG-2 - CI/CD Integration:</strong> Configure pipeline events to trigger notifications and messages.</li>
+          <li><strong>PNDBG-3 - Escalation Paths:</strong> Define clear escalation for failed builds or critical deploy issues.</li>
+          <li><strong>PNDBG-4 - Monitoring & Alerts:</strong> Combine pipeline notifications with monitoring alerts for end-to-end coverage.</li>
+          <li><strong>PNDBG-5 - Test Notifications:</strong> Regularly test the notification flows to ensure delivery.
+          </li>
+        </ol>
+      </section>
+
+      <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>
+    </div>
+  </body>
+</html>
