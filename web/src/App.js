@@ -117,7 +117,7 @@ function App() {
           <div>
             <div className="logo">Engineering Excellence Framework</div>
             <div className="logo-subtext">
-              Built by <img src="/99xlogo.svg" alt="99x" className="logo-inline" />
+              by <img src="/99xlogo.svg" alt="99x" className="logo-inline" />
             </div>
           </div>
           <div className="nav-links">
@@ -126,7 +126,6 @@ function App() {
           </div>
         </nav>
         <header>
-          <div className="hero-badge">ENGINEERING EXCELLENCE FRAMEWORK</div>
           <h1>
             Building the Future
             <br />
@@ -156,7 +155,7 @@ function App() {
         </section>
 
         <div className="main-content" id="performance">
-          <div className="glass-card">
+          <div className="glass-card" id="practices">
             <div className="card-header">
               <span className="card-icon">🚀</span>
                 <div>
@@ -165,7 +164,7 @@ function App() {
                 </div>
             </div>
             {/* performance goals moved to culture card */}
-            <div className="practices-section" id="practices">
+            <div className="practices-section">
               <div className="practice-category">
                 <div className="category-header">
                   <span className="way-badge">FIRST WAY</span>
