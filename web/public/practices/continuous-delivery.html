@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Continuous Delivery - 99x Engineering Excellence Framework</title>
+    <style>
+      body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #0b0b0b; color: #fff; padding: 36px; }
+      a { color: #9b8cf0; text-decoration: none; }
+      .container { max-width: 980px; margin: 0 auto; }
+      h1 { font-size: 1.8rem; margin-bottom: 6px; }
+      h2 { margin-top: 18px; }
+      .meta { color: rgba(255,255,255,0.75); margin-bottom: 18px; }
+      section { background: rgba(255,255,255,0.02); padding: 18px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); margin-bottom: 14px; }
+      ul { margin-left: 20px; }
+      table { width: 100%; border-collapse: collapse; color: #fff; margin-top: 8px; }
+      th, td { text-align: left; padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+      .back { display:inline-block; margin-bottom: 18px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a class="back" href="/">← Back to site</a>
+      <h1>Continuous Delivery</h1>
+      <div class="meta">Continuously deliver software in small increments with automated testing and deployment to improve quality and speed of delivery.</div>
+
+      <section>
+        <h2>Key aspects</h2>
+        <ul>
+          <li>Version Control</li>
+          <li>Work in Small Batches</li>
+          <li>Limit Work In-Progress (WIP)</li>
+          <li>Adhering to Coding Standards</li>
+          <li>Trunk-Based Development</li>
+          <li>Loosely Coupled Architecture</li>
+          <li>Continuous Integration</li>
+          <li>Feature toggles to decouple deployment from release</li>
+          <li>Shift Left on Quality</li>
+          <li>Test Automation</li>
+          <li>Test Data Management</li>
+          <li>Deployment Automation</li>
+          <li>Shift Left on Security and Privacy</li>
+          <li>Lightweight Change Approval</li>
+          <li>Proactive Notification on Build and Deployment Process</li>
+          <li>Monitoring and Obtaining Feedback from Production</li>
+          <li>Make Flow of Work Visible to Team and Customer</li>
+          <li>Visual Management of Current Application Production, Build, and Deployment State</li>
+          <li>Empowered Teams</li>
+          <li>Team Experimentation</li>
+          <li>Communication and Collaboration Skills</li>
+          <li>Continuous Learning and Skill Development</li>
+          <li>Agile Methodologies and Practices</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Risks of not implementing</h2>
+        <table>
+          <thead><tr><th>Risk #</th><th>Title</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>CDR-1</td><td>Increased Time-to-Market</td><td>Longer release cycles slow feature delivery.</td></tr>
+            <tr><td>CDR-2</td><td>Higher Risk of Human Errors</td><td>Manual steps increase error rates.</td></tr>
+            <tr><td>CDR-3</td><td>Difficulty Maintaining Quality</td><td>Inconsistent testing leads to quality regressions.</td></tr>
+            <tr><td>CDR-4</td><td>Lack of Rapid Feedback</td><td>Slow feedback loops reduce the ability to iterate quickly.</td></tr>
+            <tr><td>CDR-5</td><td>Reduced Flexibility</td><td>Harder to respond to market changes quickly.</td></tr>
+            <tr><td>CDR-6</td><td>Increased Technical Debt</td><td>Delays in fixes and updates accumulate debt.</td></tr>
+            <tr><td>CDR-7</td><td>Higher Deployment Risks</td><td>Manual deployments can cause outages.</td></tr>
+            <tr><td>CDR-8</td><td>Slower Innovation Pace</td><td>Infrequent releases hinder experimentation and learning.</td></tr>
+            <tr><td>CDR-9</td><td>Increased Coordination Overhead</td><td>Manual processes require more coordination between teams.</td></tr>
+            <tr><td>CDR-10</td><td>Poor Collaboration and Communication</td><td>Teams may lack alignment across stakeholders.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <div>
+          <h3>CDG-1 — Automate Build and Deployment Processes</h3>
+          <ol>
+            <li>Use build automation tools like Jenkins or GitLab CI/CD.</li>
+            <li>Define build and deployment scripts and artifact versioning.</li>
+            <li>Use IaC tools for environment provisioning.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>CDG-2 — Implement Continuous Integration (CI)</h3>
+          <ol>
+            <li>Run automated builds and tests on commits.</li>
+            <li>Include unit, integration and acceptance tests in CI.</li>
+            <li>Report test results and maintain code coverage goals.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>CDG-3 — Establish Comprehensive Automated Testing</h3>
+          <ol>
+            <li>Define a testing strategy covering unit, integration, and regression tests.</li>
+            <li>Automate test execution and integrate with CI.</li>
+            <li>Monitor flakiness and maintain test health.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>CDG-4 — Adopt Infrastructure as Code (IaC)</h3>
+          <ol>
+            <li>Version control infrastructure code and deploy reproducible environments.</li>
+            <li>Automate provisioning and configuration.</li>
+            <li>Test IaC changes before applying to production.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>CDG-5 — Enable Continuous Deployment</h3>
+          <ol>
+            <li>Use canary or blue-green deployments to reduce risk.</li>
+            <li>Automate rollback strategies and monitor for anomalies.</li>
+            <li>Ensure access controls around deployment actions.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>CDG-6 — Implement Monitoring and Alerting</h3>
+          <ol>
+            <li>Collect metrics, logs and traces from production.</li>
+            <li>Define alerting thresholds and incident playbooks.</li>
+            <li>Visualize key metrics in dashboards.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>CDG-7 — Promote Collaboration and Communication</h3>
+          <ol>
+            <li>Encourage cross-functional teams and knowledge sharing.</li>
+            <li>Use communication tools and hold regular ceremonies.</li>
+            <li>Practice blameless postmortems to learn from incidents.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>CDG-8 — Establish Version Control Best Practices</h3>
+          <ol>
+            <li>Use Git and trunk-based development where possible.</li>
+            <li>Enforce code reviews and branch naming conventions.</li>
+            <li>Use feature flags for dark launches.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>CDG-9 — Implement Agile and DevOps Principles</h3>
+          <ol>
+            <li>Adopt iterative development and continuous improvement.</li>
+            <li>Automate routine tasks and foster shared responsibility.</li>
+            <li>Track metrics to measure process improvements.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>CDG-10 — Perform Regular Retrospectives and Process Refinements</h3>
+          <ol>
+            <li>Run retrospectives after iterations to capture learnings.</li>
+            <li>Prioritize process improvements and track progress.</li>
+          </ol>
+        </div>
+      </section>
+
+      <p style="margin-top:28px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>
+    </div>
+  </body>
+</html>

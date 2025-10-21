@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visual Management of Production, Build & Deployment State - 99x Engineering Excellence Framework</title>
+    <style>
+      body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #0b0b0b; color: #fff; padding: 36px; }
+      a { color: #9b8cf0; text-decoration: none; }
+      .container { max-width: 980px; margin: 0 auto; }
+      h1 { font-size: 1.8rem; margin-bottom: 6px; }
+      h2 { margin-top: 18px; }
+      .meta { color: rgba(255,255,255,0.75); margin-bottom: 18px; }
+      section { background: rgba(255,255,255,0.02); padding: 18px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); margin-bottom: 14px; }
+      ul { margin-left: 20px; }
+      table { width: 100%; border-collapse: collapse; color: #fff; margin-top: 8px; }
+      th, td { text-align: left; padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+      .back { display:inline-block; margin-bottom: 18px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a class="back" href="/">← Back to site</a>
+      <h1>Visual Management of Current Application Production, Build, and Deployment State</h1>
+      <div class="meta">Visual dashboards and indicators that show the current state of production, builds, and deployments to improve visibility, collaboration, and decision-making.</div>
+
+      <section>
+        <h2>Key aspects</h2>
+        <ul>
+          <li><strong>Real-time visualizations:</strong> Dashboards, boards or status pages that update in real time to reflect the current state.</li>
+          <li><strong>CI/CD Integration:</strong> Integrate with pipelines to show commit, test, build, and deployment statuses.</li>
+          <li><strong>Status indicators:</strong> Use color-coded indicators (green/yellow/red) and icons to show health and blockers.</li>
+          <li><strong>Information transparency:</strong> Provide access to relevant status info for features, bugs and tasks.</li>
+          <li><strong>Collaboration & communication:</strong> Use visuals to surface dependencies and blockers and drive coordination.</li>
+          <li><strong>Metrics & analytics:</strong> Track build times, deployment frequency and failure rates for data-driven improvements.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Risks of not implementing</h2>
+        <table>
+          <thead><tr><th>Risk #</th><th>Title</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>VMAR-1</td><td>Lack of visibility</td><td>Team members may not have a clear view of the application's current state.</td></tr>
+            <tr><td>VMAR-2</td><td>Delays in identifying issues</td><td>Issues during build or deployment may not be detected quickly.</td></tr>
+            <tr><td>VMAR-3</td><td>Difficulty tracking progress</td><td>Tracking features and tasks becomes hard without visual cues.</td></tr>
+            <tr><td>VMAR-4</td><td>Inefficient resource allocation</td><td>Teams may be misaligned in resource usage.</td></tr>
+            <tr><td>VMAR-5</td><td>Increased risk of errors</td><td>Wrong versions or deployments may be released accidentally.</td></tr>
+            <tr><td>VMAR-6</td><td>Ineffective collaboration</td><td>Teams may struggle to coordinate without shared visual context.</td></tr>
+            <tr><td>VMAR-7</td><td>Inability to prioritize</td><td>Teams can't prioritize effectively without clear visual cues.</td></tr>
+            <tr><td>VMAR-8</td><td>Limited process improvement</td><td>Hard to spot bottlenecks and areas to improve.</td></tr>
+            <tr><td>VMAR-9</td><td>Difficulty tracking dependencies</td><td>Interdependent tasks may be missed or overlooked.</td></tr>
+            <tr><td>VMAR-10</td><td>Lack of accountability</td><td>No clear ownership or status visibility for tasks.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <div>
+          <h3>VMAG-1 — Establish Visual Dashboards</h3>
+          <ol>
+            <li>Identify key metrics and status indicators.</li>
+            <li>Select a dashboard or visualization tool.</li>
+            <li>Design and configure dashboards for real-time views.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>VMAG-2 — Integrate CI/CD Pipelines</h3>
+          <ol>
+            <li>Identify pipeline APIs and tools.</li>
+            <li>Configure pipelines to emit statuses to the visual system.</li>
+            <li>Verify and test the integrations.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>VMAG-3 — Define Status Indicators</h3>
+          <ol>
+            <li>Define consistent colors and icons for statuses.</li>
+            <li>Communicate and document the indicator meanings.</li>
+            <li>Ensure teams adhere to the indicators.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>VMAG-4 — Ensure Real-time Updates</h3>
+          <ol>
+            <li>Automate data updates from CI/CD and monitoring tools.</li>
+            <li>Monitor the update pipelines for failures.</li>
+            <li>Alert on stale or missing data streams.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>VMAG-5 — Promote Information Sharing</h3>
+          <ol>
+            <li>Use centralized repositories or dashboards for status sharing.</li>
+            <li>Set access controls and encourage contribution.</li>
+            <li>Keep displays accessible to stakeholders.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>VMAG-6 — Track and Analyze Metrics</h3>
+          <ol>
+            <li>Select metrics like build times, deployment frequency, and defect rates.</li>
+            <li>Collect and analyze data over time.</li>
+            <li>Use insights to improve the pipeline and processes.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>VMAG-7 — Regularly Review and Refine Visualizations</h3>
+          <ol>
+            <li>Review visualizations with the team regularly.</li>
+            <li>Gather feedback and update dashboards accordingly.</li>
+            <li>Refine views to focus on actionable information.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>VMAG-8 — Provide Training and Support</h3>
+          <ol>
+            <li>Train team members on using the visual management tools.</li>
+            <li>Offer support and documentation for maintaining dashboards.</li>
+            <li>Encourage adoption and continual learning.</li>
+          </ol>
+        </div>
+      </section>
+
+      <p style="margin-top:28px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>
+    </div>
+  </body>
+</html>
