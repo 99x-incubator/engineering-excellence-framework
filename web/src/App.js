@@ -144,9 +144,7 @@ function App() {
           </div>
         </header>
 
-  {/* stats section removed as requested */}
-
-        <section className="lifecycle-section" id="framework">
+        <section className="framework-section" id="framework">
           <h2 className="section-title">Explore Our Framework</h2>
           <div className="framework-image-container">
             {/* Replace the lifecycle cards with an illustrative image. */}
@@ -210,35 +208,6 @@ function App() {
                   <a href={`${process.env.PUBLIC_URL}/practices/team-experimentation.html`} className="practice-item practice-link">Team Experimentation</a>
                   <a href={`${process.env.PUBLIC_URL}/practices/training-and-development.html`} className="practice-item practice-link">Training and Development</a>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="glass-card" id="culture">
-            <div className="card-header">
-              <span className="card-icon">💎</span>
-              <h2>Product Team Culture & Performance</h2>
-            </div>
-            <div className="goals-grid">
-              {/* moved from Product Team Performance */}
-              <div className="goal-card">
-                <h3>🎯 Enhance Software Product Delivery Performance</h3>
-              </div>
-              <div className="goal-card">
-                <h3>⚡ Reduce Rework and Increase Team Efficiency</h3>
-              </div>
-              <div className="goal-card">
-                <h3>💰 Reduce the Cost of the Product Engineering Team</h3>
-              </div>
-
-              {/* existing culture goals */}
-              <div className="goal-card">
-                <h3>😊 Reduce the Team Deployment Pain </h3>
-              </div>
-              <div className="goal-card">
-                <h3>🔥 Reduce the Team Burnout</h3>
-              </div>
-              <div className="goal-card">
-                <h3>✨ Improve 99x Employee Job Satisfaction</h3>
               </div>
             </div>
           </div>
