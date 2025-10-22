@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Version Control - 99x Engineering Excellence Framework</title>
+    <style>
+      body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #0a0a0a; color: #fff; padding: 40px; }
+      a { color: #9b8cf0; text-decoration: none; }
+      .container { max-width: 900px; margin: 0 auto; }
+      h1 { font-size: 2rem; margin-bottom: 8px; }
+      .meta { color: rgba(255,255,255,0.7); margin-bottom: 24px; }
+      section { background: rgba(255,255,255,0.02); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); margin-bottom: 16px; }
+      table { width: 100%; border-collapse: collapse; color: #fff; }
+      th, td { text-align: left; padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+      .back { display:inline-block; margin-bottom: 20px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a class="back" href="/">← Back to site</a>
+      <h1>Version Control</h1>
+      <div class="meta">A critical practice to manage and track source code changes</div>
+
+      <section>
+        <h2>Overview</h2>
+        <p>Version control is a critical best practice in software engineering that helps manage and track changes to source code and other project assets over time. It enables collaboration among developers, facilitates bug tracking, and provides a safety net for code changes.</p>
+      </section>
+
+      <section>
+        <h2>Key aspects covered by the practice</h2>
+        <ul>
+          <li><strong>Repository management:</strong> Establish a centralized repository to store the project's source code and related files. Use Git or similar systems.</li>
+          <li><strong>Branching strategy:</strong> Use branches for independent development (e.g., GitFlow, GitHub Flow).</li>
+          <li><strong>Commit frequently and meaningfully:</strong> Make granular commits with helpful messages.</li>
+          <li><strong>Pull requests/code reviews:</strong> Use PRs for reviews before merging to main branches.</li>
+          <li><strong>Commit history maintenance:</strong> Keep history clean for rollbacks/cherry-picks.</li>
+          <li><strong>Merge and conflict resolution:</strong> Resolve conflicts promptly and correctly.</li>
+          <li><strong>Version tagging:</strong> Tag releases (SemVer) to mark milestones.</li>
+          <li><strong>Backup and disaster recovery:</strong> Backup repositories and verify recovery processes.</li>
+          <li><strong>Documentation and collaboration:</strong> Use commit messages, issues and review comments to provide context.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Risks of not implementing this practice</h2>
+        <table>
+          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>VCR-1</td><td>Loss of code and history — accidental deletions or irreversible changes.</td></tr>
+            <tr><td>VCR-2</td><td>Lack of code integrity — overwrites and inconsistencies.</td></tr>
+            <tr><td>VCR-3</td><td>Inefficient collaboration — chaotic file sharing and duplication.</td></tr>
+            <tr><td>VCR-4</td><td>Difficulty in bug tracking and regression issues.</td></tr>
+            <tr><td>VCR-5</td><td>Limited code review and quality assurance.</td></tr>
+            <tr><td>VCR-6</td><td>Lack of traceability and auditing.</td></tr>
+            <tr><td>VCR-7</td><td>Increased deployment risks.</td></tr>
+            <tr><td>VCR-8</td><td>Limited scalability and parallel development.</td></tr>
+            <tr><td>VCR-9</td><td>Lack of backup and disaster recovery.</td></tr>
+            <tr><td>VCR-10</td><td>Decreased productivity and efficiency.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Guidelines / Work Instructions</h2>
+        <ol>
+          <li><strong>VCG-1 - Establish a Centralized Repository:</strong> Choose Git, set up a repo, define structure and access controls.</li>
+          <li><strong>VCG-2 - Adopt a Branching Strategy:</strong> Define main branch, use feature branches, document chosen strategy.</li>
+          <li><strong>VCG-4 - Implement Code Review Process:</strong> Use PRs and define review guidelines.</li>
+          <li><strong>VCG-5 - Resolve Merge Conflicts Promptly:</strong> Train developers and document conflict resolution processes.</li>
+          <li><strong>VCG-6 - Utilize Version Tagging:</strong> Use SemVer and tag releases.</li>
+          <li><strong>VCG-7 - Regularly Backup the Repository:</strong> Automate backups and test recovery periodically.</li>
+          <li><strong>VCG-8 - Encourage Documentation and Collaboration:</strong> Use commit messages, integrate issue tracking and promote knowledge sharing.</li>
+        </ol>
+      </section>
+
+      <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>
+    </div>
+  </body>
+</html>

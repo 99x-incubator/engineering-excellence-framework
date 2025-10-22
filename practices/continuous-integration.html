@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Continuous Integration - 99x Engineering Excellence Framework</title>
+    <style>
+      body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #0a0a0a; color: #fff; padding: 40px; }
+      a { color: #9b8cf0; text-decoration: none; }
+      .container { max-width: 900px; margin: 0 auto; }
+      h1 { font-size: 2rem; margin-bottom: 8px; }
+      .meta { color: rgba(255,255,255,0.7); margin-bottom: 24px; }
+      section { background: rgba(255,255,255,0.02); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); margin-bottom: 16px; }
+      ul { margin-left: 20px; }
+      table { width: 100%; border-collapse: collapse; color: #fff; }
+      th, td { text-align: left; padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+      .back { display:inline-block; margin-bottom: 20px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a class="back" href="/">← Back to site</a>
+      <h1>Continuous Integration</h1>
+      <div class="meta">Continuous Integration (CI) is the practice of frequently integrating code changes into a shared repository, with automated builds and tests.</div>
+
+      <section>
+        <h2>Key aspects</h2>
+        <ul>
+          <li><strong>Automated Build & Test:</strong> Automatically build and run tests on each commit.</li>
+          <li><strong>Version Control:</strong> Use Git to manage code and enable frequent commits.</li>
+          <li><strong>CI Server:</strong> Use CI tools (Jenkins, GitHub Actions, etc.) to trigger builds and tests.</li>
+          <li><strong>Small, Frequent Commits:</strong> Keep changes small to simplify integration.</li>
+          <li><strong>Automated Testing:</strong> Maintain unit, integration and acceptance tests.</li>
+          <li><strong>Continuous Feedback:</strong> Notify developers immediately about failures.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Risks of not implementing CI</h2>
+        <table>
+          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>CIR-1</td><td>Code Conflicts — integration becomes harder and time-consuming.</td></tr>
+            <tr><td>CIR-2</td><td>Integration Issues — hidden problems surface late in the cycle.</td></tr>
+            <tr><td>CIR-3</td><td>Delayed Bug Detection — slow feedback increases fix cost.</td></tr>
+            <tr><td>CIR-4</td><td>Difficult Debugging — hard to trace root causes across big merges.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Guidelines / Work Instructions</h2>
+        <ol>
+          <li><strong>CIG-1 - Use Version Control:</strong> Commit often and push to the central repo.</li>
+          <li><strong>CIG-2 - Automated Builds:</strong> Configure build scripts and automation.</li>
+          <li><strong>CIG-3 - Automated Tests:</strong> Integrate tests into the build pipeline.</li>
+          <li><strong>CIG-4 - Regular Integration:</strong> Merge frequently and resolve conflicts quickly.</li>
+          <li><strong>CIG-5 - Continuous Feedback:</strong> Configure notifications for build/test failures.</li>
+          <li><strong>CIG-6 - Code Reviews & Quality Gates:</strong> Enforce reviews and static checks before merging.</li>
+        </ol>
+      </section>
+
+      <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>
+    </div>
+  </body>
+</html>

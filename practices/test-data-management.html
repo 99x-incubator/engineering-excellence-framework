@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Test Data Management - 99x Engineering Excellence Framework</title>
+    <style>
+      body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #0a0a0a; color: #fff; padding: 40px; }
+      a { color: #9b8cf0; text-decoration: none; }
+      .container { max-width: 900px; margin: 0 auto; }
+      h1 { font-size: 2rem; margin-bottom: 8px; }
+      .meta { color: rgba(255,255,255,0.7); margin-bottom: 24px; }
+      section { background: rgba(255,255,255,0.02); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); margin-bottom: 16px; }
+      ul { margin-left: 20px; }
+      table { width: 100%; border-collapse: collapse; color: #fff; }
+      th, td { text-align: left; padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+      .back { display:inline-block; margin-bottom: 20px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a class="back" href="/">← Back to site</a>
+      <h1>Test Data Management</h1>
+      <div class="meta">Manage and provision representative, secure test data for reliable, repeatable testing.</div>
+
+      <section>
+        <h2>Key aspects</h2>
+        <ul>
+          <li><strong>Test Data Generation:</strong> Create realistic datasets covering valid and invalid cases.</li>
+          <li><strong>Data Privacy & Security:</strong> Mask or anonymize sensitive data to comply with regulations.</li>
+          <li><strong>Reusability:</strong> Design reusable datasets across tests and environments.</li>
+          <li><strong>Environment Management:</strong> Ensure test data availability and integrity across test environments.</li>
+          <li><strong>Versioning & Tracking:</strong> Maintain history and traceability of data changes.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Risks of not implementing</h2>
+        <table>
+          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>TDMR-1</td><td>Insufficient Test Coverage — missing data scenarios that reveal bugs.</td></tr>
+            <tr><td>TDMR-2</td><td>Data Inaccuracy — misleading test results due to bad data.</td></tr>
+            <tr><td>TDMR-3</td><td>Security Breach — exposure of sensitive data in test environments.</td></tr>
+            <tr><td>TDMR-4</td><td>Data Dependency Issues — failing tests due to unmanaged data relationships.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Guidelines / Work Instructions</h2>
+        <ol>
+          <li><strong>TDMG-1 - Define Requirements:</strong> Identify attributes, formats, and ranges needed for tests.</li>
+          <li><strong>TDMG-2 - Test Data Generation:</strong> Use automated generation or synthetic data for coverage.</li>
+          <li><strong>TDMG-3 - Data Privacy:</strong> Mask/anonymize PII and secure storage/access.
+          <li><strong>TDMG-4 - Versioning & Tracking:</strong> Keep changes tracked and linked to test cases.</li>
+          <li><strong>TDMG-5 - Reusable Datasets:</strong> Parameterize datasets for reuse across test suites.</li>
+          <li><strong>TDMG-6 - Environment Management:</strong> Provision stable test environments and backups.</li>
+          <li><strong>TDMG-7 - Cleanup & Refresh:</strong> Implement archiving and refresh policies to keep data relevant.</li>
+        </ol>
+      </section>
+
+      <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>
+    </div>
+  </body>
+</html>

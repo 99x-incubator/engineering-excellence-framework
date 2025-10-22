@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Deployment Automation - 99x Engineering Excellence Framework</title>
+    <style>
+      body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #0a0a0a; color: #fff; padding: 40px; }
+      a { color: #9b8cf0; text-decoration: none; }
+      .container { max-width: 900px; margin: 0 auto; }
+      h1 { font-size: 2rem; margin-bottom: 8px; }
+      .meta { color: rgba(255,255,255,0.7); margin-bottom: 24px; }
+      section { background: rgba(255,255,255,0.02); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); margin-bottom: 16px; }
+      ul { margin-left: 20px; }
+      table { width: 100%; border-collapse: collapse; color: #fff; }
+      th, td { text-align: left; padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+      .back { display:inline-block; margin-bottom: 20px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a class="back" href="/">← Back to site</a>
+      <h1>Deployment Automation</h1>
+      <div class="meta">Automating deployment processes to reduce manual errors, ensure consistency, and speed up releases.</div>
+
+      <section>
+        <h2>Key aspects</h2>
+        <ul>
+          <li><strong>CI/CD:</strong> Integrate builds, tests and deployments into automated pipelines for reliable, frequent releases.</li>
+          <li><strong>Infrastructure as Code (IaC):</strong> Define infrastructure in code (Terraform, CloudFormation) for repeatability.</li>
+          <li><strong>Configuration Management:</strong> Use tools like Ansible, Chef or Puppet to ensure consistent environment configuration.</li>
+          <li><strong>Containerization & Orchestration:</strong> Leverage Docker and Kubernetes to package and manage applications.</li>
+          <li><strong>Release Management:</strong> Plan versioning, rollouts and rollback strategies (canary, blue/green).</li>
+          <li><strong>Automated Testing, Monitoring & Security:</strong> Run automated tests, monitoring and security scans as part of the pipeline.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Risks of not implementing</h2>
+        <table>
+          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>DAR-1</td><td>Manual Errors — higher chance of human mistakes during deployments.</td></tr>
+            <tr><td>DAR-2</td><td>Inconsistent Deployments — environments drift and deployments behave differently across stages.</td></tr>
+            <tr><td>DAR-3</td><td>Slow Release Cycles — manual steps slow down time-to-market.</td></tr>
+            <tr><td>DAR-4</td><td>Difficulty in Rollbacks — manual rollbacks are error-prone and slow.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Guidelines / Work Instructions</h2>
+        <ol>
+          <li><strong>DAG-1 - Establish Version Control:</strong> Use Git, branching strategies and enforce PR reviews and tags.</li>
+          <li><strong>DAG-2 - Implement CI:</strong> Configure CI server to run builds and tests on each commit.</li>
+          <li><strong>DAG-3 - Automate Deployments:</strong> Script deployments and automate environment provisioning.</li>
+          <li><strong>DAG-4 - Adopt IaC:</strong> Define infrastructure as code and version it alongside application code.</li>
+          <li><strong>DAG-5 - Containerize & Orchestrate:</strong> Use containers and orchestration for consistent deployments.</li>
+          <li><strong>DAG-6 - Implement Continuous Deployment:</strong> Automate promotion of artifacts with controlled rollout strategies.</li>
+          <li><strong>DAG-7 - Monitoring & Logging:</strong> Instrument applications and pipelines for observability and alerts.</li>
+          <li><strong>DAG-8 - Security & Compliance:</strong> Add automated security scans and compliance checks into pipelines.</li>
+          <li><strong>DAG-11 - Defect Reporting:</strong> Establish defect reporting and RCA process linked to deployments.</li>
+        </ol>
+      </section>
+
+      <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>
+    </div>
+  </body>
+</html>
