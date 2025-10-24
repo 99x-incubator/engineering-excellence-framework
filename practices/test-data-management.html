@@ -21,43 +21,70 @@
     <div class="container">
       <a class="back" href="/">← Back to site</a>
       <h1>Test Data Management</h1>
-      <div class="meta">Manage and provision representative, secure test data for reliable, repeatable testing.</div>
+      <div class="meta">Test Data Management involves the effective management of test data in software development projects. It focuses on ensuring that test data is accurate, representative, and sufficient to thoroughly test the functionality and performance of the software being developed.</div>
 
       <section id="key-aspects">
-        <h2>Key aspects</h2>
+        <h2>Key aspects covered by the practice</h2>
         <ul>
-          <li><strong>Test Data Generation:</strong> Create realistic datasets covering valid and invalid cases.</li>
-          <li><strong>Data Privacy & Security:</strong> Mask or anonymize sensitive data to comply with regulations.</li>
-          <li><strong>Reusability:</strong> Design reusable datasets across tests and environments.</li>
-          <li><strong>Environment Management:</strong> Ensure test data availability and integrity across test environments.</li>
-          <li><strong>Versioning & Tracking:</strong> Maintain history and traceability of data changes.</li>
+          <li><strong>Test Data Generation:</strong> Test data needs to be generated to simulate real-world scenarios and cover a wide range of input combinations. It should include both valid and invalid data to test the software's ability to handle different situations. Automated test data generation tools can be used to generate large volumes of data efficiently.</li>
+          <li><strong>Data Privacy and Security:</strong> Test data often contains sensitive information, such as personally identifiable information (PII) or proprietary data. It's crucial to ensure data privacy and security by anonymizing or masking sensitive data to comply with privacy regulations and protect sensitive information from unauthorized access.</li>
+          <li><strong>Test Data Reusability:</strong> Test data should be designed for reuse across different test cases and environments. By creating reusable test data sets, developers and testers can save time and effort in data creation and ensure consistency across various testing activities.</li>
+          <li><strong>Test Data Environment Management:</strong> It's important to manage the test data environment effectively, including databases, servers, and other resources required for testing. This involves setting up and configuring the necessary infrastructure and ensuring data integrity and availability during testing.</li>
+          <li><strong>Data Versioning and Tracking:</strong> Test data should be versioned and tracked to maintain a historical record of changes and facilitate traceability. This helps in identifying issues, reproducing defects, and understanding the impact of data changes on the testing process.</li>
+          <li><strong>Test Data Cleanup:</strong> Test data tends to accumulate over time, leading to data redundancy and increased storage requirements. Regular data cleanup processes should be in place to remove obsolete or irrelevant test data, ensuring the efficient use of resources.</li>
+          <li><strong>Test Data Refresh and Variation:</strong> To prevent testing from becoming predictable and biased, test data should be refreshed periodically. This involves changing the test data to introduce different variations and edge cases, enhancing the effectiveness of testing efforts.</li>
+          <li><strong>Test Data Documentation:</strong> Comprehensive documentation of test data is essential for future reference and understanding. It should include information about the purpose, source, format, and any transformations applied to the test data. Documentation aids in sharing knowledge and maintaining consistency within the team.</li>
         </ul>
       </section>
 
       <section id="risks">
-        <h2>Risks of not implementing</h2>
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <thead><tr><th>Risk Number</th><th>Title</th><th>Description</th></tr></thead>
           <tbody>
-            <tr><td>TDMR-1</td><td>Insufficient Test Coverage — missing data scenarios that reveal bugs.</td></tr>
-            <tr><td>TDMR-2</td><td>Data Inaccuracy — misleading test results due to bad data.</td></tr>
-            <tr><td>TDMR-3</td><td>Security Breach — exposure of sensitive data in test environments.</td></tr>
-            <tr><td>TDMR-4</td><td>Data Dependency Issues — failing tests due to unmanaged data relationships.</td></tr>
+            <tr><td>TDMR-1</td><td>Insufficient Test Coverage</td><td>Inadequate test data may lead to insufficient coverage of various scenarios, reducing the effectiveness of testing.</td></tr>
+            <tr><td>TDMR-2</td><td>Data Inaccuracy</td><td>Inaccurate test data can result in misleading test results and mask actual defects present in the software.</td></tr>
+            <tr><td>TDMR-3</td><td>Security Breach</td><td>Failure to protect sensitive test data may lead to security breaches and compromise the confidentiality and integrity of the data.</td></tr>
+            <tr><td>TDMR-4</td><td>Data Dependency Issues</td><td>Lack of proper management and tracking of test data dependencies can cause issues when executing test cases, leading to incomplete or incorrect testing.</td></tr>
+            <tr><td>TDMR-5</td><td>Inconsistent Testing Results</td><td>Inconsistent test data across different testing environments can produce varying results, making it difficult to compare and analyze outcomes accurately.</td></tr>
+            <tr><td>TDMR-6</td><td>Data Redundancy and Storage Overhead</td><td>Accumulation of unnecessary test data can result in data redundancy, consuming additional storage space and increasing operational costs.</td></tr>
+            <tr><td>TDMR-7</td><td>Time and Effort Wastage</td><td>Manual and ad-hoc test data creation processes can be time-consuming and error-prone, wasting valuable resources and delaying testing activities.</td></tr>
+            <tr><td>TDMR-8</td><td>Difficulty in Defect Reproduction</td><td>Without proper versioning and tracking of test data, reproducing and investigating defects may become challenging, hindering the debugging process.</td></tr>
+            <tr><td>TDMR-9</td><td>Limited Test Data Reusability</td><td>Lack of reusable test data sets restricts their usability, leading to repetitive data creation efforts and decreased testing efficiency.</td></tr>
+            <tr><td>TDMR-10</td><td>Ineffective Performance Testing</td><td>Insufficient and unrealistic test data may result in inadequate performance testing, failing to identify bottlenecks and performance issues accurately.</td></tr>
+            <tr><td>TDMR-11</td><td>Compliance and Audit Risks</td><td>Failure to properly manage test data can result in non-compliance with industry or regulatory requirements, leading to audit failures and potential legal implications. Test data containing sensitive or personally identifiable information must be handled in accordance with privacy and security regulations.</td></tr>
           </tbody>
         </table>
       </section>
 
       <section id="guidelines">
-        <h2>Guidelines / Work Instructions</h2>
-        <ol>
-          <li><strong>TDMG-1 - Define Requirements:</strong> Identify attributes, formats, and ranges needed for tests.</li>
-          <li><strong>TDMG-2 - Test Data Generation:</strong> Use automated generation or synthetic data for coverage.</li>
-          <li><strong>TDMG-3 - Data Privacy:</strong> Mask/anonymize PII and secure storage/access.
-          <li><strong>TDMG-4 - Versioning & Tracking:</strong> Keep changes tracked and linked to test cases.</li>
-          <li><strong>TDMG-5 - Reusable Datasets:</strong> Parameterize datasets for reuse across test suites.</li>
-          <li><strong>TDMG-6 - Environment Management:</strong> Provision stable test environments and backups.</li>
-          <li><strong>TDMG-7 - Cleanup & Refresh:</strong> Implement archiving and refresh policies to keep data relevant.</li>
-        </ol>
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <table>
+          <thead><tr><th>Guideline Number</th><th>Name</th><th>Purpose</th><th>Performing Method</th><th>Possible Risks if Failed</th></tr></thead>
+          <tbody>
+            <tr><td>TDMG-1</td><td>Define Test Data Requirements</td><td>To identify the required test data to adequately cover test scenarios.</td><td>1. Analyze the software requirements and identify the types of test data needed.<br/><br/>2. Define data attributes, ranges, and formats.<br/><br/>3. Consider valid and invalid data combinations.</td><td>TDMR-1 - Insufficient Test Coverage</td></tr>
+
+            <tr><td>TDMG-2</td><td>Implement Test Data Generation Strategy</td><td>To generate representative and sufficient test data for testing purposes.</td><td>1. Determine the appropriate test data generation technique (e.g., random, boundary, or combinatorial).<br/><br/>2. Use automated test data generation tools.<br/><br/>3. Consider data dependencies and relationships.</td><td>TDMR-1 - Insufficient Test Coverage<br/>TDMR-2 - Data Inaccuracy</td></tr>
+
+            <tr><td>TDMG-3</td><td>Ensure Data Privacy and Security</td><td>[ISO 4.7.8]<br/>[ISO 27001 A.14.3.1]<br/>To protect sensitive information within test data.</td><td>1. Anonymize or mask sensitive data elements.<br/><br/>2. Comply with privacy regulations.<br/><br/>3. Implement access controls and encryption for test data storage and transmission.</td><td>TDMR-3 - Security Breach<br/>TDMR-11 - Compliance and Audit Risks</td></tr>
+
+            <tr><td>TDMG-4</td><td>Establish Test Data Versioning and Tracking</td><td>To maintain a historical record of test data changes and facilitate traceability.</td><td>1. Implement a version control system for test data.<br/><br/>2. Document changes made to test data.<br/><br/>3. Establish traceability between test data versions and associated test cases.</td><td>TDMR-4 - Data Dependency Issues<br/>TDMR-8 - Difficulty in Defect Reproduction</td></tr>
+
+            <tr><td>TDMG-5</td><td>Design Reusable Test Data Sets</td><td>To create test data that can be reused across different test scenarios.</td><td>1. Identify common test data elements across multiple test cases.<br/><br/>2. Develop generic and parameterized test data sets.<br/><br/>3. Ensure data consistency and reliability.</td><td>TDMR-9 - Limited Test Data Reusability</td></tr>
+
+            <tr><td>TDMG-6</td><td>Manage Test Data Environment</td><td>To set up and maintain the necessary infrastructure and resources for test data management.</td><td>1. Configure test data environments (e.g., databases, servers).<br/><br/>2. Ensure data integrity and availability during testing.<br/><br/>3. Establish backup and recovery procedures.</td><td>TDMR-5 - Inconsistent Testing Results</td></tr>
+
+            <tr><td>TDMG-7</td><td>Implement Test Data Cleanup Process</td><td>To remove obsolete or irrelevant test data, ensuring efficient use of resources.</td><td>1. Regularly identify and delete unnecessary test data.<br/><br/>2. Establish criteria for determining data obsolescence.<br/><br/>3. Implement data archiving and purging strategies.</td><td>TDMR-6 - Data Redundancy and Storage Overhead</td></tr>
+
+            <tr><td>TDMG-8</td><td>Refresh and Vary Test Data</td><td>To introduce different variations and prevent predictability in testing.</td><td>1. Periodically change test data values and attributes.<br/><br/>2. Modify data distributions and patterns.<br/><br/>3. Consider edge cases and abnormal scenarios.</td><td>TDMR-10 - Ineffective Performance Testing</td></tr>
+
+            <tr><td>TDMG-9</td><td>Document Test Data</td><td>To provide comprehensive information and facilitate knowledge sharing.</td><td>1. Document test data sources, formats, and transformations.<br/><br/>2. Maintain a record of data generation and modification processes.<br/><br/>3. Capture any specific assumptions or considerations related to test data.</td><td>TDMR-7 - Time and Effort Wastage<br/>TDMR-4 - Data Dependency Issues</td></tr>
+
+            <tr><td>TDMG-10</td><td>Establish Test Data Review Process</td><td>To ensure the accuracy and relevance of test data.</td><td>1. Conduct regular reviews of test data against requirements.<br/><br/>2. Involve stakeholders in data review sessions.<br/><br/>3. Document and address any identified gaps or discrepancies.</td><td>TDMR-2 - Data Inaccuracy<br/>TDMR-7 - Time and Effort Wastage</td></tr>
+
+            <tr><td>TDMG-11</td><td>Separate Test Data from Test Scripts</td><td>To ensure easy maintenance of test data</td><td>Ensure that test data is decoupled from test scripts. This separation allows for easier maintenance, updates, and reuse of test data across different test cases and environments.<br/><br/>Store test data in dedicated repositories or databases, making it accessible to testers and automation frameworks.</td><td>TDMR-4 - Data Dependency Issues</td></tr>
+          </tbody>
+        </table>
       </section>
 
       <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>

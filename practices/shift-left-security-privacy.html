@@ -21,48 +21,264 @@
     <div class="container">
       <a class="back" href="/">← Back to site</a>
       <h1>Shift Left on Security & Privacy</h1>
-      <div class="meta">Integrate security and privacy early into the SDLC to reduce vulnerabilities and ensure privacy compliance.</div>
 
-      <section id="key-aspects">
-        <h2>Key aspects</h2>
-        <ul>
-          <li><strong>Threat Modeling:</strong> Identify threats, assess impact, and plan mitigations early.</li>
-          <li><strong>Secure Design:</strong> Apply secure-by-design principles and least privilege.</li>
-          <li><strong>Code Analysis & Testing:</strong> Use static analysis, SAST/DAST and automated security tests.</li>
-          <li><strong>Secure Code Review:</strong> Incorporate security-focused peer reviews and checklists.</li>
-          <li><strong>Training:</strong> Provide security and privacy training for developers and stakeholders.</li>
-          <li><strong>DevSecOps:</strong> Automate security checks within CI/CD pipelines.</li>
-          <li><strong>Privacy by Design:</strong> Apply data minimization, consent handling, and secure data practices.</li>
-        </ul>
-      </section>
+    <main>
+      <article>
+      
+        <p>Shift Left on security and privacy is a best practice in software engineering that involves integrating security and privacy considerations early in the software development lifecycle. By addressing these aspects as early as possible, organizations can reduce the risk of vulnerabilities and privacy breaches and improve the overall security and privacy posture of their software systems.</p>
 
-      <section id="risks">
-        <h2>Risks of not implementing</h2>
+        <h2>Key aspects covered by the practice</h2>
+        <h3>Threat modeling</h3>
+        <p>Shift Left emphasizes conducting threat modeling early in the development process. Threat modeling involves identifying potential threats, assessing their impact, and devising appropriate countermeasures. By performing threat modeling early, security risks can be identified and mitigated before they become costly to address.</p>
+
+        <h3>Secure design and architecture</h3>
+        <p>Emphasizing secure design and architecture is crucial. Developers should consider security and privacy requirements when designing software systems. This involves using secure coding practices, implementing secure protocols and encryption, and considering the principle of least privilege, where access rights are granted based on necessity.</p>
+
+        <h3>Code analysis and testing</h3>
+        <p>Shift Left advocates for integrating security and privacy testing as part of the development process. This includes code analysis, static code analysis, and automated security and privacy testing tools. Early identification and resolution of vulnerabilities in the code help prevent security incidents later in the development cycle.</p>
+
+        <h3>Secure code review</h3>
+        <p>Conducting secure code reviews is essential to identify and fix vulnerabilities. Peer code reviews, code analysis tools, and manual reviews can help detect coding errors, insecure coding practices, and potential security weaknesses.</p>
+
+        <h3>Security training and awareness</h3>
+        <p>Educating developers and other stakeholders about secure coding practices, privacy regulations, and emerging threats is an important aspect of Shift Left. By providing security training and raising awareness, organizations can foster a security-conscious culture and ensure that security and privacy considerations are ingrained in the development process.</p>
+
+        <h3>Automation and DevSecOps</h3>
+        <p>Automation plays a vital role in Shift Left. Integrating security and privacy tools into the software development pipeline allows for continuous monitoring, testing, and analysis. DevSecOps practices ensure that security and privacy are seamlessly integrated into the development and operations workflows.</p>
+
+        <h3>Privacy by design</h3>
+        <p>Privacy considerations should be integrated into the development process from the outset. Adhering to privacy-by-design principles, such as data minimization, consent management, and secure data handling, helps protect user privacy and comply with privacy regulations.</p><br/>
+
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <thead>
+            <tr>
+              <th>Risk Number</th>
+              <th>Title</th>
+              <th>Description</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr><td>SLSPR-1</td><td>Increased vulnerability exposure — more security gaps.</td></tr>
-            <tr><td>SLSPR-3</td><td>Non-compliance with privacy regulations — legal and financial risks.</td></tr>
-            <tr><td>SLSPR-6</td><td>Data leakage or loss — exposure of sensitive information.</td></tr>
-            <tr><td>SLSPR-10</td><td>Increased business risks — reputational and financial impact.</td></tr>
+            <tr>
+              <td>SLSPR-1</td>
+              <td>Increased vulnerability exposure</td>
+              <td>Failing to address security and privacy concerns early in the development process increases the exposure to potential vulnerabilities.</td>
+            </tr>
+            <tr>
+              <td>SLSPR-2</td>
+              <td>Higher likelihood of security breaches</td>
+              <td>Without integrating security and privacy considerations early on, there is a higher probability of security breaches and unauthorized access to sensitive information.</td>
+            </tr>
+            <tr>
+              <td>SLSPR-3</td>
+              <td>Non-compliance with privacy regulations</td>
+              <td>Neglecting privacy considerations can result in non-compliance with regulations such as GDPR, CCPA, or other data protection laws, leading to legal and financial consequences.</td>
+            </tr>
+            <tr>
+              <td>SLSPR-4</td>
+              <td>Costly remediation efforts</td>
+              <td>Identifying and addressing security and privacy issues later in the development cycle is often more expensive and time-consuming than addressing them early on.</td>
+            </tr>
+            <tr>
+              <td>SLSPR-5</td>
+              <td>Reputational damage</td>
+              <td>Security incidents and privacy breaches can significantly damage an organization's reputation, leading to loss of customer trust and potential business consequences.</td>
+            </tr>
+            <tr>
+              <td>SLSPR-6</td>
+              <td>Data leakage or loss</td>
+              <td>Insufficient security measures can lead to data leakage or loss, potentially exposing sensitive information and causing harm to individuals or the organization.</td>
+            </tr>
+            <tr>
+              <td>SLSPR-7</td>
+              <td>Delayed product release or deployment</td>
+              <td>Discovering security or privacy issues late in the development process can cause delays in product release or deployment, impacting project timelines and business objectives.</td>
+            </tr>
+            <tr>
+              <td>SLSPR-8</td>
+              <td>Increased vulnerability to cyber attacks</td>
+              <td>Failing to address security concerns early makes software systems more vulnerable to various cyber attacks, including malware, ransomware, and phishing attempts.</td>
+            </tr>
+            <tr>
+              <td>SLSPR-9</td>
+              <td>Inadequate protection of user privacy</td>
+              <td>Insufficient attention to privacy considerations can result in inadequate protection of user data, violating user privacy expectations and damaging user trust.</td>
+            </tr>
+            <tr>
+              <td>SLSPR-10</td>
+              <td>Difficulty in achieving security and privacy maturity</td>
+              <td>Without a proactive approach to security and privacy, it becomes challenging to achieve a mature security and privacy posture within the organization.</td>
+            </tr>
+            <tr>
+              <td>SLSPR-11</td>
+              <td>Increased Business Risks</td>
+              <td>Poor security and privacy practices increase overall business risks. Organizations may face financial losses, loss of competitive advantage, and potential liability due to security incidents, privacy breaches, and the resulting consequences. Proactive security and privacy measures are essential for mitigating business risks.</td>
+            </tr>
+          </tbody>
+        </table><br/>
+
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Guideline Number</th>
+              <th>Name</th>
+              <th>Purpose</th>
+              <th>Performing Method</th>
+              <th>Possible Risks if Failed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SLSPG-1</td>
+              <td>Establish a threat modeling process</td>
+              <td>Identify and mitigate potential security threats early in the development process.</td>
+              <td>
+                1. Identify potential threats and attack vectors.<br>
+                2. Assess the impact and likelihood of each threat.<br>
+                3. Design appropriate countermeasures and mitigations.<br>
+                4. Review and update the threat model periodically.
+              </td>
+              <td>SLSPR-1 - Increased vulnerability exposure</td>
+            </tr>
+            <tr>
+              <td>SLSPG-2</td>
+              <td>Implement secure coding practices</td>
+              <td>Promote the use of secure coding techniques to reduce the likelihood of vulnerabilities.</td>
+              <td>
+                1. Train developers on secure coding practices.<br>
+                2. Enforce code review processes to identify and fix insecure code.<br>
+                3. Use static code analysis tools to detect potential security weaknesses.
+              </td>
+              <td>SLSPR-2 - Higher likelihood of security breaches<br>SLSPR-6 - Data leakage or loss</td>
+            </tr>
+            <tr>
+              <td>SLSPG-3</td>
+              <td>Conduct security and privacy testing</td>
+              <td>Identify and remediate security and privacy issues through comprehensive testing.</td>
+              <td>
+                1. Perform regular security and privacy testing during development.<br>
+                2. Use automated testing tools to scan for vulnerabilities and privacy concerns.<br>
+                3. Implement penetration testing to identify potential weaknesses.
+              </td>
+              <td>SLSPR-3 - Non-compliance with privacy regulations<br>SLSPR-8 - Increased vulnerability to cyber attacks</td>
+            </tr>
+            <tr>
+              <td>SLSPG-4</td>
+              <td>Adopt a secure development framework</td>
+              <td>Provide a structured approach to incorporate security and privacy into the development process.</td>
+              <td>
+                1. Choose and implement a recognized secure development framework (e.g., OWASP SAMM).<br>
+                2. Incorporate security and privacy activities into each phase of the software development lifecycle.<br>
+                3. Align development processes with relevant security and privacy standards.
+              </td>
+              <td>SLSPR-4 - Costly remediation efforts<br>SLSPR-7 - Delayed product release or deployment</td>
+            </tr>
+            <tr>
+              <td>SLSPG-5</td>
+              <td>Enable continuous monitoring and incident response</td>
+              <td>Proactively monitor and respond to security and privacy incidents in real-time.</td>
+              <td>
+                1. Implement logging and monitoring solutions to detect and respond to security events.<br>
+                2. Establish an incident response plan to address security incidents promptly.<br>
+                3. Regularly review logs and conduct post-incident analysis to improve security practices.
+              </td>
+              <td>SLSPR-5 - Reputational damage<br>SLSPR-9 - Inadequate protection of user privacy</td>
+            </tr>
+            <tr>
+              <td>SLSPG-6</td>
+              <td>Provide security and privacy training</td>
+              <td>Educate developers and stakeholders on security and privacy best practices.</td>
+              <td>
+                1. Conduct regular security and privacy awareness training sessions.<br>
+                2. Promote secure coding practices, secure architecture design, and privacy-by-design principles.<br>
+                3. Stay updated on emerging security threats and privacy regulations.
+              </td>
+              <td>SLSPR-10 - Difficulty in achieving security and privacy maturity</td>
+            </tr>
+            <tr>
+              <td>SLSPG-7</td>
+              <td>Establish clear security and privacy requirements</td>
+              <td>Define and communicate security and privacy requirements to the development team.</td>
+              <td>
+                1. Collaborate with stakeholders to identify and document security and privacy requirements.<br>
+                2. Ensure requirements are specific, measurable, attainable, relevant, and time-bound (SMART).<br>
+                3. Regularly review and update requirements based on changing threats and regulations.
+              </td>
+              <td>SLSPR-1 - Increased vulnerability exposure<br>SLSPR-3 - Non-compliance with privacy regulations</td>
+            </tr>
+            <tr>
+              <td>SLSPG-8</td>
+              <td>Adopt privacy-by-design principles</td>
+              <td>Integrate privacy considerations into the development process from the outset.</td>
+              <td>
+                1. Incorporate privacy principles such as data minimization, purpose limitation, and user consent into system design.<br>
+                2. Implement privacy impact assessments (PIA) to identify and mitigate privacy risks.<br>
+                3. Regularly review and update privacy policies and practices to align with evolving privacy regulations.
+              </td>
+              <td>SLSPR-6 - Data leakage or loss<br>SLSPR-9 - Inadequate protection of user privacy</td>
+            </tr>
+            <tr>
+              <td>SLSPG-9</td>
+              <td>Implement secure data handling and storage</td>
+              <td>Ensure the secure handling and storage of user data to protect privacy.</td>
+              <td>
+                1. Encrypt sensitive data (PII) during transit and at rest.<br>
+                2. Implement access controls to restrict data access to authorized personnel.<br>
+                3. Regularly assess and audit data handling practices for compliance with privacy regulations.<br>
+                4. Regularly dispose of the temporary files created for the processing of PII after their intended lifespan.
+              </td>
+              <td>SLSPR-6 - Data leakage or loss<br>SLSPR-9 - Inadequate protection of user privacy</td>
+            </tr>
+            <tr>
+              <td>SLSPG-10</td>
+              <td>Maintain product privacy architecture</td>
+              <td>Ensure the product architecture/design incorporates privacy by design and privacy by default principles</td>
+              <td>
+                1. Establish a clear understanding of privacy requirements and standards, including ISO 27701.<br>
+                2. Conduct regular architecture/design reviews to assess and ensure compliance with privacy by design principles.<br>
+                3. Incorporate privacy controls, mechanisms, and privacy-enhancing technologies into the architecture/design.<br>
+                4. Document and maintain the privacy architecture as an integral part of the product documentation.
+              </td>
+              <td>SLSPR-3 - Non-compliance with privacy regulations<br>SLSPR-6 - Data leakage or loss<br>SLSPR-9 - Inadequate protection of user privacy</td>
+            </tr>
+            <tr>
+              <td>SLSPG-11</td>
+              <td>Conduct impact analysis and mitigate adverse effects</td>
+              <td>Assess the potential impact of implementing security and privacy measures on the product and mitigate any adverse effects.</td>
+              <td>
+                1. Identify potential changes or modifications required to implement security and privacy measures.<br>
+                2. Perform an impact analysis to evaluate the potential effects on the product, such as performance, functionality, user experience, or compatibility.<br>
+                3. Develop mitigation strategies to address identified adverse impacts.<br>
+                4. Test and validate the modified product to ensure it meets security, privacy, and functional requirements.
+              </td>
+              <td>SLSPR-4 - Costly remediation efforts<br>SLSPR-7 - Delayed product release or deployment</td>
+            </tr>
+            <tr>
+              <td>SLSPG-12</td>
+              <td>Establish Documentation and Reporting Standards</td>
+              <td>Ensure a defined process is in place for fostering security and privacy of the application and work instructions</td>
+              <td>
+                Document security and privacy guidelines, policies, and procedures.<br>
+                Provide templates and examples for documenting security controls, threat models, and privacy impact assessments.<br>
+                Establish reporting mechanisms for security incidents, vulnerabilities, and privacy breaches.
+              </td>
+              <td>SLSPR-10 - Difficulty in achieving security and privacy maturity</td>
+            </tr>
+            <tr>
+              <td>SLSPG-13</td>
+              <td>Regularly Review and Improve Practices</td>
+              <td>Ensure existing security and privacy practices are updated with the evolvement of the Product and scope.</td>
+              <td>
+                Continuously evaluate and improve the effectiveness of security and privacy practices.<br>
+                Conduct periodic reviews and assessments to identify areas for enhancement.<br>
+                Encourage feedback from stakeholders and incorporate lessons learned into future iterations of the development process.
+              </td>
+              <td>SLSPR-11 - Increased Business Risks</td>
+            </tr>
           </tbody>
         </table>
-      </section>
+      </article>
+    </main>
 
-      <section id="guidelines">
-        <h2>Guidelines / Work Instructions</h2>
-        <ol>
-          <li><strong>SLSPG-1 - Threat Modeling:</strong> Run and update threat models during design and feature planning.</li>
-          <li><strong>SLSPG-2 - Secure Coding:</strong> Enforce secure coding rules and SAST checks.</li>
-          <li><strong>SLSPG-3 - Security Testing:</strong> Integrate SAST/DAST and pen-testing into CI/CD.</li>
-          <li><strong>SLSPG-4 - Secure Frameworks:</strong> Adopt secure development frameworks like OWASP SAMM.</li>
-          <li><strong>SLSPG-5 - Monitoring & Incident Response:</strong> Implement logging, monitoring, and an incident response plan.</li>
-          <li><strong>SLSPG-6 - Training:</strong> Keep teams trained and informed on threats and privacy requirements.</li>
-          <li><strong>SLSPG-7 - Privacy by Design:</strong> Build privacy controls and consent mechanisms into the product.</li>
-        </ol>
-      </section>
-
-      <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>
-    </div>
-  </body>
-</html>
+    <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>

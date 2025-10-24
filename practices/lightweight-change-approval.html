@@ -21,38 +21,195 @@
     <div class="container">
       <a class="back" href="/">← Back to site</a>
       <h1>Lightweight Change Approval</h1>
-      <div class="meta">Adopt a streamlined change approval process focused on peer review and minimal overhead to improve velocity and quality.</div>
+      <div class="meta">Software Engineering Best Practice Lightweight Change Approval emphasizes the use of a lightweight change approval process, which has been shown through research to yield superior IT performance compared to external change approval boards (CABs).</div>
 
       <section id="key-aspects">
-        <h2>Key aspects</h2>
+        <h2>Key aspects covered by the practice</h2>
         <ul>
-          <li><strong>Lightweight Process:</strong> Keep approvals efficient and avoid unnecessary bureaucracy.</li>
-          <li><strong>Peer Review:</strong> Use code reviews, pair programming and intrateam reviews as primary approval mechanisms.</li>
-          <li><strong>Superior Performance:</strong> Research shows lightweight approvals often outperform heavy CAB processes in IT performance.</li>
+          <li><strong>Lightweight Process:</strong> The change approval process is designed to be streamlined and efficient, avoiding unnecessary overhead. It aims to strike a balance between ensuring change quality and maintaining a smooth workflow.</li>
+          <li><strong>Peer Review:</strong> The practice advocates for a peer review-based change approval process. This can be achieved through techniques such as pair programming or intrateam code review. Peer review leverages the expertise within the development team to assess and validate changes.</li>
+          <li><strong>Superior IT Performance:</strong> Research findings suggest that lightweight change approval processes based on peer review result in improved IT performance. By utilizing peer review, issues and defects can be detected earlier, leading to higher-quality software.</li>
         </ul>
       </section>
 
       <section id="risks">
-        <h2>Risks of not implementing</h2>
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <thead>
+            <tr><th>Risk Number</th><th>Title</th><th>Description</th></tr>
+          </thead>
           <tbody>
-            <tr><td>LCAR-1</td><td>Bottlenecked Decision-Making — slow approvals increase cycle time.</td></tr>
-            <tr><td>LCAR-2</td><td>Increased Time-to-Market — long processes delay releases.</td></tr>
-            <tr><td>LCAR-3</td><td>Decreased Agility — inability to adapt quickly to change.</td></tr>
+            <tr><td>LCAR-1</td><td>Bottlenecked Decision-Making</td><td>Long approval processes can introduce bottlenecks in decision-making, leading to delays in approving and implementing changes. Examples include CABs, Change Control Boards, or formal change review committees.</td></tr>
+            <tr><td>LCAR-2</td><td>Increased Time-to-Market</td><td>Complex and lengthy approval processes can result in increased time-to-market, hindering the ability to respond quickly to customer needs and market demands.</td></tr>
+            <tr><td>LCAR-3</td><td>Decreased Agility</td><td>Rigid long approval processes restrict agility and hinder the ability to iterate and adapt to evolving requirements and feedback. Examples include extensive change request forms, multi-stage approval hierarchies, or bureaucratic workflows.</td></tr>
+            <tr><td>LCAR-4</td><td>Inefficient Resource Utilization</td><td>Long approval processes involving numerous stakeholders lead to inefficient utilization of resources, including personnel and time. Examples include extensive documentation requirements, excessive meetings, or lengthy review cycles.</td></tr>
+            <tr><td>LCAR-5</td><td>Loss of Developer Productivity</td><td>Lengthy approval processes impact developer productivity, as they must wait for approvals instead of focusing on coding and delivering value. Examples include excessive wait times for approvals, complex change request processes, or rigid change control procedures.</td></tr>
+            <tr><td>LCAR-6</td><td>Increased Complexity and Overhead</td><td>Complex approval processes introduce additional administrative overhead and increase the complexity of change management. Examples include convoluted change request forms, intricate decision-making frameworks, or excessive documentation requirements.</td></tr>
+            <tr><td>LCAR-7</td><td>Higher Risk of Communication Breakdowns</td><td>With numerous stakeholders involved in long approval processes, there is a higher risk of miscommunication, misunderstandings, and information gaps. Examples include distributed decision-making, lack of clarity in approval criteria, or inadequate communication channels.</td></tr>
+            <tr><td>LCAR-8</td><td>Limited Contextual Knowledge</td><td>Long approval processes may lack in-depth contextual knowledge of the system, resulting in suboptimal decisions regarding change approvals. Examples include inadequate understanding of system dependencies, insufficient technical expertise, or limited visibility into the impact of changes.</td></tr>
+            <tr><td>LCAR-9</td><td>Ineffective Risk Management</td><td>Complex approval processes can lead to inadequate risk management, as detailed analysis and evaluation may be bypassed or overlooked. Examples include rushed assessments, incomplete risk mitigation strategies, or insufficient consideration of potential impacts.</td></tr>
+            <tr><td>LCAR-10</td><td>Resistance to Change</td><td>Long approval processes can foster a culture of resistance to change, making it challenging to introduce innovative ideas and improvements in a timely manner. Examples include conservative decision-making tendencies, resistance to change from stakeholders, or organizational reluctance to adopt new practices.</td></tr>
           </tbody>
         </table>
       </section>
 
       <section id="guidelines">
-        <h2>Guidelines / Work Instructions</h2>
-        <ol>
-          <li><strong>LCAG-1 - Define Approval Criteria:</strong> Set clear, objective criteria for approvals.</li>
-          <li><strong>LCAG-2 - Automate Workflows:</strong> Use issue trackers and CI to automate notifications and approvals.</li>
-          <li><strong>LCAG-3 - CI & Testing:</strong> Enforce CI tests and quality gates to reduce manual checks.</li>
-          <li><strong>LCAG-4 - Foster Collaboration:</strong> Promote peer review and knowledge sharing within teams.</li>
-          <li><strong>LCAG-5 - Simplify Documentation:</strong> Keep change request forms short and focused on impact and rollback plans.</li>
-        </ol>
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <table>
+          <thead>
+            <tr><th>Guideline Number</th><th>Name</th><th>Purpose</th><th>Performing Method</th><th>Possible Risks if Failed</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>LCAG-1</td>
+              <td>Define Clear Change Approval Criteria</td>
+              <td>To establish clear criteria for evaluating and approving changes, ensuring transparency and consistency in the change approval process.</td>
+              <td>
+                1. Identify key factors to consider when evaluating changes (e.g., impact on system stability, security, or performance).<br>
+
+                2. Define specific thresholds or guidelines for each factor.<br>
+
+                3. Document the criteria and communicate them to all team members.
+              </td>
+              <td>LCAR-7 - Higher Risk of Communication Breakdowns<br>LCAR-8 - Limited Contextual Knowledge</td>
+            </tr>
+            <tr>
+              <td>LCAG-2</td>
+              <td>Automate Change Approval Workflow</td>
+              <td>streamline the change approval process and reduce manual effort, enabling faster decision-making and minimizing delays.</td>
+              <td>
+                1. Identify suitable tools or platforms for automating the change approval workflow (e.g., issue tracking systems, continuous integration/continuous delivery pipelines).<br>
+
+                2. Configure the workflow to include automated notifications, approvals, and status updates.<br>
+
+                3. Integrate relevant tools and systems to facilitate seamless information exchange.
+              </td>
+              <td>LCAR-1 - Bottlenecked Decision-Making<br>LCAR-4 - Inefficient Resource Utilization</td>
+            </tr>
+            <tr>
+              <td>LCAG-3</td>
+              <td>Implement Continuous Integration and Testing</td>
+              <td>To detect issues and defects early in the development process, enabling prompt resolution and improving software quality.</td>
+              <td>
+                1. Set up a continuous integration (CI) system that automatically builds and tests code changes.<br>
+
+                2. Configure the CI system to run unit tests, integration tests, and other relevant checks.<br>
+
+                3. Establish criteria for determining the quality of a change based on test results.<br>
+
+                4. Utilize peer code reviews in conjunction with CI to ensure changes are thoroughly validated.
+              </td>
+              <td>LCAR-3 - Decreased Agility<br>LCAR-5 - Loss of Developer Productivity</td>
+            </tr>
+            <tr>
+              <td>LCAG-4</td>
+              <td>Foster a Culture of Collaboration and Feedback [ISO 4.1.3.b]</td>
+              <td>To promote effective peer review and knowledge sharing within the development team, improving the accuracy and efficiency of change approvals.</td>
+              <td>
+                1. Encourage regular code reviews, utilizing techniques such as pair programming or intrateam code review.<br>
+
+                2. Establish a feedback culture where team members provide constructive criticism and share their expertise.<br>
+
+                3. Foster an environment that values open communication and encourages questions and discussions.
+              </td>
+              <td>LCAR-3 - Decreased Agility<br>LCAR-7 - Higher Risk of Communication Breakdowns</td>
+            </tr>
+            <tr>
+              <td>LCAG-5</td>
+              <td>Simplify Change Request Documentation</td>
+              <td>To reduce administrative overhead and streamline the change request process, allowing faster evaluations and approvals.</td>
+              <td>
+                1. Review and simplify the change request form or template, removing unnecessary fields or information.<br>
+
+                2. Define a standard format for change requests to ensure consistency.<br>
+
+                3. Streamline the review and approval steps, avoiding excessive bureaucracy.
+              </td>
+              <td>LCAR-6 - Increased Complexity and Overhead<br>LCAR-9 - Ineffective Risk Management</td>
+            </tr>
+            <tr>
+              <td>LCAG-6</td>
+              <td>Promote Cross-Functional Collaboration</td>
+              <td>To enhance the decision-making process by involving stakeholders from different disciplines, reducing the risk of miscommunication and improving the quality of change approvals.</td>
+              <td>
+                1. Identify key stakeholders who should be involved in change approval decisions (e.g., developers, testers, operations team members).<br>
+
+                2. Establish clear communication channels and regular meetings to discuss proposed changes.<br>
+
+                3. Encourage collaborative problem-solving and consensus-building.
+              </td>
+              <td>LCAR-7 - Higher Risk of Communication Breakdowns<br>LCAR-10 - Resistance to Change</td>
+            </tr>
+            <tr>
+              <td>LCAG-7</td>
+              <td>Establish Time Boundaries for Change Approval</td>
+              <td>To avoid unnecessary delays and ensure changes are evaluated and approved within a reasonable timeframe.</td>
+              <td>
+                1. Define service level agreements (SLAs) or target timelines for different types of changes based on complexity and impact.<br>
+
+                2. Monitor the change approval process to identify bottlenecks or delays.<br>
+
+                3. Implement mechanisms to escalate and resolve issues that exceed the defined time boundaries.
+              </td>
+              <td>LCAR-2 - Increased Time-to-Market<br>LCAR-4 - Inefficient Resource Utilization</td>
+            </tr>
+            <tr>
+              <td>LCAG-8</td>
+              <td>Provide Training and Support for Change Approvers</td>
+              <td>To equip change approvers with the necessary knowledge and skills to evaluate changes effectively, reducing the risk of suboptimal decisions.</td>
+              <td>
+                1. Identify training needs for change approvers, considering factors such as technology, domain knowledge, and risk assessment.<br>
+
+                2. Develop training materials, workshops, or mentorship programs to address these needs.<br>
+
+                3. Provide ongoing support and resources to change approvers, including access to subject matter experts and documentation.
+              </td>
+              <td>LCAR-8 - Limited Contextual Knowledge<br>LCAR-9 - Ineffective Risk Management</td>
+            </tr>
+            <tr>
+              <td>LCAG-9</td>
+              <td>Continuously Monitor and Evaluate the Change Approval Process</td>
+              <td>To identify areas for improvement and ensure the change approval process remains effective and efficient over time.</td>
+              <td>
+                1. Collect feedback from team members involved in the change approval process.<br>
+
+                2. Monitor process metrics such as approval time, rejection rates, or customer satisfaction.<br>
+
+                3. Conduct regular retrospectives or reviews to discuss findings and implement process improvements.
+              </td>
+              <td>LCAR-1 - Bottlenecked Decision-Making<br>LCAR-6 - Increased Complexity and Overhead</td>
+            </tr>
+            <tr>
+              <td>LCAG-10</td>
+              <td>Encourage Experimentation and Learning</td>
+              <td>To foster a culture of continuous improvement and innovation, allowing the team to discover more effective approaches to change approval.</td>
+              <td>
+                1. Provide opportunities for team members to propose and experiment with new change approval techniques or tools.<br>
+
+                2. Celebrate and share successful experiments and lessons learned with the entire team.<br>
+
+                3. Encourage a growth mindset and embrace change as an opportunity for improvement.
+              </td>
+              <td>LCAR-10 - Resistance to Change
+LCAR-3 - Decreased Agility</td>
+            </tr>
+            <tr>
+              <td>LCAG-11</td>
+              <td>Approval for Use of Third-Party Components [ISO 4.5.1]</td>
+              <td>Obtain approval for the use of third-party libraries, code segments, and applications in the product. Make the information and criteria used in the selection process available to relevant stakeholders.</td>
+              <td>
+                1. Document the process for requesting approval for third-party components.<br>
+
+                2. Include evaluation criteria such as security, licensing, compatibility, and maintenance.<br>
+
+                3. Communicate the process and criteria to the development team and stakeholders.<br>
+
+                4. Establish a review and approval workflow for assessing and approving the use of third-party components.
+              </td>
+              <td>LCAR-2 - Increased Defects in Production, LCAR-8 - Limited Contextual Knowledge</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>

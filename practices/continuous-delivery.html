@@ -26,142 +26,244 @@
 
       <section id="key-aspects">
         <h2>Key aspects</h2>
-        <ul>
-          <li>Version Control</li>
-          <li>Work in Small Batches</li>
-          <li>Limit Work In-Progress (WIP)</li>
-          <li>Adhering to Coding Standards</li>
-          <li>Trunk-Based Development</li>
-          <li>Loosely Coupled Architecture</li>
-          <li>Continuous Integration</li>
-          <li>Feature toggles to decouple deployment from release</li>
-          <li>Shift Left on Quality</li>
-          <li>Test Automation</li>
-          <li>Test Data Management</li>
-          <li>Deployment Automation</li>
-          <li>Shift Left on Security and Privacy</li>
-          <li>Lightweight Change Approval</li>
-          <li>Proactive Notification on Build and Deployment Process</li>
-          <li>Monitoring and Obtaining Feedback from Production</li>
-          <li>Make Flow of Work Visible to Team and Customer</li>
-          <li>Visual Management of Current Application Production, Build, and Deployment State</li>
-          <li>Empowered Teams</li>
-          <li>Team Experimentation</li>
-          <li>Communication and Collaboration Skills</li>
-          <li>Continuous Learning and Skill Development</li>
-          <li>Agile Methodologies and Practices</li>
-        </ul>
+        <p>Version Control: Effective use of version control systems, such as Git, to track and manage changes to source code, enabling collaboration, traceability, and easy rollback to previous versions.</p>
+        <p>Work in Small Batches: Breaking down work into small, manageable units or user stories, allowing for faster feedback, reduced risk, and easier prioritization and deployment.</p>
+        <p>Limit Work In-Progress (WIP): Focusing on completing and delivering work before taking on new tasks, preventing bottlenecks and improving productivity by reducing multitasking and context switching.</p>
+        <p>Adhering to Coding Standards: Following agreed-upon coding conventions and best practices within the development team, promoting consistency, readability, maintainability, and reducing bugs and technical debt.</p>
+        <p>Trunk-Based Development: Promoting a development approach where all developers work on a single branch (the "trunk") for faster integration and reduced merge conflicts, enabling continuous integration and shorter release cycles.</p>
+        <p>Loosely Coupled Architecture: Designing software systems with loosely coupled components that interact through well-defined interfaces, allowing for flexibility, maintainability, and scalability.</p>
+        <p>Continuous Integration: Regularly integrating code changes from multiple developers into a shared repository, facilitating early bug detection, faster feedback, and enabling automated testing and deployment.</p>
+        <p>Feature toggles: Decoupling deployments from product releases, applications are deployable with more flexibility as business dependencies are detached from deployments and impact on deployment can be controlled.</p>
+        <p>Shift Left on Quality: Emphasizing early and continuous testing throughout the development lifecycle, starting from requirements gathering to development and deployment, to ensure high-quality software.</p>
+        <p>Test Automation: Automating the execution of tests to validate software functionality, performance, and security, enabling faster and more reliable regression testing and freeing up resources for more critical tasks.</p>
+        <p>Test Data Management: Efficiently managing and provisioning test data for testing environments, ensuring data integrity, repeatability, and sufficient coverage of different scenarios.</p>
+        <p>Deployment Automation: Automating the process of deploying software to various environments, such as development, testing, and production, reducing manual errors, and enabling frequent and reliable deployments.</p>
+        <p>Shift Left on Security and Privacy: Incorporating security and privacy considerations throughout the development lifecycle, starting from requirements, design, coding, and testing, to proactively address vulnerabilities and protect user data.</p>
+        <p>Lightweight Change Approval: Implementing streamlined and efficient change approval processes to minimize bureaucracy and delays while ensuring appropriate oversight and control.</p>
+        <p>Proactive Notification on Build and Deployment Process: Implementing automated notifications and alerts to keep the team and stakeholders informed about the progress, issues, and status of builds and deployments.</p>
+        <p>Monitoring and Obtaining Feedback from Production: Implementing monitoring and logging mechanisms to collect data and insights from the production environment, enabling proactive issue detection, performance optimization, and continuous improvement.</p>
+        <p>Make Flow of Work Visible to Team and Customer: Utilizing visual tools, such as Kanban boards, to provide transparency and visibility into the status and progress of work items, facilitating collaboration and shared understanding.</p>
+        <p>Visual Management of Current Application Production, Build, and Deployment State: Using visual dashboards or tools to provide real-time visibility into the state of the application, builds, and deployments, helping teams identify bottlenecks and address issues promptly.</p>
+        <p>Empowered Teams: Fostering a culture of autonomy, trust, and ownership, where teams have the authority and responsibility to make decisions, experiment, and continuously improve their processes and outcomes.</p>
+        <p>Team Experimentation: Encouraging teams to experiment with new tools, techniques, and approaches, fostering innovation, learning, and the identification of better ways of working.</p>
+        <p>Continuous Delivery: Striving to deliver software frequently, reliably, and with minimal manual intervention, enabling rapid feedback, faster time to market, and increased customer satisfaction.</p>
+        <p>Communication and Collaboration Skills: Emphasizing effective communication, active listening, and collaboration within and across teams, fostering shared understanding, alignment, and successful outcomes.</p>
+        <p>Continuous Learning and Skill Development: Promoting a learning culture, providing opportunities for skill development, knowledge sharing, and staying updated with emerging technologies and industry trends.</p>
+        <p>Agile Methodologies and Practices: Embracing agile principles and methodologies, such as Scrum or Kanban, to enable iterative development, adaptability to change, and customer-centricity.</p>
+        <p>Culture of Collaboration: Continuous Delivery requires a culture of collaboration and communication within the software team and across different stakeholders. It encourages close collaboration between developers, testers, operations teams, and product owners, promoting shared ownership and responsibility for the software's success.</p>
       </section>
 
       <section id="risks">
-        <h2>Risks of not implementing</h2>
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk #</th><th>Title</th><th>Description</th></tr></thead>
+          <thead>
+            <tr>
+              <th>Risk Number</th>
+              <th>Title</th>
+              <th>Description</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr><td>CDR-1</td><td>Increased Time-to-Market</td><td>Longer release cycles slow feature delivery.</td></tr>
-            <tr><td>CDR-2</td><td>Higher Risk of Human Errors</td><td>Manual steps increase error rates.</td></tr>
-            <tr><td>CDR-3</td><td>Difficulty Maintaining Quality</td><td>Inconsistent testing leads to quality regressions.</td></tr>
-            <tr><td>CDR-4</td><td>Lack of Rapid Feedback</td><td>Slow feedback loops reduce the ability to iterate quickly.</td></tr>
-            <tr><td>CDR-5</td><td>Reduced Flexibility</td><td>Harder to respond to market changes quickly.</td></tr>
-            <tr><td>CDR-6</td><td>Increased Technical Debt</td><td>Delays in fixes and updates accumulate debt.</td></tr>
-            <tr><td>CDR-7</td><td>Higher Deployment Risks</td><td>Manual deployments can cause outages.</td></tr>
-            <tr><td>CDR-8</td><td>Slower Innovation Pace</td><td>Infrequent releases hinder experimentation and learning.</td></tr>
-            <tr><td>CDR-9</td><td>Increased Coordination Overhead</td><td>Manual processes require more coordination between teams.</td></tr>
-            <tr><td>CDR-10</td><td>Poor Collaboration and Communication</td><td>Teams may lack alignment across stakeholders.</td></tr>
+            <tr>
+              <td>CDR-1</td>
+              <td>Increased Time-to-Market</td>
+              <td>Without Continuous Delivery, the time taken to release software updates is longer, delaying the delivery of new features and improvements to end users.</td>
+            </tr>
+            <tr>
+              <td>CDR-2</td>
+              <td>Higher Risk of Human Errors</td>
+              <td>Manual processes and lack of automation increase the chances of human errors, leading to issues in the software and potentially impacting its reliability and quality.</td>
+            </tr>
+            <tr>
+              <td>CDR-3</td>
+              <td>Difficulty in Maintaining Consistent Quality</td>
+              <td>Without automated testing and continuous integration, it becomes challenging to ensure consistent quality standards across different software releases.</td>
+            </tr>
+            <tr>
+              <td>CDR-4</td>
+              <td>Lack of Rapid Feedback</td>
+              <td>Not following Continuous Delivery hampers the ability to gather rapid feedback from users and make timely improvements based on their needs and preferences.</td>
+            </tr>
+            <tr>
+              <td>CDR-5</td>
+              <td>Reduced Flexibility and Adaptability</td>
+              <td>Inflexible release processes make it harder to respond to market demands and customer feedback quickly, reducing the adaptability of the software.</td>
+            </tr>
+            <tr>
+              <td>CDR-6</td>
+              <td>Increased Technical Debt</td>
+              <td>Without Continuous Delivery, the accumulation of technical debt is more likely as fixes, updates, and improvements are delayed, making future development and maintenance more challenging.</td>
+            </tr>
+            <tr>
+              <td>CDR-7</td>
+              <td>Higher Deployment Risks</td>
+              <td>Manual deployment processes increase the risk of deployment failures, resulting in downtime, user dissatisfaction, and potential financial losses for the organization.</td>
+            </tr>
+            <tr>
+              <td>CDR-8</td>
+              <td>Slower Innovation Pace</td>
+              <td>A lack of Continuous Delivery practices can hinder the pace of innovation, preventing teams from releasing new features and improvements frequently and impeding competitiveness.</td>
+            </tr>
+            <tr>
+              <td>CDR-9</td>
+              <td>Increased Coordination Overhead</td>
+              <td>Without streamlined and automated processes, coordinating activities among different team members, such as developers, testers, and operations personnel, becomes more time-consuming and error-prone.</td>
+            </tr>
+            <tr>
+              <td>CDR-10</td>
+              <td>Poor Collaboration and Communication</td>
+              <td>The absence of a culture of collaboration and communication hinders effective teamwork, leading to misunderstandings, delays, and lower overall productivity.</td>
+            </tr>
           </tbody>
         </table>
       </section>
 
       <section id="guidelines">
         <h2>PHR Guidelines / Work Instructions</h2>
-        <div>
-          <h3>CDG-1 — Automate Build and Deployment Processes</h3>
-          <ol>
-            <li>Use build automation tools like Jenkins or GitLab CI/CD.</li>
-            <li>Define build and deployment scripts and artifact versioning.</li>
-            <li>Use IaC tools for environment provisioning.</li>
-          </ol>
-        </div>
-
-        <div>
-          <h3>CDG-2 — Implement Continuous Integration (CI)</h3>
-          <ol>
-            <li>Run automated builds and tests on commits.</li>
-            <li>Include unit, integration and acceptance tests in CI.</li>
-            <li>Report test results and maintain code coverage goals.</li>
-          </ol>
-        </div>
-
-        <div>
-          <h3>CDG-3 — Establish Comprehensive Automated Testing</h3>
-          <ol>
-            <li>Define a testing strategy covering unit, integration, and regression tests.</li>
-            <li>Automate test execution and integrate with CI.</li>
-            <li>Monitor flakiness and maintain test health.</li>
-          </ol>
-        </div>
-
-        <div>
-          <h3>CDG-4 — Adopt Infrastructure as Code (IaC)</h3>
-          <ol>
-            <li>Version control infrastructure code and deploy reproducible environments.</li>
-            <li>Automate provisioning and configuration.</li>
-            <li>Test IaC changes before applying to production.</li>
-          </ol>
-        </div>
-
-        <div>
-          <h3>CDG-5 — Enable Continuous Deployment</h3>
-          <ol>
-            <li>Use canary or blue-green deployments to reduce risk.</li>
-            <li>Automate rollback strategies and monitor for anomalies.</li>
-            <li>Ensure access controls around deployment actions.</li>
-          </ol>
-        </div>
-
-        <div>
-          <h3>CDG-6 — Implement Monitoring and Alerting</h3>
-          <ol>
-            <li>Collect metrics, logs and traces from production.</li>
-            <li>Define alerting thresholds and incident playbooks.</li>
-            <li>Visualize key metrics in dashboards.</li>
-          </ol>
-        </div>
-
-        <div>
-          <h3>CDG-7 — Promote Collaboration and Communication</h3>
-          <ol>
-            <li>Encourage cross-functional teams and knowledge sharing.</li>
-            <li>Use communication tools and hold regular ceremonies.</li>
-            <li>Practice blameless postmortems to learn from incidents.</li>
-          </ol>
-        </div>
-
-        <div>
-          <h3>CDG-8 — Establish Version Control Best Practices</h3>
-          <ol>
-            <li>Use Git and trunk-based development where possible.</li>
-            <li>Enforce code reviews and branch naming conventions.</li>
-            <li>Use feature flags for dark launches.</li>
-          </ol>
-        </div>
-
-        <div>
-          <h3>CDG-9 — Implement Agile and DevOps Principles</h3>
-          <ol>
-            <li>Adopt iterative development and continuous improvement.</li>
-            <li>Automate routine tasks and foster shared responsibility.</li>
-            <li>Track metrics to measure process improvements.</li>
-          </ol>
-        </div>
-
-        <div>
-          <h3>CDG-10 — Perform Regular Retrospectives and Process Refinements</h3>
-          <ol>
-            <li>Run retrospectives after iterations to capture learnings.</li>
-            <li>Prioritize process improvements and track progress.</li>
-          </ol>
-        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Guideline Number</th>
+              <th>Name</th>
+              <th>Purpose (Why?)</th>
+              <th>Performing Method (How?)</th>
+              <th>Possible Risks if Failed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CDG-1</td>
+              <td>Automate Build and Deployment Processes</td>
+              <td>Reduce manual effort and minimize errors in the build and deployment processes.</td>
+              <td>
+                1. Use build automation tools like Jenkins or GitLab CI/CD.<br>
+                2. Define clear build and deployment scripts.<br>
+                3. Implement versioning of build artifacts.<br>
+                4. Use deployment automation tools like Ansible or Kubernetes.
+              </td>
+              <td>CDR-1 - Increased Time-to-Market<br>CDR-7 - Higher Deployment Risks</td>
+            </tr>
+            <tr>
+              <td>CDG-2</td>
+              <td>Implement Continuous Integration (CI)</td>
+              <td>Detect integration issues early and ensure the software remains in a releasable state.</td>
+              <td>
+                1. Set up a CI server like Jenkins or GitLab CI/CD.<br>
+                2. Configure automated builds and tests triggered by code commits.<br>
+                3. Include unit tests, integration tests, and other necessary tests in the CI pipeline.<br>
+                4. Generate reports for test results and code coverage.
+              </td>
+              <td>CDR-3 - Difficulty in Maintaining Consistent Quality<br>CDR-4 - Lack of Rapid Feedback</td>
+            </tr>
+            <tr>
+              <td>CDG-3</td>
+              <td>Establish Comprehensive Automated Testing</td>
+              <td>Ensure the quality of the software and catch bugs early in the development process.</td>
+              <td>
+                1. Define a test strategy covering unit tests, integration tests, regression tests, and other relevant tests.<br>
+                2. Automate the execution of these tests using frameworks like JUnit, Selenium, or PyTest.<br>
+                3. Integrate tests into the CI pipeline to run them continuously.<br>
+                4. Monitor test results and failures.
+              </td>
+              <td>CDR-3 - Difficulty in Maintaining Consistent Quality<br>CDR-4 - Lack of Rapid Feedback</td>
+            </tr>
+            <tr>
+              <td>CDG-4</td>
+              <td>Adopt Infrastructure as Code (IaC)</td>
+              <td>Manage infrastructure resources using code and automate their provisioning and configuration.</td>
+              <td>
+                1. Define infrastructure configurations using tools like Terraform or CloudFormation.<br>
+                2. Version control infrastructure code.<br>
+                3. Automate infrastructure provisioning and configuration.<br>
+                4. Continuously test and validate infrastructure changes.
+              </td>
+              <td>CDR-7 - Higher Deployment Risks<br>CDR-9 - Increased Coordination Overhead</td>
+            </tr>
+            <tr>
+              <td>CDG-5</td>
+              <td>Enable Continuous Deployment</td>
+              <td>Automate the release process to rapidly deliver software updates to production environments.</td>
+              <td>
+                1. Set up a deployment pipeline with automated steps for packaging, testing, and deploying software.<br>
+                2. Implement canary or blue-green deployment strategies to minimize risk.<br>
+                3. Monitor deployments and rollbacks for any issues or errors.<br>
+                4. Establish proper access controls and permissions for deployment activities.
+              </td>
+              <td>CDR-1 - Increased Time-to-Market<br>CDR-7 - Higher Deployment Risks</td>
+            </tr>
+            <tr>
+              <td>CDG-6</td>
+              <td>Implement Monitoring and Alerting</td>
+              <td>Gain visibility into the software's behavior in production and detect issues promptly.</td>
+              <td>
+                1. Set up monitoring tools to collect metrics, logs, and user feedback.<br>
+                2. Define meaningful alerts and thresholds for key performance indicators.<br>
+                3. Implement dashboards and reports for monitoring and analysis.<br>
+                4. Regularly review and analyze monitoring data for identifying potential issues.
+              </td>
+              <td>CDR-4 - Lack of Rapid Feedback<br>CDR-8 - Slower Innovation Pace</td>
+            </tr>
+            <tr>
+              <td>CDG-7</td>
+              <td>Promote Collaboration and Communication</td>
+              <td>Foster a culture of collaboration and effective communication among team members and stakeholders.</td>
+              <td>
+                1. Encourage cross-functional teams and promote knowledge sharing.<br>
+                2. Use collaborative tools like Slack or Microsoft Teams for communication.<br>
+                3. Conduct regular team meetings, stand-ups, and retrospectives.<br>
+                4. Foster a blame-free culture that encourages learning and improvement.
+              </td>
+              <td>CDR-10 - Poor Collaboration and Communication</td>
+            </tr>
+            <tr>
+              <td>CDG-8</td>
+              <td>Establish Version Control Best Practices</td>
+              <td>Ensure effective management of source code and configuration files.</td>
+              <td>
+                1. Use a distributed version control system like Git.<br>
+                2. Set up a branching strategy that suits the team's development process.<br>
+                3. Enforce code reviews to maintain code quality.<br>
+                4. Define and follow naming conventions for branches and repositories.
+              </td>
+              <td>CDR-2 - Higher Risk of Human Errors<br>CDR-6 - Increased Technical Debt</td>
+            </tr>
+            <tr>
+              <td>CDG-9</td>
+              <td>Implement Agile and DevOps Principles</td>
+              <td>Embrace Agile methodologies and DevOps practices for continuous improvement and collaboration.</td>
+              <td>
+                1. Adopt Agile frameworks like Scrum or Kanban.<br>
+                2. Encourage iterative development and frequent feedback.<br>
+                3. Foster a DevOps culture of shared responsibility and continuous learning.<br>
+                4. Promote the use of automation and self-service tools.
+              </td>
+              <td>CDR-1 - Increased Time-to-Market<br>CDR-8 - Slower Innovation Pace</td>
+            </tr>
+            <tr>
+              <td>CDG-10</td>
+              <td>Perform Regular Retrospectives and Process Refinements</td>
+              <td>Continuously evaluate the Continuous Delivery process and make necessary improvements.</td>
+              <td>
+                1. Conduct regular retrospectives to review the effectiveness of the CD process.<br>
+                2. Collect feedback from team members and stakeholders.<br>
+                3. Identify areas of improvement and implement changes incrementally.<br>
+                4. Monitor and measure the impact of process refinements.
+              </td>
+              <td>CDR-1 - Increased Time-to-Market<br>CDR-9 - Increased Coordination Overhead</td>
+            </tr>
+            <tr>
+              <td>CDG-11</td>
+              <td>Feature Toggles / Dark Launches</td>
+              <td>Decoupling deployments from product releases, deployments can be done with more flexibility as business dependencies are detached from deployments and impact on deployment can be controlled.</td>
+              <td>
+                1. Implement feature toggle frameworks.<br>
+                2. Use feature flags to enable/disable features per environment.<br>
+                3. Ensure toggle lifecycles are managed and cleaned up.<br>
+              </td>
+              <td>CDR-2 - Higher Risk of Human Errors<br>CDR-6 - Increased Technical Debt</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <p style="margin-top:28px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>

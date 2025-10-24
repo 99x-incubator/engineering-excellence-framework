@@ -30,52 +30,71 @@
 
       <section id="key-aspects">
         <h2>Key aspects covered by the practice</h2>
-        <ul>
-          <li><strong>Iterative Development:</strong> Deliver in short iterations that produce potentially shippable increments.</li>
-          <li><strong>Continuous Integration:</strong> Integrate frequently to detect issues early.</li>
-          <li><strong>Rapid Feedback Loop:</strong> Get feedback quickly to make course corrections.</li>
-          <li><strong>Risk Mitigation:</strong> Reduce large, risky changes by addressing challenges early.</li>
-          <li><strong>Flexibility and Adaptability:</strong> Easier to reprioritize and adapt to changing requirements.</li>
-          <li><strong>Continuous Delivery:</strong> Aim for always-releasable software.</li>
-          <li><strong>Quality Focus:</strong> Emphasize testing and reviews on smaller slices of work.</li>
-          <li><strong>Reduced Time to Market:</strong> Deliver incremental value faster.</li>
-          <li><strong>Collaboration and Communication:</strong> Improve team coordination and knowledge sharing.</li>
-        </ul>
+        <p>Iterative Development: Working in small batches follows an iterative development approach, where software is developed and delivered in multiple iterations or increments. Each iteration typically spans a few days to a few weeks and results in a potentially shippable product increment.</p>
+        <p>Continuous Integration: Small batches promote frequent integration of code changes into a shared codebase through continuous integration practices. Developers regularly merge their work into a central repository, allowing early detection and resolution of integration issues.</p>
+        <p>Rapid Feedback Loop: By working in small batches, developers can receive feedback on their work more frequently. This facilitates quick identification of issues, improves collaboration, and enables faster course corrections.</p>
+        <p>Risk Mitigation: Breaking down work into small batches helps mitigate risks associated with software development. It allows teams to address potential challenges and obstacles early on, reducing the likelihood of significant delays or failures in the later stages of development.</p>
+        <p>Flexibility and Adaptability: Small batches enable teams to be more flexible and adaptable to changing requirements. As each batch represents a smaller portion of the overall project, it becomes easier to adjust priorities, incorporate feedback, and respond to evolving customer needs.</p>
+        <p>Continuous Delivery: With small batches, teams can aim for continuous delivery, where software can be deployed to production at any time. This practice ensures that software is always in a releasable state and can be delivered to end-users whenever needed.</p>
+        <p>Quality Focus: Working in small batches facilitates a stronger focus on quality. By delivering smaller increments of functionality, teams can concentrate on thorough testing, code reviews, and other quality assurance practices, resulting in higher overall software quality.</p>
+        <p>Reduced Time to Market: Small batches enable faster delivery of software features or improvements. By continuously delivering small increments of value, teams can reduce time to market and provide value to users sooner.</p>
+        <p>Collaboration and Communication: Small batches encourage collaboration and effective communication within development teams. With smaller pieces of work, it becomes easier for team members to coordinate their efforts, share knowledge, and provide support to each other.</p>
       </section>
 
       <section id="risks">
-        <h2>Risks of not implementing this practice</h2>
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <thead><tr><th>Risk Number</th><th>Title</th><th>Description</th></tr></thead>
           <tbody>
-            <tr><td>WSBR-1</td><td>Poor Feedback Loop — lack of frequent feedback leads to late issue discovery.</td></tr>
-            <tr><td>WSBR-2</td><td>Increased Integration Challenges — large merges and fragile integrations.</td></tr>
-            <tr><td>WSBR-3</td><td>Limited Adaptability — hard to change course quickly.</td></tr>
-            <tr><td>WSBR-4</td><td>Higher Risk of Project Failure — issues not surfaced early.</td></tr>
-            <tr><td>WSBR-5</td><td>Delayed Time to Market — bigger tasks take longer to deliver value.</td></tr>
-            <tr><td>WSBR-6</td><td>Decreased Collaboration — silos form around large tasks.</td></tr>
-            <tr><td>WSBR-7</td><td>Inefficient Testing and Debugging — harder to test large changes.</td></tr>
-            <tr><td>WSBR-8</td><td>Reduced Flexibility — inability to respond to feedback quickly.</td></tr>
-            <tr><td>WSBR-9</td><td>Lower Productivity — longer lead times and increased complexity.</td></tr>
-            <tr><td>WSBR-10</td><td>Decreased Customer Satisfaction — slower delivery of value.</td></tr>
+            <tr><td>WSBR-1</td><td>Poor Feedback Loop</td><td>Lack of frequent feedback can result in delayed detection of issues, leading to lower software quality.</td></tr>
+            <tr><td>WSBR-2</td><td>Increased Integration Challenges</td><td>Without continuous integration, merging large code changes becomes more complex and error-prone.</td></tr>
+            <tr><td>WSBR-3</td><td>Limited Adaptability</td><td>Working on large, monolithic tasks makes it difficult to adjust to changing requirements or priorities.</td></tr>
+            <tr><td>WSBR-4</td><td>Higher Risk of Project Failure</td><td>By not mitigating risks early through small batches, the overall project is at a higher risk of failure or significant delays.</td></tr>
+            <tr><td>WSBR-5</td><td>Delayed Time to Market</td><td>Working on big tasks all at once can delay the release of software features, impacting time to market and user satisfaction.</td></tr>
+            <tr><td>WSBR-6</td><td>Decreased Collaboration</td><td>Larger tasks can create silos within the development team, reducing collaboration and hindering knowledge sharing.</td></tr>
+            <tr><td>WSBR-7</td><td>Inefficient Testing and Debugging</td><td>Testing and debugging become more challenging with larger tasks, potentially leading to overlooked issues and decreased software quality.</td></tr>
+            <tr><td>WSBR-8</td><td>Reduced Flexibility</td><td>Lack of small batches limits the team's ability to adapt to customer feedback, market changes, or evolving requirements.</td></tr>
+            <tr><td>WSBR-9</td><td>Lower Productivity</td><td>Working on large tasks can result in lower productivity due to increased complexity and longer lead times for completion.</td></tr>
+            <tr><td>WSBR-10</td><td>Decreased Customer Satisfaction</td><td>Delayed delivery of value and limited flexibility can lead to lower customer satisfaction and a negative impact on business outcomes.</td></tr>
           </tbody>
         </table>
       </section>
 
       <section id="guidelines">
-        <h2>Guidelines / Work Instructions</h2>
-        <ol>
-          <li><strong>WSBG-1 - Break Work into Small Tasks:</strong> Identify larger tasks and break them down into smaller units that can be completed in a few days.</li>
-          <li><strong>WSBG-2 - Define Clear Acceptance Criteria:</strong> Collaborate with stakeholders to set unambiguous acceptance criteria (functional, non-functional, security, performance).</li>
-          <li><strong>WSBG-3 - Prioritize and Sequence Tasks:</strong> Order tasks based on dependencies and business value.</li>
-          <li><strong>WSBG-4 - Implement Continuous Integration:</strong> Set up automated builds, tests, and reviews triggered by changes.</li>
-          <li><strong>WSBG-5 - Perform Regular Code Reviews:</strong> Establish review practices to improve quality.</li>
-          <li><strong>WSBG-6 - Adopt Test-Driven Development (TDD):</strong> Write tests before features to ensure quality.</li>
-          <li><strong>WSBG-7 - Automate Build and Deployment Processes:</strong> Automate CI/CD to support frequent delivery.</li>
-          <li><strong>WSBG-8 - Encourage Pair Programming:</strong> Promote collaboration and knowledge sharing.</li>
-          <li><strong>WSBG-9 - Conduct Retrospectives and Act on Feedback:</strong> Continuously improve via retrospectives.</li>
-          <li><strong>WSBG-10 - Maintain a Prioritized and Flexible Backlog:</strong> Keep a backlog prioritized by business value and revisit it regularly.</li>
-        </ol>
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <table>
+          <thead><tr><th>Guideline Number</th><th>Name</th><th>Purpose</th><th>Performing Method</th><th>Possible Risks if Failed</th></tr></thead>
+          <tbody>
+            <tr><td>WSBG-1</td><td>Break Work into Small Tasks</td><td>Facilitate manageable units of work that can be completed in short cycles.</td><td>Identify larger tasks and break them down into smaller, self-contained units that can be completed within a few days.</td><td>WSBR-1 - Poor Feedback Loop</td></tr>
+
+            <tr><td>WSBG-2</td><td>ISO 4.2.3]<br/>[ISO 27001 A.14.1.1]<br/> [ISO 27001 A.14.2.9] <br/>Define Clear Acceptance Criteria</td><td><br/>Ensure shared understanding of task completion.</td><td>Collaborate with stakeholders to establish unambiguous acceptance criteria for each task. Acceptance Criteria should cover
+
+Functional
+None-Functional
+Security and Privacy
+Performance
+Aspects for a given story/task</td><td>WSBR-1 - Poor Feedback Loop</td></tr>
+
+            <tr><td>WSBG-3</td><td>Prioritize and Sequence Tasks</td><td>Determine task order based on dependencies and business value.</td><td>Analyze task dependencies and prioritize them in a logical sequence to maximize efficiency.</td><td>WSBR-3 - Limited Adaptability</td></tr>
+
+            <tr><td>WSBG-4</td><td>Implement Continuous Integration</td><td>Detect integration issues early and ensure code quality.</td><td>Set up automated builds, tests, and code reviews triggered by code changes to ensure frequent integration and early issue detection.</td><td>WSBR-2 - Increased Integration Challenges</td></tr>
+
+            <tr><td>WSBG-5</td><td>Perform Regular Code Reviews</td><td>Enhance code quality and identify potential issues.</td><td>Establish a code review process where team members review each other's code for quality, adherence to standards, and identification of potential improvements.</td><td>WSBR-7 - Inefficient Testing and Debugging</td></tr>
+
+            <tr><td>WSBG-6</td><td>Adopt Test-Driven Development (TDD)</td><td>Promote code quality and test coverage.</td><td>Write tests before implementing functionality to ensure better code quality, increased test coverage, and quick feedback loops.</td><td>WSBR-7 - Inefficient Testing and Debugging</td></tr>
+
+            <tr><td>WSBG-7</td><td>Automate Build and Deployment Processes</td><td>Enable frequent and reliable delivery of software.</td><td>Automate build, testing, and deployment processes to ensure consistent and reliable delivery of software increments.</td><td>WSBR-5 - Delayed Time to Market</td></tr>
+
+            <tr><td>WSBG-8</td><td>Encourage Pair Programming</td><td>Foster collaboration and knowledge sharing.</td><td>Pair developers to work together on tasks, sharing knowledge, ensuring code quality, and promoting effective communication.</td><td>WSBR-6 - Decreased Collaboration</td></tr>
+
+            <tr><td>WSBG-9</td><td>Conduct Retrospectives and Act on Feedback</td><td>Continuously improve the development process.</td><td>Regularly conduct retrospectives to reflect on the team's work, identify areas for improvement, and implement action items based on feedback.</td><td>WSBR-10 - Decreased Customer Satisfaction</td></tr>
+
+            <tr><td>WSBG-10</td><td>[ISO 4.2.2] Maintain a Prioritized and Flexible Backlog</td><td><br/>Enable flexibility and adaptability in responding to changing requirements.</td><td>Maintain a backlog of tasks, prioritizing them based on business value and customer needs. Regularly reassess and reprioritize tasks to accommodate evolving requirements.
+Use Point estimations to evaluate the complexity of backlog items</td><td>WSBR-3 - Limited Adaptability
+
+WSBR-8 - Reduced Flexibility.</td></tr>
+          </tbody>
+        </table>
       </section>
 
       <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>
