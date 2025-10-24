@@ -22,112 +22,164 @@
     <div class="container">
       <a class="back" href="/">← Back to site</a>
       <h1>Visual Management of Current Application Production, Build, and Deployment State</h1>
-      <div class="meta">Visual dashboards and indicators that show the current state of production, builds, and deployments to improve visibility, collaboration, and decision-making.</div>
+      <div class="meta">Visual management of the current application production, build, and deployment state is a methodology that focuses on providing a visual representation of the state of an application throughout its production, build, and deployment processes. This practice aims to enhance visibility, collaboration, and decision-making within software development teams. This approach enables teams to quickly identify issues, prioritize work, and communicate effectively with team members and stakeholders.</div>
 
       <section id="key-aspects">
-        <h2>Key aspects</h2>
+        <h2>Key aspects covered by the practice</h2>
         <ul>
-          <li><strong>Real-time visualizations:</strong> Dashboards, boards or status pages that update in real time to reflect the current state.</li>
-          <li><strong>CI/CD Integration:</strong> Integrate with pipelines to show commit, test, build, and deployment statuses.</li>
-          <li><strong>Status indicators:</strong> Use color-coded indicators (green/yellow/red) and icons to show health and blockers.</li>
-          <li><strong>Information transparency:</strong> Provide access to relevant status info for features, bugs and tasks.</li>
-          <li><strong>Collaboration & communication:</strong> Use visuals to surface dependencies and blockers and drive coordination.</li>
-          <li><strong>Metrics & analytics:</strong> Track build times, deployment frequency and failure rates for data-driven improvements.</li>
+          <li><strong>Real-time visualizations:</strong> The practice emphasizes creating visual representations, such as dashboards or Kanban boards, that reflect the current state of the application's production, build, and deployment processes. These visualizations should be updated in real-time to provide the most accurate and up-to-date information.</li>
+          <li><strong>Continuous integration and delivery (CI/CD):</strong> The practice integrates with CI/CD pipelines to monitor and display the status of various stages, including code commits, automated tests, builds, and deployments. It helps identify bottlenecks, track progress, and quickly address any issues that may arise during these processes.</li>
+          <li><strong>Status indicators:</strong> Visual management techniques employ status indicators, such as color-coded cards or icons, to represent the state of different components or stages of the application. For example, green may indicate a successful deployment, yellow may denote a warning or pending action, and red may signify a failed or blocked state.</li>
+          <li><strong>Information transparency:</strong> The practice promotes transparency by making relevant information easily accessible to all team members. This includes providing visibility into the status of individual features, user stories, bugs, and associated tasks. Team members can quickly grasp the current state of the application and make informed decisions based on this shared understanding.</li>
+          <li><strong>Collaboration and communication:</strong> Visual management facilitates collaboration and communication among team members. It encourages discussions around the application's state, helps identify dependencies or blockers, and enables team members to coordinate their efforts more effectively. By visualizing the workflow, teams can prioritize tasks, plan work, and optimize resource allocation.</li>
+          <li><strong>Metrics and analytics:</strong> The practice leverages metrics and analytics to gain insights into the performance and health of the software development process. These metrics can include build times, deployment frequency, defect rates, and customer feedback. Visual representations of these metrics enable teams to identify trends, evaluate the effectiveness of their practices, and make data-driven improvements.</li>
+          <li><strong>Continuous improvement:</strong> Visual management encourages a culture of continuous improvement by fostering transparency and enabling teams to identify areas for optimization. It provides a platform for retrospectives, where teams can reflect on past performance, discuss challenges, and brainstorm ideas to enhance their development processes.</li>
         </ul>
       </section>
 
       <section id="risks">
-        <h2>Risks of not implementing</h2>
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk #</th><th>Title</th><th>Description</th></tr></thead>
+          <thead>
+            <tr><th>Risk Number</th><th>Title</th><th>Description</th></tr>
+          </thead>
           <tbody>
-            <tr><td>VMAR-1</td><td>Lack of visibility</td><td>Team members may not have a clear view of the application's current state.</td></tr>
-            <tr><td>VMAR-2</td><td>Delays in identifying issues</td><td>Issues during build or deployment may not be detected quickly.</td></tr>
-            <tr><td>VMAR-3</td><td>Difficulty tracking progress</td><td>Tracking features and tasks becomes hard without visual cues.</td></tr>
-            <tr><td>VMAR-4</td><td>Inefficient resource allocation</td><td>Teams may be misaligned in resource usage.</td></tr>
-            <tr><td>VMAR-5</td><td>Increased risk of errors</td><td>Wrong versions or deployments may be released accidentally.</td></tr>
-            <tr><td>VMAR-6</td><td>Ineffective collaboration</td><td>Teams may struggle to coordinate without shared visual context.</td></tr>
-            <tr><td>VMAR-7</td><td>Inability to prioritize</td><td>Teams can't prioritize effectively without clear visual cues.</td></tr>
-            <tr><td>VMAR-8</td><td>Limited process improvement</td><td>Hard to spot bottlenecks and areas to improve.</td></tr>
-            <tr><td>VMAR-9</td><td>Difficulty tracking dependencies</td><td>Interdependent tasks may be missed or overlooked.</td></tr>
-            <tr><td>VMAR-10</td><td>Lack of accountability</td><td>No clear ownership or status visibility for tasks.</td></tr>
+            <tr><td>VMAR-1</td><td>Lack of visibility</td><td>Without visual management, team members may have limited visibility into the current state of the application, leading to confusion and misunderstandings.</td></tr>
+            <tr><td>VMAR-2</td><td>Delays in identifying issues</td><td>Without real-time visualizations, delays in identifying issues during the production, build, and deployment processes may occur, resulting in increased downtime and reduced efficiency.</td></tr>
+            <tr><td>VMAR-3</td><td>Difficulty in tracking progress</td><td>The absence of visual representations makes it difficult to track the progress of individual features, user stories, and tasks, hindering effective project management.</td></tr>
+            <tr><td>VMAR-4</td><td>Inefficient resource allocation</td><td>Without clear visual indicators, teams may struggle to allocate resources efficiently, leading to overburdened or underutilized team members, impacting productivity.</td></tr>
+            <tr><td>VMAR-5</td><td>Increased risk of errors</td><td>Lack of visual management increases the likelihood of human errors, such as deploying incorrect versions, leading to potential bugs and stability issues in the application.</td></tr>
+            <tr><td>VMAR-6</td><td>Ineffective collaboration</td><td>The absence of visual representations hampers effective collaboration and communication among team members, resulting in misunderstandings, duplicated efforts, and misaligned priorities.</td></tr>
+            <tr><td>VMAR-7</td><td>Inability to prioritize tasks</td><td>Without visual cues, teams may struggle to prioritize tasks appropriately, leading to delays in critical features or deployment of less important components.</td></tr>
+            <tr><td>VMAR-8</td><td>Limited process improvement</td><td>The lack of visual management makes it challenging to identify bottlenecks or areas for process improvement, hindering the team's ability to optimize their workflows.</td></tr>
+            <tr><td>VMAR-9</td><td>Difficulty in tracking dependencies</td><td>The absence of visual indicators for dependencies makes it harder to track and manage interrelated tasks, increasing the risk of missed dependencies and integration issues.</td></tr>
+            <tr><td>VMAR-10</td><td>Lack of accountability</td><td>Without visual representations of individual responsibilities and task statuses, accountability may decrease, leading to a lack of ownership and potential delays in completing tasks.</td></tr>
           </tbody>
         </table>
       </section>
 
       <section id="guidelines">
         <h2>PHR Guidelines / Work Instructions</h2>
-        <div>
-          <h3>VMAG-1 — Establish Visual Dashboards</h3>
-          <ol>
-            <li>Identify key metrics and status indicators.</li>
-            <li>Select a dashboard or visualization tool.</li>
-            <li>Design and configure dashboards for real-time views.</li>
-          </ol>
-        </div>
+        <table>
+          <thead>
+            <tr><th>Guideline Number</th><th>Name</th><th>Purpose</th><th>Performing Method</th><th>Possible Risks if Failed</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>VMAG-1</td>
+              <td>Establish Visual Dashboards</td>
+              <td>To provide a centralized view of the application's production, build, and deployment state.</td>
+              <td>
+                1. Identify relevant metrics and status indicators for the dashboard.<br/>
 
-        <div>
-          <h3>VMAG-2 — Integrate CI/CD Pipelines</h3>
-          <ol>
-            <li>Identify pipeline APIs and tools.</li>
-            <li>Configure pipelines to emit statuses to the visual system.</li>
-            <li>Verify and test the integrations.</li>
-          </ol>
-        </div>
+                2. Select a suitable visualization tool or framework.<br/>
 
-        <div>
-          <h3>VMAG-3 — Define Status Indicators</h3>
-          <ol>
-            <li>Define consistent colors and icons for statuses.</li>
-            <li>Communicate and document the indicator meanings.</li>
-            <li>Ensure teams adhere to the indicators.</li>
-          </ol>
-        </div>
+                3. Design and configure the dashboard to display real-time information.
+              </td>
+              <td>VMAR-1 - Lack of visibility<br/>
+VMAR-2 - Delays in identifying issues<br/>
+VMAR-9 - Difficulty in tracking dependencies</td>
+            </tr>
+            <tr>
+              <td>VMAG-2</td>
+              <td>Integrate CI/CD Pipelines</td>
+              <td>To ensure seamless integration with the CI/CD pipelines and automate the display of relevant information.</td>
+              <td>
+                1. Identify the CI/CD pipeline tools and APIs to extract relevant data.<br/>
 
-        <div>
-          <h3>VMAG-4 — Ensure Real-time Updates</h3>
-          <ol>
-            <li>Automate data updates from CI/CD and monitoring tools.</li>
-            <li>Monitor the update pipelines for failures.</li>
-            <li>Alert on stale or missing data streams.</li>
-          </ol>
-        </div>
+                2. Configure the pipeline to send status updates to the visual management system.<br/>
 
-        <div>
-          <h3>VMAG-5 — Promote Information Sharing</h3>
-          <ol>
-            <li>Use centralized repositories or dashboards for status sharing.</li>
-            <li>Set access controls and encourage contribution.</li>
-            <li>Keep displays accessible to stakeholders.</li>
-          </ol>
-        </div>
+                3. Test and validate the integration.
+              </td>
+              <td>VMAR-2 - Delays in identifying issues<br/>
+VMAR-3 - Difficulty in tracking progress</td>
+            </tr>
+            <tr>
+              <td>VMAG-3</td>
+              <td>Define Status Indicators</td>
+              <td>To establish consistent status indicators that represent the different stages of the application's production, build, and deployment processes.</td>
+              <td>
+                1. Define a set of status indicators, such as colors or icons, and their corresponding meanings.<br/>
 
-        <div>
-          <h3>VMAG-6 — Track and Analyze Metrics</h3>
-          <ol>
-            <li>Select metrics like build times, deployment frequency, and defect rates.</li>
-            <li>Collect and analyze data over time.</li>
-            <li>Use insights to improve the pipeline and processes.</li>
-          </ol>
-        </div>
+                2. Communicate and document the indicators across the team.<br/>
 
-        <div>
-          <h3>VMAG-7 — Regularly Review and Refine Visualizations</h3>
-          <ol>
-            <li>Review visualizations with the team regularly.</li>
-            <li>Gather feedback and update dashboards accordingly.</li>
-            <li>Refine views to focus on actionable information.</li>
-          </ol>
-        </div>
+                3. Ensure adherence to the indicators throughout the workflow.
+              </td>
+              <td>VMAR-4 - Inefficient resource allocation<br/>
+VMAR-5 - Increased risk of errors</td>
+            </tr>
+            <tr>
+              <td>VMAG-4</td>
+              <td>Ensure Real-time Updates</td>
+              <td>To provide up-to-date information by ensuring that the visual management system reflects real-time changes in the application state.</td>
+              <td>
+                1. Implement automated data updates from relevant sources to the visual management system.<br/>
 
-        <div>
-          <h3>VMAG-8 — Provide Training and Support</h3>
-          <ol>
-            <li>Train team members on using the visual management tools.</li>
-            <li>Offer support and documentation for maintaining dashboards.</li>
-            <li>Encourage adoption and continual learning.</li>
-          </ol>
-        </div>
+                2. Test the update mechanism to ensure accuracy and timeliness.<br/>
+
+                3. Monitor and resolve any issues that may affect real-time updates.
+              </td>
+              <td>VMAR-1 - Lack of visibility<br/>
+VMAR-2 - Delays in identifying issues</td>
+            </tr>
+            <tr>
+              <td>VMAG-5</td>
+              <td>Promote Information Sharing</td>
+              <td>To foster collaboration and communication by making relevant information easily accessible to all team members.</td>
+              <td>
+                1. Establish a centralized repository for storing and sharing information related to the application state.<br/>
+
+                2. Define access controls and permissions for different team members.<br/>
+
+                3. Encourage team members to contribute and update information regularly.
+              </td>
+              <td>VMAR-6 - Ineffective collaboration<br/>
+VMAR-7 - Inability to prioritize tasks</td>
+            </tr>
+            <tr>
+              <td>VMAG-6</td>
+              <td>Track and Analyze Metrics</td>
+              <td>To gain insights into the performance and health of the software development process through the analysis of relevant metrics.</td>
+              <td>
+                1. Identify key metrics to track, such as build times, deployment frequency, or defect rates.<br/>
+
+                2. Implement data collection and analysis mechanisms.<br/>
+
+                3. Visualize the metrics to provide actionable insights.
+              </td>
+              <td>VMAR-8 - Limited process improvement<br/>
+VMAR-10 - Lack of accountability</td>
+            </tr>
+            <tr>
+              <td>VMAG-7</td>
+              <td>Regularly Review and Refine Visualizations</td>
+              <td>To ensure that the visual management system remains effective and aligned with the team's needs and objectives.</td>
+              <td>
+                1. Conduct regular reviews of the visualizations with the team.<br/>
+
+                2. Gather feedback and identify areas for improvement.<br/>
+
+                3. Refine the visualizations based on feedback and evolving requirements.
+              </td>
+              <td>VMAR-8 - Limited process improvement<br/>
+VMAR-10 - Lack of accountability</td>
+            </tr>
+            <tr>
+              <td>VMAG-8</td>
+              <td>Provide Training and Support</td>
+              <td>To ensure that team members are proficient in using the visual management system and understand its benefits.</td>
+              <td>
+                1. Conduct training sessions to familiarize team members with the system and its features.<br/>
+
+                2. Provide ongoing support and assistance to address any issues or questions.<br/>
+
+                3. Encourage knowledge sharing and collaboration around the visual management system.
+              </td>
+              <td>VMAR-6 - Ineffective collaboration<br/>
+VMAR-10 - Lack of accountability</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <p style="margin-top:28px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>

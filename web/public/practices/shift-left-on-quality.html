@@ -21,43 +21,189 @@
     <div class="container">
       <a class="back" href="/">← Back to site</a>
       <h1>Shift Left on Quality</h1>
-      <div class="meta">Move QA and quality practices earlier in the lifecycle to detect defects sooner and reduce rework.</div>
+      <div class="meta">Shift Left on Quality is a best practice in software engineering that emphasizes early and continuous involvement of quality assurance throughout the software development lifecycle. Traditionally, quality assurance activities were performed towards the end of the development process, but with the shift left approach, these activities are moved earlier in the lifecycle, starting from the requirements gathering phase and continuing throughout design, development, and testing. This practice helps identify and rectify defects and quality issues earlier, leading to improved overall software quality and reduced costs.</div>
 
       <section id="key-aspects">
-        <h2>Key aspects</h2>
+        <h2>Key aspects covered by the practice</h2>
         <ul>
-          <li><strong>Early Defect Detection:</strong> Involve QA from requirements to prevent defect propagation.</li>
-          <li><strong>Collaboration:</strong> Encourage cross-functional collaboration between developers and QA.</li>
-          <li><strong>TDD:</strong> Write tests before code to enforce quality-driven development.</li>
-          <li><strong>Automation & CI:</strong> Automate tests and integrate them into CI pipelines for quick feedback.</li>
-          <li><strong>Code Reviews & Static Analysis:</strong> Enforce regular code reviews and static checks.</li>
-          <li><strong>Requirements Validation:</strong> Ensure requirements are clear, complete and testable.</li>
+          <li><strong>Early Defect Detection:</strong> By involving quality assurance activities early in the development process, defects and quality issues are identified and addressed at an early stage. This prevents the propagation of issues and reduces the cost and effort required to fix them later.</li>
+          <li><strong>Collaboration and Communication:</strong> Shift Left on Quality promotes collaboration between developers, testers, and other stakeholders. It encourages open communication and knowledge sharing, ensuring that everyone is aligned on quality goals and requirements.</li>
+          <li><strong>Test-Driven Development (TDD):</strong> TDD is an integral part of Shift Left on Quality. It involves writing tests before writing the code. This approach helps in designing cleaner code, validating requirements, and preventing defects. The focus is on building quality into the software from the start.</li>
+          <li><strong>Automation and Continuous Integration:</strong> Automation plays a crucial role in Shift Left on Quality. Automated testing frameworks and tools are used to streamline and speed up the testing process. Continuous integration practices ensure that tests are run frequently, providing quick feedback on the quality of the software.</li>
+          <li><strong>Code Reviews and Static Analysis:</strong> Regular code reviews and static analysis are performed throughout the development process to catch potential issues such as coding errors, security vulnerabilities, and performance bottlenecks. This helps improve code quality and prevents defects from reaching the later stages of development.</li>
+          <li><strong>Requirements Validation:</strong> Quality assurance activities are involved in the requirements gathering phase to ensure that the requirements are clear, complete, and testable. This early validation helps in identifying any ambiguities or inconsistencies, reducing rework and retesting efforts later.</li>
+          <li><strong>DevOps and Continuous Delivery:</strong> Shift Left on Quality aligns with DevOps principles and continuous delivery practices. It emphasizes the integration of quality assurance processes into the continuous delivery pipeline, enabling rapid and frequent releases while maintaining high software quality.</li>
         </ul>
       </section>
 
       <section id="risks">
-        <h2>Risks of not implementing</h2>
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <thead>
+            <tr><th>Risk Number</th><th>Title</th><th>Description</th></tr>
+          </thead>
           <tbody>
-            <tr><td>SLQR-1</td><td>Late Discovery of Critical Defects — costly fixes late in the lifecycle.</td></tr>
-            <tr><td>SLQR-2</td><td>Increased Rework Effort — more time spent fixing defects.</td></tr>
-            <tr><td>SLQR-3</td><td>Inadequate Test Coverage — missed defects due to late testing.</td></tr>
-            <tr><td>SLQR-4</td><td>Lack of Alignment on Quality Goals — poor coordination between teams.</td></tr>
+            <tr><td>SLQR-1</td><td>Late Discovery of Critical Defects</td><td>Critical defects may go unnoticed until late in the development process, leading to increased costs and delays in delivery.</td></tr>
+            <tr><td>SLQR-2</td><td>Increased Rework Effort</td><td>Defects discovered late require significant rework, leading to additional effort and resources.</td></tr>
+            <tr><td>SLQR-3</td><td>Inadequate Test Coverage</td><td>Without early and continuous testing, there is a higher chance of inadequate test coverage, resulting in missed defects and lower software quality.</td></tr>
+            <tr><td>SLQR-4</td><td>Lack of Alignment on Quality Goals</td><td>Not involving quality assurance early can lead to misalignment between development and testing teams, impacting the overall quality goals of the project.</td></tr>
+            <tr><td>SLQR-5</td><td>Reduced Collaboration and Communication</td><td>Without early involvement of quality assurance, collaboration and communication between developers and testers may suffer, leading to misunderstandings and quality issues.</td></tr>
+            <tr><td>SLQR-6</td><td>Lowered Customer Satisfaction</td><td>Late discovery of defects and quality issues can result in a lower-quality product, leading to decreased customer satisfaction.</td></tr>
+            <tr><td>SLQR-7</td><td>Increased Technical Debt</td><td>Defects and quality issues left undiscovered and unaddressed accumulate technical debt, making future enhancements and maintenance more challenging and time-consuming.</td></tr>
+            <tr><td>SLQR-8</td><td>Inefficient Use of Resources</td><td>Not catching defects early can result in inefficient use of resources, as developers may need to spend more time debugging and fixing issues instead of focusing on new development tasks.</td></tr>
+            <tr><td>SLQR-9</td><td>Missed Opportunities for Continuous Improvement</td><td>By not involving quality assurance early, valuable insights and lessons learned from testing and analysis are missed, limiting opportunities for process and product improvements.</td></tr>
+            <tr><td>SLQR-10</td><td>Higher Business Risks</td><td>The presence of undetected defects can lead to potential business risks such as security breaches, data loss, and system failures, impacting the organization's reputation and financial stability.</td></tr>
+            <tr><td>SLQR-11</td><td>Inadequate Requirements Validation</td><td>Without quality assurance involvement in the requirements gathering phase, there is a higher risk of unclear, incomplete, or ambiguous requirements. This can lead to misunderstandings, incorrect implementations, and wasted development effort. It may also result in scope creep and increased project timelines.</td></tr>
+            <tr><td>SLQA-12</td><td>Lower Code Quality</td><td>Without early involvement of quality assurance, code quality may suffer. Absence of code reviews, static analysis, and other quality checks can lead to poor coding practices, lack of adherence to coding standards, and the introduction of avoidable defects. This can negatively impact maintainability, readability, and extensibility of the codebase.</td></tr>
+            <tr><td>SLQA-13</td><td>Missed Opportunities for Automation</td><td>Shift Left on Quality emphasizes automation in testing and quality assurance processes. Not implementing this practice limits the opportunities for automating repetitive tasks, such as unit tests, integration tests, and regression tests. Manual testing becomes more time-consuming, error-prone, and hinders productivity.</td></tr>
           </tbody>
         </table>
       </section>
 
       <section id="guidelines">
-        <h2>Guidelines / Work Instructions</h2>
-        <ol>
-          <li><strong>SLQG-1 - Early QA Involvement:</strong> Include QA in requirement workshops and planning.</li>
-          <li><strong>SLQG-2 - TDD:</strong> Adopt test-first practices and refactor based on test results.</li>
-          <li><strong>SLQG-3 - CI & Automated Testing:</strong> Integrate tests in CI pipelines and run them frequently.</li>
-          <li><strong>SLQG-4 - Code Reviews & Static Analysis:</strong> Enforce code quality checks and reviews.</li>
-          <li><strong>SLQG-5 - Requirements Validation:</strong> Define acceptance criteria and test cases up-front.</li>
-          <li><strong>SLQG-6 - Continuous Learning:</strong> Run retrospectives and evolve practices based on metrics and feedback.</li>
-        </ol>
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <table>
+          <thead>
+            <tr><th>Guideline Number</th><th>Name</th><th>Purpose</th><th>Performing Method</th><th>Possible Risks if Failed</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SLQG-1</td>
+              <td>Early Involvement of Quality Assurance (QA)</td>
+              <td>To ensure that quality assurance activities are integrated into the development process from the beginning.</td>
+              <td>
+                Include QA Consultant in the requirements gathering phase (CA and Engineering Workshops)<br>
+                Collaborate with QA to define clear and testable requirements.<br>
+                Conduct regular meetings between developers and QA/QA Consultant to align quality goals and expectations.
+              </td>
+              <td>SLQR-4 - Lack of Alignment on Quality Goals<br>SLQR-6 - Lowered Customer Satisfaction</td>
+            </tr>
+            <tr>
+              <td>SLQG-2</td>
+              <td>Implement Test-Driven Development (TDD)</td>
+              <td>To foster a culture of quality and build tests before writing the code.</td>
+              <td>
+                Write test cases before implementing code.<br>
+                Automate tests to ensure frequent execution and quick feedback.<br>
+                Refactor code based on test results.
+              </td>
+              <td>SLQR-3 - Inadequate Test Coverage<br>SLQR-5 - Reduced Collaboration and Communication</td>
+            </tr>
+            <tr>
+              <td>SLQG-3</td>
+              <td>Establish Continuous Integration (CI) and Automated Testing</td>
+              <td>To enable frequent integration of code changes and automated testing throughout the development process.</td>
+              <td>
+                Set up a CI server to trigger builds and tests automatically.<br>
+                Create automated test suites covering various functional and non-functional aspects.<br>
+                Monitor test results and address failures promptly.
+              </td>
+              <td>SLQR-1 - Late Discovery of Critical Defects<br>SLQR-8 - Inefficient Use of Resources<br>SLQR-12 - Missed Opportunities for Automation</td>
+            </tr>
+            <tr>
+              <td>SLQG-4</td>
+              <td>Perform Code Reviews and Static Analysis</td>
+              <td>To identify coding errors, security vulnerabilities, and other issues early in the development process.</td>
+              <td>
+                Conduct regular code reviews involving developers and QA Consultant.<br>
+                Utilize static analysis tools to scan code for potential issues.<br>
+                Ensure tests defined in the story outline are passing<br>
+                Address identified issues promptly and track resolutions.
+              </td>
+              <td>SLQR-7 - Increased Technical Debt<br>SLQA-12 - Lower Code Quality</td>
+            </tr>
+            <tr>
+              <td>SLQG-5</td>
+              <td>Adopt Requirements Validation Practices</td>
+              <td>To ensure that requirements are clear, complete, and testable before the development starts.</td>
+              <td>
+                Conduct thorough reviews of requirements documents.<br>
+                Verify the clarity and completeness of requirements with stakeholders.<br>
+                Collaborate with the team and QA Consultant to define acceptance criteria for each requirement.<br>
+                Ensure Feature Story has clear, concise and understandable test cases defined as part of the story outline.
+              </td>
+              <td>SLQR-9 - Missed Opportunities for Continuous Improvement<br>SL-QR-11 - Inadequate Requirements Validation</td>
+            </tr>
+            <tr>
+              <td>SLQG-6</td>
+              <td>Enable Continuous Learning and Improvement</td>
+              <td>To encourage learning from testing and analysis and drive process and product improvements.</td>
+              <td>
+                Conduct retrospective meetings after each release to identify lessons learned.<br>
+                Document and share insights and best practices among the team.<br>
+                Extract tests defined in the feature story outline and update smoke and regression test suites<br>
+                Incorporate identified improvements into future development cycles.
+              </td>
+              <td>SLQR-10 - Higher Business Risks</td>
+            </tr>
+            <tr>
+              <td>SLQG-7</td>
+              <td>Identify and Address Non-Functional Requirements [ISO - NFRs] [ISO 4.1.6 4.1.6]</td>
+              <td>To ensure that non-functional requirements are considered and addressed early in the development process.</td>
+              <td>
+                1. Collaborate with stakeholders to identify and document non-functional requirements.<br>
+
+                2. Collaborate with stakeholders to identify other special requirements (eg: laws, regulations, standards, compatibilities, etc.).<br>
+
+                3. Define specific acceptance criteria for each non-functional requirement.<br>
+
+                4. Incorporate non-functional tests into the automated testing framework.<br>
+
+                5. Ensure we have verification process in place to validate the special requirements (eg: laws, regulations, standards, compatibilities, etc.)
+              </td>
+              <td>SLQR-3 - Inadequate Test Coverage<br>SLQR-5 - Reduced Collaboration and Communication</td>
+            </tr>
+            <tr>
+              <td>SLQG-8</td>
+              <td>Develop a Comprehensive Test Strategy [ISO 4.7.1] [ISO 4.1.3] [ISO 27001 A.14.2.8]</td>
+              <td>To ensure that the test strategy covers important areas such as test levels, compatibilities, test environments, extent of tests, and test types.</td>
+              <td>
+                1. Formulate a test strategy document that outlines the overall approach to testing.<br>
+                2. Identify and define the different test levels, including unit, integration, and UI tests.<br>
+                3. Determine the compatibility matrix, listing the supported browsers, devices, operating systems, databases, etc.<br>
+                4. Establish separate test environments for development, staging, and production.<br>
+                5. Specify the extent of tests, including smoke tests and regression tests.<br>
+                6. Define the various test types to be conducted, such as functional, non-functional, information security, PII security, performance, accessibility, etc.
+              </td>
+              <td>SLQR-3 - Inadequate Test Coverage<br>SLQR-5 - Reduced Collaboration and Communication<br>SLQR-10 - Higher Business Risks</td>
+            </tr>
+            <tr>
+              <td>SLQG-9</td>
+              <td>Early Defect Detection and Root Cause Analysis</td>
+              <td>To reduce the instances of getting Defects at the latter stage and to avoid mistakes happening repeatedly</td>
+              <td>
+                Encourage the early detection and reporting of defects.<br>
+                Conduct root cause analysis to understand the underlying causes of defects and implement corrective actions.<br>
+                Track and monitor defect trends to identify recurring issues and address them systematically.
+              </td>
+              <td>SLQR-1 - Late Discovery of Critical Defects<br>SLQR-2 - Increased Rework Effort<br>SLQR-9 - Missed Opportunities for Continuous Improvement</td>
+            </tr>
+            <tr>
+              <td>SLQG-10</td>
+              <td>Implement Metrics and Reporting</td>
+              <td>To track the quality of the deliveries and process and early detection of problems.</td>
+              <td>
+                Establish meaningful quality metrics to measure the effectiveness of the Shift Left on Quality practice.<br>
+                Track metrics such as defect density, test coverage, test execution results, and customer satisfaction.<br>
+                Use the collected data to identify trends, make data-driven decisions, and drive continuous improvement.
+              </td>
+              <td>SLQR-9 - Missed Opportunities for Continuous Improvement</td>
+            </tr>
+            <tr>
+              <td>SLQG-11</td>
+              <td>Maintain Documentation and Knowledge Management and provide Training and Skill development</td>
+              <td>To ensure everyone understands the team process and ease the onboarding of new members to the process</td>
+              <td>
+                Ensure proper documentation of quality assurance processes, test plans, and test cases.<br>
+                Maintain a centralized knowledge base to capture lessons learned, best practices, and guidelines for quality assurance activities.<br>
+                Facilitate easy access to relevant documentation and encourage knowledge sharing among team members.<br>
+                Provide training and skill development opportunities for QA professionals and developers.<br>
+                Offer workshops, seminars, and certifications to enhance their knowledge of quality assurance practices, testing techniques, and automation tools.
+              </td>
+              <td>SLQR-10 - Higher Business Risks</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>

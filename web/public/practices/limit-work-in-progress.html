@@ -25,44 +25,111 @@
 
       <section>
         <h2>Definition & Benefits</h2>
-        <p>Limiting WIP involves setting a maximum number of tasks or stories that can be in progress simultaneously. Benefits include reduced multitasking, improved flow, higher throughput, better collaboration, and higher quality.</p>
+        <p>Limiting Work In-Progress (WIP) is a software engineering best practice aimed at managing and controlling the amount of work that is actively being worked on at any given time. It is a key aspect of agile methodologies such as Kanban and Lean Software Development. By limiting Work In-Progress, software engineering teams can achieve better flow, reduce multitasking, enhance collaboration, and improve the overall quality and efficiency of their work. It is a valuable practice for managing workloads, maintaining focus, and continuously improving development processes.</p>
       </section>
 
       <section id="key-aspects">
-        <h2>Key aspects</h2>
-        <ul>
-          <li><strong>Set Realistic WIP Limits:</strong> Determine limits per workflow stage based on team capacity and historical data.</li>
-          <li><strong>Reduce Multitasking:</strong> Encourage finishing work before pulling new items.</li>
-          <li><strong>Visualize Work:</strong> Use Kanban boards to expose bottlenecks and blockers.</li>
-          <li><strong>Pull System:</strong> Team members pull work only when capacity exists.</li>
-          <li><strong>Measure & Improve:</strong> Track lead time, cycle time, and throughput to optimize limits.</li>
-        </ul>
+        <h2>Key aspects covered by the practice</h2>
+        <p>Definition: Limiting WIP involves setting a maximum limit on the number of tasks or user stories that can be in progress simultaneously. This limit is determined based on the team's capacity and the goal is to prevent overloading and maintain focus.</p>
+        <p>Reduces Multitasking: By limiting WIP, teams avoid multitasking, where individuals switch between multiple tasks frequently. Multitasking can lead to decreased productivity, increased context switching, and longer lead times. By focusing on completing a limited number of tasks before starting new ones, teams can achieve better flow and efficiency.</p>
+        <p>Enhances Flow and Throughput: Limiting WIP helps maintain a smooth flow of work through the development process. It prevents bottlenecks and congestion by ensuring that tasks are completed before new ones are started. This, in turn, leads to improved throughput and faster delivery of valuable software increments.</p>
+        <p>Encourages Collaboration: When team members are not overwhelmed with excessive workloads, they have more opportunities to collaborate effectively. Limiting WIP promotes teamwork, knowledge sharing, and collective problem-solving. It encourages individuals to support each other and work together towards common goals.</p>
+        <p>Visualize and Identify Blockers: By visualizing the work items on a Kanban board or similar tool, teams can easily identify bottlenecks and blockers in the development process. If work items are piling up in a specific column or stage, it indicates potential issues that need to be addressed promptly. This visibility allows for quicker response times and proactive problem-solving.</p>
+        <p>Improves Focus and Quality: When teams are limited to a specific number of tasks, they can focus their attention and efforts on delivering high-quality results. It allows for thorough testing, reviews, and quality assurance practices, resulting in better overall software quality.</p>
+        <p>Facilitates Continuous Improvement: Limiting WIP promotes a culture of continuous improvement. Teams can monitor their performance metrics, such as lead time and cycle time, and make data-driven decisions to optimize their processes. By experimenting with WIP limits and adapting them over time, teams can refine their workflows and achieve higher levels of productivity.</p>
       </section>
 
       <section id="risks">
-        <h2>Risks of not implementing WIP limits</h2>
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <thead><tr><th>Risk Number</th><th>Title</th><th>Description</th></tr></thead>
           <tbody>
-            <tr><td>WIPR-1</td><td>Overloaded Resources — risk of burnout and lower productivity.</td></tr>
-            <tr><td>WIPR-2</td><td>Increased Lead Time — slow delivery due to work piling up.</td></tr>
-            <tr><td>WIPR-3</td><td>Reduced Focus and Attention — lower quality due to context switching.</td></tr>
-            <tr><td>WIPR-4</td><td>Inefficient Collaboration — fragmented team efforts.</td></tr>
-            <tr><td>WIPR-5</td><td>Hidden Bottlenecks — inability to spot process issues early.</td></tr>
+            <tr><td>WIPR-1</td><td>Overloaded Resources</td><td>Without limiting WIP, resources such as developers and testers may become overloaded with too many tasks, leading to burnout and decreased productivity.</td></tr>
+            <tr><td>WIPR-2</td><td>Increased Lead Time</td><td>Without WIP limits, tasks can pile up, causing longer lead times for completing work items and delivering software increments to stakeholders.</td></tr>
+            <tr><td>WIPR-3</td><td>Reduced Focus and Attention</td><td>Lack of WIP limits can result in team members being spread too thin, leading to reduced focus and attention on individual tasks, potentially compromising quality.</td></tr>
+            <tr><td>WIPR-4</td><td>Inefficient Collaboration</td><td>Excessive WIP can hinder effective collaboration since team members may be working on different tasks simultaneously, making it harder to align efforts and achieve synergy.</td></tr>
+            <tr><td>WIPR-5</td><td>Hidden Bottlenecks</td><td>Without WIP limits, bottlenecks in the development process may go unnoticed, causing delays and disruptions to the workflow.</td></tr>
+            <tr><td>WIPR-6</td><td>Increased Defects and Rework</td><td>Lack of WIP limits can lead to inadequate time for testing and quality assurance, resulting in a higher number of defects and the need for additional rework.</td></tr>
+            <tr><td>WIPR-7</td><td>Unpredictable Project Completion</td><td>Without controlling WIP, it becomes challenging to predict when projects or milestones will be completed, making it difficult to plan and manage expectations.</td></tr>
+            <tr><td>WIPR-8</td><td>Decreased Customer Satisfaction</td><td>Longer lead times and lower quality due to excessive WIP can result in dissatisfied customers who may perceive the software as unreliable or incomplete.</td></tr>
+            <tr><td>WIPR-9</td><td>Ineffective Prioritization</td><td>Without WIP limits, tasks may be started without proper prioritization, leading to inefficient use of resources and potential delays in delivering high-value features.</td></tr>
+            <tr><td>WIPR-10</td><td>Lack of Visibility and Accountability</td><td>Excessive WIP can make it difficult to track progress and identify responsible parties for specific tasks, reducing transparency and accountability within the team.</td></tr>
+            <tr><td>WIPR-11</td><td>Lack of Continuous Improvement</td><td>Not implementing WIP limits can hinder the team's ability to measure and analyze performance metrics accurately. Without clear data on lead time, cycle time, and other key indicators, it becomes challenging to identify areas for improvement and make data-driven decisions to optimize processes.</td></tr>
           </tbody>
         </table>
       </section>
 
       <section id="guidelines">
-        <h2>Guidelines / Work Instructions</h2>
-        <ol>
-          <li><strong>WIPG-1 - Set Realistic WIP Limits:</strong> Analyze capacity and set per-stage limits.</li>
-          <li><strong>WIPG-2 - Visualize WIP on a Board:</strong> Keep the board updated and review it frequently.</li>
-          <li><strong>WIPG-3 - Implement Pull System:</strong> Start new work only when capacity is available.</li>
-          <li><strong>WIPG-4 - Collaborate and Communicate:</strong> Use stand-ups and pairing to unblock work.</li>
-          <li><strong>WIPG-5 - Measure Performance:</strong> Track metrics and iterate on limits.</li>
-          <li><strong>WIPG-6 - Prioritize Based on Value:</strong> Pull higher-value work first.</li>
-        </ol>
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <table>
+          <thead><tr><th>Guideline Number</th><th>Name</th><th>Purpose</th><th>Performing Method</th><th>Possible Risks if Failed</th></tr></thead>
+          <tbody>
+            <tr><td>WIPG-1</td><td>Set Realistic WIP Limits</td><td>To prevent overloading resources and maintain focus</td><td>
+1. Analyze team capacity and historical performance data to determine a realistic WIP limit.<br/>
+
+2. Set WIP limits for each stage of the development process based on the team's capacity and the workflow's constraints.<br/>
+</td><td>WIPR-1 - Overloaded Resources</td></tr>
+
+            <tr><td>WIPG-2</td><td>Visualize WIP on a Kanban/Scrum Board</td><td>To provide visibility and identify bottlenecks</td><td>
+1. Use a physical or digital Kanban/Scrum board to visualize tasks and their status.<br/>
+
+2. Update the board in real-time to reflect the current state of WIP, 3. Monitor the board regularly to identify and address bottlenecks.<br/>
+</td><td>WIPR-5 - Hidden Bottlenecks</td></tr>
+
+            <tr><td>WIPG-3</td><td>Implement Pull System</td><td>To promote flow and reduce multitasking</td><td>
+1. Use a pull system where team members only start new tasks when there is capacity, and a task has been completed.<br/>
+
+2. Avoid pushing excessive work into the system and focus on completing existing tasks before starting new ones.<br/>
+</td><td>WIPR-2 - Increased Lead Time</td></tr>
+
+            <tr><td>WIPG-4</td><td>Collaborate and Communicate Effectively</td><td>To optimize teamwork and prevent inefficiencies</td><td>
+1. Encourage frequent communication and collaboration among team members.<br/>
+
+2. Foster a culture of knowledge sharing and help team members align their efforts.<br/>
+
+3. Use collaborative tools and techniques, such as daily stand-ups or virtual meetings, to ensure everyone is on the same page.<br/>
+</td><td>WIPR-4 - Inefficient Collaboration</td></tr>
+
+            <tr><td>WIPG-5</td><td>Measure and Analyze Performance Metrics</td><td>To track progress and identify areas for improvement</td><td>
+1. Define and track performance metrics such as lead time, cycle time, and throughput.<br/>
+
+2. Analyze the metrics regularly to identify patterns, trends, and areas for optimization.<br/>
+
+3. Use the insights gained to make data-driven decisions and continuously improve the workflow.<br/>
+</td><td>WIPR-10 - Lack of Visibility and Accountability<br/><br/>WIPR-11 - Lack of Continuous Improvement</td></tr>
+
+
+            <tr><td>WIPG-6</td><td>Prioritize Tasks Based on Value</td><td>To ensure efficient use of resources and timely delivery of high-value features</td><td>
+1. Establish a clear prioritization framework that aligns with the project's goals and stakeholder requirements.<br/>
+
+2. Evaluate and prioritize tasks based on their value, impact, and dependencies.<br/>
+
+3. Focus on completing high-priority tasks before moving on to lower-priority ones.<br/>
+</td><td>WIPR-9 - Ineffective Prioritization</td></tr>
+
+            <tr><td>WIPG-7</td><td>Implement Continuous Integration and Testing</td><td>To maintain software quality and reduce defects</td><td>
+1. Adopt a continuous integration process where code changes are frequently integrated into a shared repository.<br/>
+
+2. Automate tests to ensure that new features or code changes do not introduce defects.<br/>
+
+3. Perform regular testing to identify and fix issues early in the development cycle.<br/>
+</td><td>WIPR-6 - Increased Defects and Rework</td></tr>
+
+            <tr><td>WIPG-8</td><td>Regularly Review and Adapt WIP Limits</td><td>To optimize the workflow and adapt to changing circumstances</td><td>
+1. Regularly review and analyze the effectiveness of existing WIP limits.<br/>
+
+2. Consider team feedback, performance data, and project requirements to adjust WIP limits accordingly.<br/>
+
+3. Continuously experiment and iterate to find the optimal WIP limits for the team.<br/>
+</td><td>WIPR-3 - Reduced Focus and Attention</td></tr>
+
+            <tr><td>WIPG-9</td><td>Educate the team on WIP by sharing Best Practices and Lessons Learned</td><td>To avoid mistakes happening again and continuous improvement.</td><td>1. Encourage knowledge sharing among team members regarding strategies, techniques, and best practices for managing WIP effectively.<br/>
+2. Facilitate discussions and retrospectives where team members can share their experiences, lessons learned, and suggestions for optimizing WIP limits.<br/>
+3. Provide training and education to the team on the importance of WIP limits and how to effectively work within those limits.<br/>
+4. Help team members understand the benefits of limiting WIP and the potential risks of not adhering to the limits.</td><td>WIPR-8 - Decreased Customer Satisfaction</td></tr>
+
+          </tbody>
+        </table>
       </section>
 
       <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>

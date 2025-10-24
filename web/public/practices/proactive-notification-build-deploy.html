@@ -21,42 +21,208 @@
     <div class="container">
       <a class="back" href="/">← Back to site</a>
       <h1>Proactive Notification on Build & Deployment</h1>
-      <div class="meta">Notify stakeholders in real-time about build and deployment status to enable fast response and clear visibility.</div>
+      <div class="meta">Proactive notification in the software engineering context refers to the practice of actively informing relevant stakeholders about the status and progress of the build and deployment process. This approach helps ensure that all stakeholders are kept informed and can take appropriate actions as necessary.</div>
 
       <section id="key-aspects">
-        <h2>Key aspects</h2>
+        <h2>Key aspects covered by the practice</h2>
         <ul>
-          <li><strong>Automated Build & Deployment:</strong> Use CI/CD pipelines that emit events and notifications.</li>
-          <li><strong>Real-time Updates:</strong> Provide live build status (started, succeeded, failed, deployed).</li>
-          <li><strong>Customizable Notifications:</strong> Tailor notifications per stakeholder role and channel.</li>
-          <li><strong>Event-driven Triggers:</strong> Notify at key pipeline stages and failures.</li>
-          <li><strong>Multi-channel Delivery:</strong> Use email, chat, dashboards and ticketing integrations.</li>
-          <li><strong>Reporting & Analytics:</strong> Track notification delivery and build metrics for continuous improvement.</li>
+          <li><strong>Automated Build and Deployment:</strong> Proactive notification relies on automated build and deployment processes. These processes should be well-defined, efficient, and capable of generating notifications at various stages. Automated tools such as continuous integration (CI) servers and deployment pipelines are typically employed to achieve this.</li>
+          <li><strong>Real-time Status Updates:</strong> Proactive notification involves providing real-time status updates on the build and deployment process. This includes information about build initiation, progress, success, or failure. These updates are crucial for stakeholders to stay informed and take necessary actions promptly.</li>
+          <li><strong>Customizable Notifications:</strong> Different stakeholders may have varying levels of interest and responsibility in the build and deployment process. The proactive notification system should allow customization of notifications to ensure that each stakeholder receives relevant information tailored to their needs.</li>
+          <li><strong>Event-driven Triggers:</strong> Notifications should be triggered by specific events in the build and deployment process. For example, notifications can be sent when a build is initiated, when it succeeds, when it fails, or when it is deployed to different environments. These triggers ensure that stakeholders are notified at critical points and can respond accordingly.</li>
+          <li><strong>Multi-channel Communication:</strong> Proactive notifications should be delivered through multiple communication channels to reach stakeholders effectively. This can include email notifications, instant messaging platforms, project management tools, or dedicated notification systems. Using multiple channels increases the likelihood that stakeholders will receive and respond to the notifications promptly.</li>
+          <li><strong>Error and Exception Handling:</strong> The proactive notification system should include error and exception handling mechanisms. If any errors or exceptions occur during the build or deployment process, notifications should be sent immediately to relevant stakeholders. This enables quick response and resolution of issues.</li>
+          <li><strong>Reporting and Analytics:</strong> A proactive notification system should provide reporting and analytics capabilities. This allows stakeholders to track and analyze historical data, identify trends, and gain insights into the build and deployment process. Such information can be used to improve the overall software development lifecycle.</li>
         </ul>
       </section>
 
       <section id="risks">
-        <h2>Risks of not implementing</h2>
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <thead>
+            <tr><th>Risk Number</th><th>Title</th><th>Description</th></tr>
+          </thead>
           <tbody>
-            <tr><td>PNDBR-1</td><td>Lack of Visibility — teams are unaware of build/deploy outcomes.</td></tr>
-            <tr><td>PNDBR-3</td><td>Delayed Issue Identification — failures go unnoticed for longer.</td></tr>
-            <tr><td>PNDBR-4</td><td>Inefficient Problem Resolution — longer MTTR due to delayed alerts.</td></tr>
+            <tr><td>PNDBR-1</td><td>Lack of Visibility</td><td>Stakeholders may have limited or no visibility into the status of the build and deployment process, leading to uncertainty and potential delays.</td></tr>
+            <tr><td>PNDBR-2</td><td>Miscommunication</td><td>Without proactive notifications, stakeholders may not be aware of critical updates or changes, leading to miscommunication and potential misunderstandings.</td></tr>
+            <tr><td>PNDBR-3</td><td>Delayed Issue Identification</td><td>In the absence of real-time notifications, issues or failures in the build and deployment process may go unnoticed for an extended period, impacting the overall project timeline.</td></tr>
+            <tr><td>PNDBR-4</td><td>Inefficient Problem Resolution</td><td>Without proactive notifications, problem resolution may be delayed as stakeholders are not promptly alerted to issues, resulting in prolonged downtime or errors in production environments.</td></tr>
+            <tr><td>PNDBR-5</td><td>Limited Collaboration</td><td>The lack of proactive notifications hinders effective collaboration among team members and stakeholders, potentially leading to disjointed efforts and decreased productivity.</td></tr>
+            <tr><td>PNDBR-6</td><td>Higher Support Burden</td><td>Without proactive notifications, support teams may face an increased burden of responding to user-reported issues since they are not immediately aware of build or deployment failures.</td></tr>
+            <tr><td>PNDBR-7</td><td>Decreased Customer Satisfaction</td><td>Customers relying on timely software updates or deployments may experience dissatisfaction due to delays or lack of communication about the progress and availability of new features.</td></tr>
+            <tr><td>PNDBR-8</td><td>Higher Risk of Rollbacks</td><td>Without proactive notifications, failed deployments or releases may not be identified promptly, increasing the chances of more severe consequences and necessitating rollbacks.</td></tr>
+            <tr><td>PNDBR-9</td><td>Missed Deadlines</td><td>Stakeholders may miss important deadlines or milestones due to a lack of proactive notifications, leading to delays in project delivery or potential contract breaches.</td></tr>
+            <tr><td>PNDBR-10</td><td>Limited Process Improvement</td><td>Without proactive notifications and reporting, it becomes challenging to identify areas for process improvement, hindering the optimization of the build and deployment process.</td></tr>
           </tbody>
         </table>
       </section>
 
       <section id="guidelines">
-        <h2>Guidelines / Work Instructions</h2>
-        <ol>
-          <li><strong>PNDBG-1 - Stakeholder Plan:</strong> Define who gets which notifications and when.</li>
-          <li><strong>PNDBG-2 - CI/CD Integration:</strong> Configure pipeline events to trigger notifications and messages.</li>
-          <li><strong>PNDBG-3 - Escalation Paths:</strong> Define clear escalation for failed builds or critical deploy issues.</li>
-          <li><strong>PNDBG-4 - Monitoring & Alerts:</strong> Combine pipeline notifications with monitoring alerts for end-to-end coverage.</li>
-          <li><strong>PNDBG-5 - Test Notifications:</strong> Regularly test the notification flows to ensure delivery.
-          </li>
-        </ol>
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <table>
+          <thead>
+            <tr><th>Guideline Number</th><th>Name</th><th>Purpose</th><th>Performing Method</th><th>Possible Risks if Failed</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PNDBG-1</td>
+              <td>Establish Stakeholder Communication Plan</td>
+              <td>Ensure effective communication with stakeholders to keep them informed about the build and deployment process.</td>
+              <td>
+                1. Identify key stakeholders and their communication preferences.
+
+                2. Define the frequency and format of proactive notifications.
+
+                3. Document the communication plan and share it with stakeholders.
+              </td>
+              <td>PNDBR-1 - Lack of Visibility
+PNDBR-2 - Miscommunication</td>
+            </tr>
+            <tr>
+              <td>PNDBG-2</td>
+              <td>Implement Continuous Integration and Deployment</td>
+              <td>Enable automated build and deployment processes to support real-time notifications and minimize manual interventions.</td>
+              <td>
+                1. Set up a CI/CD pipeline using appropriate tools.
+
+                2. Configure triggers and notifications at different stages of the pipeline.
+
+                3. Enable email or messaging notifications for relevant stakeholders.
+              </td>
+              <td>PNDBR-3 - Delayed Issue Identification
+
+PNDBR-4 - Inefficient Problem Resolution</td>
+            </tr>
+            <tr>
+              <td>PNDBG-3</td>
+              <td>Define Escalation Paths</td>
+              <td>Establish clear escalation paths to ensure that critical issues are promptly addressed by the appropriate team members or stakeholders.</td>
+              <td>
+                1. Identify different levels of issues and their corresponding escalation paths.
+
+                2. Document the escalation paths in a centralized location.
+
+                3. Communicate the escalation paths to all relevant stakeholders.
+              </td>
+              <td>PNDBR-4 - Inefficient Problem Resolution
+
+PNDBR-5 - Limited Collaboration</td>
+            </tr>
+            <tr>
+              <td>PNDBG-4</td>
+              <td>Set Up Monitoring and Alerting</td>
+              <td>Implement monitoring tools to track the status of the build and deployment process, and configure alerts for key events or failures.</td>
+              <td>
+                1. Identify relevant metrics and events to monitor.
+
+                2. Choose appropriate monitoring tools and set up monitoring configurations.
+
+                3. Define alert thresholds and notifications for critical events.
+              </td>
+              <td>PNDBR-6 - Higher Support Burden
+
+PNDBR-7 - Decreased Customer Satisfaction
+
+PNDBR-9 - Missed Deadlines
+
+PNDBR-10 - Limited Process Improvement</td>
+            </tr>
+            <tr>
+              <td>PNDBG-5</td>
+              <td>Establish Incident Response Process [ISO]</td>
+              <td>Define a structured incident response process to address failures or issues in the build and deployment process promptly.</td>
+              <td>
+                1. Develop an incident response plan with predefined steps and roles.
+
+                2. Assign responsibilities to team members for each step of the response process.
+
+                3. Conduct regular incident response drills to ensure preparedness.
+              </td>
+              <td>PNDBR-4 - Inefficient Problem Resolution
+
+PNDBR-8 - Higher Risk of Rollbacks</td>
+            </tr>
+            <tr>
+              <td>PNDBG-6</td>
+              <td>Regularly Test the Notification System</td>
+              <td>Validate the proactive notification system by conducting regular tests to ensure that stakeholders receive timely and accurate notifications.</td>
+              <td>
+                1. Simulate different scenarios, such as successful builds failed deployments, or errors, to trigger notifications.
+
+                2. Verify that the notifications are sent as expected to the relevant stakeholders.
+
+                3. Address any issues or gaps identified during the testing process.
+              </td>
+              <td>PNDBR-2 - Miscommunication
+
+PNDBR-3 - Delayed Issue Identification</td>
+            </tr>
+            <tr>
+              <td>PNDBG-7</td>
+              <td>Monitor and Analyze Notification Delivery</td>
+              <td>Track the delivery of proactive notifications to identify any potential issues or delays in the notification system.</td>
+              <td>
+                1. Monitor the delivery of notifications to stakeholders.
+
+                2. Collect data on notification delivery times and success rates.
+
+                3. Analyze the data to identify trends or bottlenecks in the notification system.
+              </td>
+              <td>PNDBR-1 - Lack of Visibility
+
+PNDBR-2 - Miscommunication
+
+PNDBR-10 - Limited Process Improvement</td>
+            </tr>
+            <tr>
+              <td>PNDBG-8</td>
+              <td>Periodically Review and Update Communication Plan</td>
+              <td>Regularly review and update the stakeholder communication plan to ensure it aligns with the changing needs of the project and stakeholders.</td>
+              <td>
+                1. Schedule regular reviews of the communication plan.
+
+                2. Gather feedback from stakeholders and team members.
+
+                3. Make necessary updates to the plan based on the feedback and changing project requirements.
+              </td>
+              <td>PNDBR-1 - Lack of Visibility
+
+PNDBR-2 - Miscommunication
+
+PNDBR-10 - Limited Process Improvement</td>
+            </tr>
+            <tr>
+              <td>PNDBG-9</td>
+              <td>Promote a Culture of Transparency</td>
+              <td>Encourage open and transparent communication within the team and with stakeholders to foster trust and ensure everyone is well-informed.</td>
+              <td>
+                1. Foster a supportive and collaborative team environment.
+
+                2. Encourage regular updates and the sharing of information.
+
+                3. Promote transparency in reporting progress and addressing issues.
+              </td>
+              <td>PNDBR-5 - Limited Collaboration
+
+PNDBR-7 - Decreased Customer Satisfaction</td>
+            </tr>
+            <tr>
+              <td>PNDBG-10</td>
+              <td>Provide Training and Awareness</td>
+              <td>Ensure that all team members and stakeholders are educated about the proactive notification process, its importance, and their roles in it.</td>
+              <td>
+                1. Conduct training sessions or workshops to explain the proactive notification process.
+
+                2. Provide documentation and resources for reference.
+
+                3. Continuously raise awareness through reminders and updates.
+              </td>
+              <td>PNDBR-5 - Limited Collaboration
+
+PNDBR-7 - Decreased Customer Satisfaction</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>

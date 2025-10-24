@@ -21,44 +21,66 @@
     <div class="container">
       <a class="back" href="/">← Back to site</a>
       <h1>Loosely Coupled Architecture</h1>
-      <div class="meta">Design components with minimal dependencies to promote modularity, flexibility, and maintainability.</div>
+      <div class="meta">Loosely coupled architecture is a software engineering best practice that emphasizes the design and implementation of components that are independent and have minimal dependencies on each other. It promotes modularity, flexibility, and maintainability in software systems. By following the principles of loosely coupled architecture, software systems can become more modular, flexible, and maintainable. It allows for easier development, testing, and evolution of software, leading to improved quality and long-term sustainability.</div>
 
       <section id="key-aspects">
-        <h2>Key aspects</h2>
+        <h2>Key aspects covered by the practice</h2>
         <ul>
-          <li><strong>Modularity:</strong> Break systems into smaller, independent modules that can be developed and deployed separately.</li>
-          <li><strong>Minimized dependencies:</strong> Use well-defined interfaces or contracts to reduce coupling between components.</li>
-          <li><strong>Encapsulation:</strong> Hide internal implementation details and expose only necessary APIs.</li>
-          <li><strong>Loose coupling techniques:</strong> Prefer dependency injection, event-driven communication, and interface-based design.</li>
-          <li><strong>Testability:</strong> Independent components are easier to unit test with mocks and stubs.</li>
-          <li><strong>Scalability & Reusability:</strong> Loosely coupled modules can be scaled or reused independently.</li>
+          <li><strong>Modularity:</strong> Loosely coupled architecture encourages breaking down a system into smaller, independent modules or components. Each module focuses on a specific functionality and can be developed, tested, and deployed independently. This modular approach enables easier understanding, maintenance, and scalability of the system.</li>
+          <li><strong>Minimized dependencies:</strong> In loosely coupled architecture, components have minimal dependencies on each other. They communicate through well-defined interfaces or contracts, allowing them to interact without being tightly bound. This reduces the impact of changes made to one component on the rest of the system, making it more resilient to modifications and updates.</li>
+          <li><strong>Encapsulation:</strong> Components in a loosely coupled architecture are encapsulated, meaning their internal workings are hidden from other components. This promotes information hiding and abstraction, enabling developers to modify or replace the implementation of a component without affecting the rest of the system. Encapsulation also helps in achieving separation of concerns and improving code maintainability.</li>
+          <li><strong>Loose coupling techniques:</strong> Several techniques are used to achieve loose coupling in software architecture. These include dependency injection, where components are provided with their dependencies from external sources; event-driven communication, where components communicate through events or messages; and interfaces or contracts that define the interactions between components without exposing their internal details.</li>
+          <li><strong>Testability:</strong> Loose coupling enhances the testability of a system. With independent modules, it becomes easier to isolate and test individual components in isolation. Mocking or stubbing dependencies becomes simpler, enabling more effective unit testing and easier identification of issues or bugs.</li>
+          <li><strong>Scalability and flexibility:</strong> Loosely coupled architectures are more scalable and flexible. Adding or removing components can be done without disrupting the entire system. New features or functionalities can be introduced by integrating new modules without affecting the existing ones. This allows the system to adapt to changing requirements and enables future enhancements without major architectural changes.</li>
+          <li><strong>Reusability:</strong> Loosely coupled components can be easily reused in different contexts or projects. Since they have minimal dependencies and well-defined interfaces, they can be extracted and applied in other systems, promoting code reuse and reducing development effort.</li>
         </ul>
       </section>
 
       <section id="risks">
-        <h2>Risks of not implementing this practice</h2>
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <thead><tr><th>Risk Number</th><th>Title</th><th>Description</th></tr></thead>
           <tbody>
-            <tr><td>LCAR-1</td><td>Increased Code Entanglement — tight interdependencies that are hard to manage.</td></tr>
-            <tr><td>LCAR-2</td><td>Limited Flexibility — changes ripple across components.</td></tr>
-            <tr><td>LCAR-3</td><td>Higher Complexity — difficult to understand and modify the system.</td></tr>
-            <tr><td>LCAR-4</td><td>Reduced Reusability — components tied to specific contexts.</td></tr>
+            <tr><td>LCAR-1</td><td>Increased Code Entanglement</td><td>Components become tightly coupled, leading to complex interdependencies and difficulties in understanding and maintaining the codebase.</td></tr>
+            <tr><td>LCAR-2</td><td>Limited Flexibility</td><td>Changes to one component may require modifications in multiple other components, resulting in a lack of flexibility and agility in the system.</td></tr>
+            <tr><td>LCAR-3</td><td>Higher Complexity</td><td>Tightly coupled systems tend to have higher complexity due to interwoven dependencies, making it harder to comprehend and debug the code.</td></tr>
+            <tr><td>LCAR-4</td><td>Reduced Reusability</td><td>Lack of loose coupling limits the reusability of components, as they are tightly bound to specific contexts and cannot be easily extracted for use in other projects.</td></tr>
+            <tr><td>LCAR-5</td><td>Increased Risk of Bugs</td><td>When changes are made to tightly coupled components, there is a higher risk of introducing bugs or unintended side effects due to the intricate relationships between different parts of the system.</td></tr>
+            <tr><td>LCAR-6</td><td>Challenging Testing</td><td>Testing becomes more challenging in tightly coupled architectures as it is difficult to isolate individual components for testing, leading to decreased testability and potentially incomplete test coverage.</td></tr>
+            <tr><td>LCAR-7</td><td>Limited Scalability</td><td>Systems with tight coupling are less scalable since adding or removing components requires extensive modifications to existing code, which can introduce unforeseen issues and hinder scalability.</td></tr>
+            <tr><td>LCAR-8</td><td>Dependency Cascades</td><td>A change in one component can trigger a cascade of changes in other tightly coupled components, creating a domino effect and making it harder to manage and control the impact of changes.</td></tr>
+            <tr><td>LCAR-9</td><td>Vendor Lock-In</td><td>Tight coupling with specific external libraries or technologies can lead to vendor lock-in, making it difficult to switch to alternative solutions or upgrade dependencies without significant effort.</td></tr>
+            <tr><td>LCAR-10</td><td>Difficulty in Parallel Development</td><td>Tightly coupled architectures hinder parallel development efforts, as multiple developers working on different components may experience conflicts and dependencies that slow down progress.</td></tr>
           </tbody>
         </table>
       </section>
 
       <section id="guidelines">
-        <h2>Guidelines / Work Instructions</h2>
-        <ol>
-          <li><strong>LCAG-1 - Define Component Boundaries:</strong> Identify responsibilities and design clear interfaces.</li>
-          <li><strong>LCAG-2 - Use Dependency Injection:</strong> Provide dependencies externally for flexibility.</li>
-          <li><strong>LCAG-3 - Event-Driven Communication:</strong> Decouple components using events or messages.</li>
-          <li><strong>LCAG-4 - Interface-Based Development:</strong> Program to interfaces, not concrete implementations.</li>
-          <li><strong>LCAG-5 - Encapsulate Implementation:</strong> Hide internal details behind public APIs.</li>
-          <li><strong>LCAG-6 - Unit Tests & Mocks:</strong> Write tests that isolate components and mock dependencies.</li>
-          <li><strong>LCAG-7 - CI & Automated Tests:</strong> Use CI to catch integration issues early and maintain loose coupling.</li>
-        </ol>
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <table>
+          <thead><tr><th>Guideline Number</th><th>Name</th><th>Purpose</th><th>Performing Method</th><th>Possible Risks if Failed</th></tr></thead>
+          <tbody>
+            <tr><td>LCAG-1</td><td>Define Clear Component Boundaries</td><td>To establish clear boundaries between components, facilitating loose coupling and modularity.</td><td>1. Identify distinct functionalities and responsibilities for each component.<br/><br/>2. Define interfaces or contracts that specify the expected interactions between components.<br/><br/>3. Encapsulate component logic within each module.</td><td>LCAR-1 - Increased Code Entanglement<br/>LCAR-2 - Limited Flexibility<br/>LCAR-3 - Higher Complexity</td></tr>
+
+            <tr><td>LCAG-2</td><td>Use Dependency Injection</td><td>To provide components with their dependencies externally, reducing direct coupling and promoting flexibility.</td><td>1. Identify the dependencies required by a component.<br/><br/>2. Utilize a dependency injection framework or implement manual dependency injection.<br/><br/>3. Configure the dependencies at runtime and inject them into the components.</td><td>LCAR-4 - Reduced Reusability<br/>LCAR-6 - Challenging Testing</td></tr>
+
+            <tr><td>LCAG-3</td><td>Implement Event-Driven Communication</td><td>To decouple components by allowing them to communicate through events or messages.</td><td>1. Define events or messages that represent meaningful interactions between components<br/><br/>2. Implement event emitters and event listeners to publish and subscribe to events.<br/><br/>3. Ensure proper handling and propagation of events throughout the system.</td><td>LCAR-5 - Increased Risk of Bugs<br/>LCAR-6 - Challenging Testing<br/>LCAR-8 - Dependency Cascades</td></tr>
+
+            <tr><td>LCAG-4</td><td>Adopt Interface-Based Development</td><td>To promote loose coupling, rely on interfaces or contracts rather than concrete implementations when interacting with components.</td><td>1. Define interfaces that abstract the functionality provided by components.<br/><br/>2. Program against these interfaces instead of directly using concrete implementations.<br/><br/>3. Implement components that adhere to the defined interfaces.</td><td>LCAR-4 - Reduced Reusability<br/>LCAR-5 - Increased Risk of Bugs<br/>LCAR-9 - Vendor Lock-In</td></tr>
+
+            <tr><td>LCAG-5</td><td>Encapsulate Implementation Details</td><td>To achieve loose coupling, encapsulate the internal details of components and expose only the necessary interfaces or public APIs.</td><td>1. Hide implementation details behind well-defined interfaces.<br/><br/>2. Provide public APIs or methods that expose the desired functionality.<br/><br/>3. Ensure that internal changes in a component do not impact the external interface or contracts.</td><td>LCAR-1 - Increased Code Entanglement<br/>LCAR-5 - Increased Risk of Bugs</td></tr>
+
+            <tr><td>LCAG-6</td><td>Implement Unit Tests and Mock Dependencies</td><td>To improve testability and isolate components for testing purposes, develop comprehensive unit tests and use mocking frameworks to simulate dependencies.</td><td>1. Write unit tests that cover the functionality of individual components.<br/><br/>2. Use mocking frameworks to create test doubles for dependencies.<br/><br/>3. Validate component behavior in isolation, ensuring proper interaction with dependencies.</td><td>LCAR-6 - Challenging Testing<br/>LCAR-7 - Limited Scalability</td></tr>
+
+            <tr><td>LCAG-7</td><td>Apply Continuous Integration and Automated Testing</td><td>To identify integration issues early and ensure the system remains loosely coupled, integrate continuous integration practices and automated testing into the development workflow.</td><td>1. Set up a continuous integration system to automatically build and test the software.<br/><br/>2. Implement automated tests that cover integration scenarios and verify the interactions between components.<br/><br/>3. Regularly run the tests and address any failures immediately.</td><td>LCAR-6 - Challenging Testing<br/>LCAR-7 - Limited Scalability</td></tr>
+
+            <tr><td>LCAG-8</td><td>Document Component Dependencies and Interactions [ISO 4.3.1]</td><td>To aid in understanding and maintaining the system, document the dependencies and interactions between components.</td><td>1. Create documentation that outlines the dependencies each component relies on.<br/><br/>2. Document the expected interactions between components through interfaces or contracts.<br/><br/>3. Maintain up-to-date documentation as the system evolves.<br/><br/>4. Track How the team arrived at architectural decisions and when they were made for future reference.</td><td>LCAR-1 - Increased Code Entanglement<br/>LCAR-3 - Higher Complexity<br/>LCAR-10 - Difficulty in Parallel Development</td></tr>
+
+            <tr><td>LCAG-9</td><td>Perform Regular Code Reviews</td><td>To identify and address potential coupling issues early, establish a process for regular code reviews.</td><td>1. Conduct code reviews where team members analyze the codebase for tight coupling or violations of established guidelines.<br/><br/>2. Provide feedback and suggestions for improving the modularity and loose coupling of components.<br/><br/>3. Address any identified issues promptly and iteratively improve the codebase.</td><td>LCAR-1 - Increased Code Entanglement<br/>LCAR-3 - Higher Complexity</td></tr>
+
+            <tr><td>LCAG-10</td><td>Encourage Collaboration and Communication</td><td>To foster a culture of loose coupling, promote collaboration and communication within the development team.</td><td>1. Encourage team members to communicate and share knowledge about component boundaries and interfaces.<br/><br/>2. Foster an environment where developers can seek help and guidance when working on components with potential dependencies.<br/><br/>3. Conduct regular team meetings or discussions to address any concerns or challenges related to loose coupling.</td><td>LCAR-6 - Challenging Testing<br/>LCAR-10 - Difficulty in Parallel Development</td></tr>
+          </tbody>
+        </table>
       </section>
 
       <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>
