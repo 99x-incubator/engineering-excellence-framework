@@ -21,41 +21,207 @@
     <div class="container">
       <a class="back" href="/">← Back to site</a>
       <h1>Monitoring and Obtaining Feedback from Production</h1>
-      <div class="meta">Monitor production systems and collect feedback to improve reliability, performance, and user experience.</div>
+      <div class="meta">Software Engineering Best Practice
+Monitoring and Obtaining Feedback from Production involves systematically monitoring and collecting feedback from software systems in production to ensure their reliability, performance, and user satisfaction. This practice helps identify issues, improve software quality, and drive continuous improvement.</div>
 
       <section id="key-aspects">
-        <h2>Key aspects</h2>
+        <h2>Key aspects covered by the practice</h2>
         <ul>
-          <li><strong>Monitoring Infrastructure:</strong> Implement metrics, logs, and event collection tooling.</li>
-          <li><strong>KPIs & Metrics:</strong> Define response times, error rates, throughput and resource utilization to track.</li>
-          <li><strong>Alerts & Notifications:</strong> Configure automated alerts for threshold breaches and anomalies.</li>
-          <li><strong>Logs & Error Tracking:</strong> Centralize logs and use error tracking systems for prioritization.</li>
-          <li><strong>User Feedback:</strong> Collect surveys, feedback forms, and user telemetry to guide improvements.</li>
+          <li><strong>Monitoring Infrastructure:</strong> Establishing a robust monitoring infrastructure is crucial. This involves setting up monitoring tools and systems that capture relevant metrics, logs, and events from the production environment. These tools enable the tracking of system performance, availability, error patterns, error rates, and other critical indicators.</li>
+          <li><strong>Metrics and Key Performance Indicators (KPIs):</strong> Defining and tracking appropriate metrics and KPIs is essential to measure the health and performance of software systems. These can include response times, throughput, error rates, resource utilization, and user engagement metrics. KPIs should align with business goals and provide meaningful insights into the system's behavior.</li>
+          <li><strong>Automated Alerts and Notifications:</strong> Setting up automated alerts and notifications helps detect and respond to critical issues promptly. When predefined thresholds or anomalies are detected, alerts can be triggered to notify relevant stakeholders. This allows for proactive action and reduces the time to identify and address problems.</li>
+          <li><strong>Structured Logs, Log Analysis and Error Tracking:</strong> Logs are valuable sources of information for diagnosing issues and identifying areas for improvement. Analyzing logs can help uncover hidden errors, performance bottlenecks, and unusual behavior. Logs are to be structured in ways that promote analysis. Error tracking systems that can consolidate and prioritize errors, allowing development teams to focus on resolving critical issues.</li>
+          <li><strong>User Feedback and Surveys:</strong> Gathering feedback directly from users provides insights into their experiences and satisfaction levels. This can be done through user surveys, feedback forms, or user interviews. Understanding user pain points and preferences helps prioritize enhancements and new features that align with user needs.</li>
+          <li><strong>A/B Testing and Feature Flags:</strong> Deploying features behind feature flags enables controlled experimentation and gradual rollouts. A/B testing allows comparing different versions of a feature to measure its impact on user behavior or performance metrics. This practice facilitates data-driven decision-making and reduces the risk of negative user experiences.</li>
+          <li><strong>Incident Response and Post-Mortems:</strong> When incidents occur in production, a well-defined incident response process should be followed. This includes incident triage, immediate resolution, and post-incident analysis. Conducting post-mortems helps identify root causes, learn from failures, and implement preventive measures to avoid similar incidents in the future.</li>
+          <li><strong>Continuous Improvement and Iteration:</strong> Monitoring and obtaining feedback from production systems should be an ongoing process. It involves collecting data, analyzing it, identifying areas for improvement, and implementing changes iteratively. By continuously refining software based on real-world feedback, organizations can ensure better user experiences and optimize system performance.</li>
         </ul>
       </section>
 
       <section id="risks">
-        <h2>Risks of not implementing</h2>
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <thead>
+            <tr><th>Risk Number</th><th>Title</th><th>Description</th></tr>
+          </thead>
           <tbody>
-            <tr><td>MFPR-1</td><td>Undetected Performance Degradation — performance issues unnoticed.</td></tr>
-            <tr><td>MFPR-2</td><td>Unresolved Errors and Bugs — issues persist in production.</td></tr>
-            <tr><td>MFPR-6</td><td>Delayed Detection and Response to Incidents — slow remediation.</td></tr>
+            <tr><td>MFPR-1</td><td>Undetected Performance Degradation</td><td>Without monitoring, performance issues may go unnoticed, resulting in degraded system performance and user dissatisfaction.</td></tr>
+            <tr><td>MFPR-2</td><td>Unresolved Errors and Bugs</td><td>Lack of monitoring can lead to undetected errors and bugs that may persist in the production environment, affecting system stability and reliability.</td></tr>
+            <tr><td>MFPR-3</td><td>Inefficient Resource Utilization</td><td>Without monitoring, inefficient resource usage such as excessive CPU or memory consumption may go unnoticed, leading to suboptimal system performance and higher costs.</td></tr>
+            <tr><td>MFPR-4</td><td>Lack of Insights into User Behavior</td><td>Failure to gather feedback from production hinders understanding of user behavior, preferences, and needs, making it difficult to align software improvements with user expectations.</td></tr>
+            <tr><td>MFPR-5</td><td>Missed Opportunities for Optimization</td><td>Without monitoring, missed opportunities for optimization, such as identifying bottlenecks or improving algorithms, can result in suboptimal system performance and scalability.</td></tr>
+            <tr><td>MFPR-6</td><td>Delayed Detection and Response to Incidents</td><td>The absence of monitoring makes it challenging to detect and respond to incidents promptly, resulting in prolonged system downtime, customer impact, and increased recovery time.</td></tr>
+            <tr><td>MFPR-7</td><td>Inadequate System Capacity Planning</td><td>Without monitoring, accurate capacity planning becomes difficult, leading to inadequate provisioning of resources, potential performance issues, and scalability challenges.</td></tr>
+            <tr><td>MFPR-8</td><td>Unidentified Security Vulnerabilities</td><td>Failure to monitor the production environment can lead to undetected security vulnerabilities, exposing the system and user data to potential breaches or attacks.</td></tr>
+            <tr><td>MFPR-9</td><td>Decreased User Satisfaction</td><td>Without feedback collection, user satisfaction levels may decline due to unaddressed issues, lack of desired features, or difficulties in using the software effectively.</td></tr>
+            <tr><td>MFPR-10</td><td>Inability to Make Data-Driven Decisions</td><td>The absence of monitoring and feedback hampers data-driven decision-making, hindering the ability to prioritize improvements, validate hypotheses, or measure the impact of changes.</td></tr>
           </tbody>
         </table>
       </section>
 
       <section id="guidelines">
-        <h2>Guidelines / Work Instructions</h2>
-        <ol>
-          <li><strong>MFPG-1 - Monitoring Strategy:</strong> Define KPIs and select monitoring tools.</li>
-          <li><strong>MFPG-2 - Centralized Logs:</strong> Aggregate and analyze logs for errors and anomalies.</li>
-          <li><strong>MFPG-3 - Error Tracking:</strong> Integrate error tracking and prioritize fixes.
-          <li><strong>MFPG-4 - User Feedback:</strong> Implement feedback channels and analyze responses.</li>
-          <li><strong>MFPG-5 - Incident Response:</strong> Define roles and post-mortem processes for incidents.
-          </li>
-        </ol>
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <table>
+          <thead>
+            <tr><th>Guideline Number</th><th>Name</th><th>Purpose</th><th>Performing Method</th><th>Possible Risks if Failed</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MFPG-1</td>
+              <td>Establish a Comprehensive Monitoring Strategy</td>
+              <td>To ensure proactive identification of issues and performance bottlenecks in the production environment.</td>
+              <td>
+                1. Identify critical metrics and KPIs to monitor<br/>
+                2. Select appropriate monitoring tools<br/>
+                3. Define thresholds for alerts and notifications<br/>
+                4. Implement monitoring infrastructure and instrumentation
+              </td>
+              <td>MFPR-1 - Undetected Performance Degradation<br/>
+MFPR-2 - Unresolved Errors and Bugs</td>
+            </tr>
+            <tr>
+              <td>MFPG-2</td>
+              <td>Collect and Analyze Logs</td>
+              <td>To identify errors, exceptions, and unusual behavior in the production environment.</td>
+              <td>
+                1. Implement a centralized logging system<br/>
+                2.Capture relevant logs from the production environment<br/>
+                3. Analyze logs for errors and anomalies
+              </td>
+              <td>MFPR-2 - Unresolved Errors and Bugs</td>
+            </tr>
+            <tr>
+              <td>MFPG-3</td>
+              <td>Implement Real-time Error Tracking</td>
+              <td>To prioritize and address critical errors and bugs effectively.</td>
+              <td>
+                1. Integrate an error tracking system<br/>
+                2. Capture and consolidate error data<br/>
+                3. Assign severity levels and prioritize resolution
+              </td>
+              <td>MFPR-2 - Unresolved Errors and Bugs</td>
+            </tr>
+            <tr>
+              <td>MFPG-4</td>
+              <td>Define Key User Engagement Metrics</td>
+              <td>To understand user behavior, preferences, and satisfaction levels.</td>
+              <td>
+                1. Identify user engagement metrics (e.g., click-through rates, conversion rates)<br/>
+                2. Implement tracking mechanisms for user interactions<br/>
+                3. Collect and analyze user engagement data
+              </td>
+              <td>MFPR-4 - Lack of Insights into User Behavior</td>
+            </tr>
+            <tr>
+              <td>MFPG-5</td>
+              <td>Implement User Feedback Mechanisms</td>
+              <td>To gather direct feedback from users about their experiences and suggestions.</td>
+              <td>
+                1. Set up user feedback forms or surveys<br/>
+                2. Conduct user interviews or usability tests<br/>
+                3. Regularly analyze user feedback and identify patterns
+              </td>
+              <td>MFPR-4 - Lack of Insights into User Behavior<br/>
+MFPR-9 - Decreased User Satisfaction</td>
+            </tr>
+            <tr>
+              <td>MFPG-6</td>
+              <td>Establish Incident Response Process</td>
+              <td>To handle incidents in production efficiently and minimize system downtime.</td>
+              <td>
+                1. Define roles and responsibilities for incident response<br/>
+                2. Establish a clear incident triage process<br/>
+                3. Conduct post-incident analysis and create remediation plans
+              </td>
+              <td>MFPR-6 - Delayed Detection and Response to Incidents</td>
+            </tr>
+            <tr>
+              <td>MFPG-7</td>
+              <td>Implement Continuous A/B Testing</td>
+              <td>To experiment with new features and measure their impact on user behavior and performance.</td>
+              <td>
+                1. Utilize feature flags for controlled deployments<br/>
+                2. Define hypotheses and variations for A/B testing<br/>
+                3. Analyze test results and make data-driven decisions
+              </td>
+              <td>MFPR-5 - Missed Opportunities for Optimization</td>
+            </tr>
+            <tr>
+              <td>MFPG-8</td>
+              <td>Regularly Review and Update Monitoring Strategy</td>
+              <td>To ensure the monitoring strategy remains effective and aligned with system requirements.</td>
+              <td>
+                1. Periodically review monitored metrics and KPIs<br/>
+                2. Incorporate feedback from incident analysis and user feedback<br/>
+                3. Update thresholds and alerts based on system behavior and changes
+              </td>
+              <td>MFPR-1 - Undetected Performance Degradation<br/>
+MFPR-2 - Unresolved Errors and Bugs</td>
+            </tr>
+            <tr>
+              <td>MFPG-9</td>
+              <td>Promote Cross-functional Collaboration</td>
+              <td>To foster collaboration between development, operations, and user-facing teams for holistic monitoring and feedback implementation.</td>
+              <td>
+                1. Encourage regular communication and knowledge sharing<br/>
+                2. Conduct joint incident reviews and post-mortems<br/>
+                3. Establish feedback channels between teams
+              </td>
+              <td>MFPR-6 - Delayed Detection and Response to Incidents</td>
+            </tr>
+            <tr>
+              <td>MFPG-10</td>
+              <td>Document and Communicate Monitoring Processes</td>
+              <td>To ensure understanding and adherence to monitoring and feedback practices across the team.</td>
+              <td>
+                1. Create documentation outlining monitoring processes and tools<br/>
+                2. Provide training and onboarding for new team members<br/>
+                3. Regularly communicate updates and best practices
+              </td>
+              <td>MFPR-2 - Unresolved Errors and Bugs<br/>
+MFPR-6 - Delayed Detection and Response to Incidents</td>
+            </tr>
+            <tr>
+              <td>MFPG-11</td>
+              <td>Perform Regular System Capacity Planning</td>
+              <td>To ensure adequate resources for optimal system performance and scalability.</td>
+              <td>
+                1. Monitor system resource utilization and performance metrics<br/>
+                2. Analyze historical data to identify trends and predict future resource needs<br/>
+                3. Plan and provision resources accordingly
+              </td>
+              <td>MFPR-7 - Inadequate System Capacity Planning</td>
+            </tr>
+            <tr>
+              <td>MFPG-12</td>
+              <td>Implement Security Monitoring and Vulnerability Scanning</td>
+              <td>To identify and address security vulnerabilities in the production environment.</td>
+              <td>
+                1. Deploy security monitoring tools and systems<br/>
+                2. Perform regular vulnerability scans and penetration testing<br/>
+                3. Monitor security logs and respond to alerts
+              </td>
+              <td>MFPR-8 - Unidentified Security Vulnerabilities</td>
+            </tr>
+            <tr>
+              <td>MFPG-13</td>
+              <td>Establish Continuous Improvement Culture</td>
+              <td>To drive ongoing learning, optimization, and innovation within the team.</td>
+              <td>
+                1. Encourage a culture of continuous improvement and learning<br/>
+                2. Regularly share and discuss monitoring insights and feedback<br/>
+                3. Prioritize and implement improvement initiatives
+              </td>
+              <td>MFPR-1 - Undetected Performance Degradation<br/>
+MFPR-2 - Unresolved Errors and Bugs<br/>
+MFPR-3 - Inefficient Resource Utilization<br/>
+MFPR-7 - Inadequate System Capacity Planning<br/>
+MFPR-8 - Unidentified Security Vulnerabilities<br/>
+MFPR-9 - Decreased User Satisfaction<br/>
+MFPR-10 - Inability to Make Data-Driven Decisions</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>

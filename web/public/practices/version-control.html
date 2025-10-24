@@ -30,48 +30,57 @@
       <section id="key-aspects">
         <h2>Key aspects covered by the practice</h2>
         <ul>
-          <li><strong>Repository management:</strong> Establish a centralized repository to store the project's source code and related files. Use Git or similar systems.</li>
-          <li><strong>Branching strategy:</strong> Use branches for independent development (e.g., GitFlow, GitHub Flow).</li>
-          <li><strong>Commit frequently and meaningfully:</strong> Make granular commits with helpful messages.</li>
-          <li><strong>Pull requests/code reviews:</strong> Use PRs for reviews before merging to main branches.</li>
-          <li><strong>Commit history maintenance:</strong> Keep history clean for rollbacks/cherry-picks.</li>
-          <li><strong>Merge and conflict resolution:</strong> Resolve conflicts promptly and correctly.</li>
-          <li><strong>Version tagging:</strong> Tag releases (SemVer) to mark milestones.</li>
-          <li><strong>Backup and disaster recovery:</strong> Backup repositories and verify recovery processes.</li>
-          <li><strong>Documentation and collaboration:</strong> Use commit messages, issues and review comments to provide context.</li>
+          <li><strong>Repository management:</strong> Establish a centralized repository to store the project's source code and related files. Popular version control systems include Git, and Mercurial. Ensure the repository is distributed, accessible, well-organized, and appropriately secured.</li>
+          <li><strong>Branching strategy:</strong> Use branching to create independent lines of development. Main branches, such as "master" or "main," represent stable and deployable code. Feature branches allow developers to work on specific features or fixes without affecting the main branch. Adopt a branching strategy that suits the project's needs, such as GitFlow or GitHub Flow.</li>
+          <li><strong>Commit frequently and meaningfully:</strong> Commits are atomic units of change in version control systems. Encourage developers to make frequent granular commits that represent logical changes. Each commit should be self-contained and focused on a specific task or feature. Include meaningful commit messages that describe the changes made.</li>
+          <li><strong>Pull requests/code reviews:</strong> Incorporate a code review process through pull requests. Developers propose changes in a separate branch, and peers review the code before merging it into the main branch. Code reviews improve code quality, maintainability, and help catch errors before they are merged into the main codebase.</li>
+          <li><strong>Maintenance of the commit history:</strong> The commit history gives a greater reflection on the code management practices of the team and help in the activities like linear commit history maintenance which would help in deploying hotfixes, feature roll-back, cherry-picking and cleaner branch management.</li>
+          <li><strong>Merge and conflict resolution:</strong> When merging changes from one branch to another, conflicts may arise if different changes affect the same lines of code. Encourage developers to resolve conflicts promptly by understanding the changes made and merging them appropriately. Automated merge tools can assist in resolving conflicts.</li>
+          <li><strong>Version tagging:</strong> Tagging provides meaningful names or labels to specific versions of the codebase. Use tags to mark significant milestones, releases, or versions that are deployed to production. Semantic Versioning (SemVer) is a popular convention for version numbering.</li>
+          <li><strong>Backup and disaster recovery:</strong> Version control systems act as backups by storing the entire history of the project. Regularly back up the repository to a remote location or cloud storage to ensure disaster recovery capabilities. Consider employing additional backup strategies to safeguard against data loss.</li>
+          <li><strong>Documentation and collaboration:</strong> Leverage version control to document changes, collaborate, and track discussions. Encourage the use of commit messages, issue tracking integration, and code review comments to provide context and improve knowledge sharing within the team.</li>
         </ul>
       </section>
 
       <section id="risks">
-        <h2>Risks of not implementing this practice</h2>
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <thead><tr><th>Risk Number</th><th>Title</th><th>Description</th></tr></thead>
           <tbody>
-            <tr><td>VCR-1</td><td>Loss of code and history — accidental deletions or irreversible changes.</td></tr>
-            <tr><td>VCR-2</td><td>Lack of code integrity — overwrites and inconsistencies.</td></tr>
-            <tr><td>VCR-3</td><td>Inefficient collaboration — chaotic file sharing and duplication.</td></tr>
-            <tr><td>VCR-4</td><td>Difficulty in bug tracking and regression issues.</td></tr>
-            <tr><td>VCR-5</td><td>Limited code review and quality assurance.</td></tr>
-            <tr><td>VCR-6</td><td>Lack of traceability and auditing.</td></tr>
-            <tr><td>VCR-7</td><td>Increased deployment risks.</td></tr>
-            <tr><td>VCR-8</td><td>Limited scalability and parallel development.</td></tr>
-            <tr><td>VCR-9</td><td>Lack of backup and disaster recovery.</td></tr>
-            <tr><td>VCR-10</td><td>Decreased productivity and efficiency.</td></tr>
+            <tr><td>VCR-1</td><td>Loss of code and history</td><td>Without version control, there is no systematic way to track changes made to the codebase. This increases the risk of accidental deletions, overwrites, or irreversible changes, leading to the loss of valuable code and project history.</td></tr>
+            <tr><td>VCR-2</td><td>Lack of code integrity</td><td>Without version control, it becomes challenging to maintain code integrity. Multiple developers working simultaneously may overwrite each other's changes, leading to conflicts and inconsistencies in the codebase. Tracking down and resolving these issues becomes time-consuming and error-prone.</td></tr>
+            <tr><td>VCR-3</td><td>Inefficient collaboration</td><td>Version control facilitates collaboration among developers by providing a centralized platform to share and manage code. Without it, collaboration becomes chaotic, with developers manually exchanging code files or using shared network drives. This can result in confusion, duplicated efforts, and difficulty in tracking who made what changes.</td></tr>
+            <tr><td>VCR-4</td><td>Difficulty in bug tracking and regression issues</td><td>Version control systems help identify the exact changes that introduced bugs or caused regressions. Without this capability, debugging becomes more challenging, as it is harder to isolate the code changes responsible for issues. This can lead to prolonged debugging cycles and increased time to fix bugs.</td></tr>
+            <tr><td>VCR-5</td><td>Limited code review and quality assurance</td><td>Code reviews are crucial for maintaining code quality, identifying potential issues, and ensuring adherence to coding standards. Without version control, it becomes difficult to conduct code reviews effectively, resulting in lower-quality code, increased technical debt, and a higher probability of introducing bugs.</td></tr>
+            <tr><td>VCR-6</td><td>Lack of traceability and auditing</td><td>Version control provides a historical record of changes made to the codebase, including who made the changes and why. This traceability is essential for auditing purposes, compliance requirements, or investigating issues. Without version control, it becomes challenging to establish accountability and understand the context of past code changes.</td></tr>
+            <tr><td>VCR-7</td><td>Increased deployment risks</td><td>Version control helps manage different code versions, branches, and releases. Without it, deploying updates or rolling back changes becomes error-prone, as there is no systematic way to track and manage code versions. This can result in deployment failures, production issues, and difficulties in reverting to stable versions.</td></tr>
+            <tr><td>VCR-8</td><td>Limited scalability and parallel development</td><td>Version control enables parallel development by allowing multiple developers to work on different features or bug fixes simultaneously. Without it, coordination becomes cumbersome, and developers may inadvertently overwrite each other's changes. This hampers scalability and slows down the development process.</td></tr>
+            <tr><td>VCR-9</td><td>Lack of backup and disaster recovery</td><td>Version control systems act as a backup by storing the entire history of the project. Not implementing version control means losing this backup capability, making it difficult to recover from accidental data loss, hardware failures, or other disasters.</td></tr>
+            <tr><td>VCR-10</td><td>Decreased productivity and efficiency</td><td>Overall, the absence of version control hampers productivity and efficiency in software development. It leads to manual and error-prone processes, increased time spent on resolving conflicts and tracking changes, and a higher likelihood of introducing bugs or regressions.</td></tr>
           </tbody>
         </table>
       </section>
 
       <section id="guidelines">
-        <h2>Guidelines / Work Instructions</h2>
-        <ol>
-          <li><strong>VCG-1 - Establish a Centralized Repository:</strong> Choose Git, set up a repo, define structure and access controls.</li>
-          <li><strong>VCG-2 - Adopt a Branching Strategy:</strong> Define main branch, use feature branches, document chosen strategy.</li>
-          <li><strong>VCG-4 - Implement Code Review Process:</strong> Use PRs and define review guidelines.</li>
-          <li><strong>VCG-5 - Resolve Merge Conflicts Promptly:</strong> Train developers and document conflict resolution processes.</li>
-          <li><strong>VCG-6 - Utilize Version Tagging:</strong> Use SemVer and tag releases.</li>
-          <li><strong>VCG-7 - Regularly Backup the Repository:</strong> Automate backups and test recovery periodically.</li>
-          <li><strong>VCG-8 - Encourage Documentation and Collaboration:</strong> Use commit messages, integrate issue tracking and promote knowledge sharing.</li>
-        </ol>
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <table>
+          <thead><tr><th>Guideline Number</th><th>Name</th><th>Purpose</th><th>Performing Method</th><th>Possible Risks if Failed</th></tr></thead>
+          <tbody>
+            <tr><td>VCG-1</td><td>Establish a Centralized Repository</td><td>To provide a centralized location for storing and managing the project's source code and related files.</td><td>1. Choose a version control system (e.g., Git) and set up a central repository<br/><br/>2. Define repository structure and organization<br/><br/>3. Implement appropriate access controls and security measures.</td><td>VCR-1: Loss of code and history<br/>VCR-3: Inefficient collaboration<br/>VCR-7: Increased deployment risks<br/>VCR-9: Lack of backup and disaster recovery</td></tr>
+
+            <tr><td>VCG-2</td><td>Adopt a Branching Strategy</td><td>To facilitate parallel development, isolating changes, and managing stable and deployable code.</td><td>1. Define the main branch (e.g., 'master' or 'main') as the base for stable code.<br/><br/>2. Use feature branches for developing specific features or bug fixes.<br/><br/>3. Determine a branching strategy (e.g., GitFlow, GitHub Flow) that suits the project's needs and document it.</td><td>VCR-2: Lack of code integrity<br/>VCR-8: Limited scalability and parallel development</td></tr>
+
+            <tr><td>VCG-4</td><td>Implement Code Review Process</td><td>To improve code quality, catch errors, and facilitate knowledge sharing.</td><td>1. Use a pull request-based code review process.<br/><br/>2. Encourage developers to create separate branches for proposed changes<br/><br/>3. Establish guidelines for conducting code reviews and provide feedback.</td><td>VCR-5: Limited code review and quality assurance<br/>VCR-6: Lack of traceability and auditing</td></tr>
+
+            <tr><td>VCG-5</td><td>Resolve Merge Conflicts Promptly</td><td>To prevent conflicts from affecting the codebase and maintain code integrity.</td><td>1. Train developers on resolving merge conflicts using appropriate tools<br/><br/>2. Encourage timely conflict resolution by communicating and coordinating with developers<br/><br/>3. Document conflict resolution processes and best practices.</td><td>VCR-2: Lack of code integrity<br/>VCR-5: Limited code review and quality assurance</td></tr>
+
+            <tr><td>VCG-6</td><td>Utilize Version Tagging</td><td>To mark significant milestones, releases, or versions of the codebase.</td><td>1. Define a version tagging convention (e.g., SemVer) and document it.<br/><br/>2. Tag releases or versions with meaningful names or labels.<br/><br/>3. Communicate the purpose and significance of each tagged version.</td><td>VCR-7: Increased deployment risks<br/>VCR-10: Decreased productivity and efficiency</td></tr>
+
+            <tr><td>VCG-7</td><td>Regularly Backup the Repository</td><td>To ensure disaster recovery capabilities and protect against data loss.</td><td>1. Set up regular automated backups of the repository to a remote location or cloud storage.<br/><br/>2. Document backup procedures and schedules.<br/><br/>3. Perform periodic tests to verify the backup integrity and recovery process.</td><td>VCR-1: Loss of code and history<br/>VCR-9: Lack of backup and disaster recovery</td></tr>
+
+            <tr><td>VCG-8</td><td>Encourage Documentation and Collaboration</td><td>To provide context, track discussions, and facilitate knowledge sharing.</td><td>1. Emphasize the use of commit messages to describe changes<br/><br/>2. Integrate issue tracking tools with version control for better traceability<br/><br/>3. Encourage code review comments and discussions to improve collaboration.</td><td>VCR-3: Inefficient collaboration<br/>VCR-6: Lack of traceability and auditing</td></tr>
+          </tbody>
+        </table>
       </section>
 
       <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>

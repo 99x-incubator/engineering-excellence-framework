@@ -21,43 +21,67 @@
     <div class="container">
       <a class="back" href="/">← Back to site</a>
       <h1>Continuous Integration</h1>
-      <div class="meta">Continuous Integration (CI) is the practice of frequently integrating code changes into a shared repository, with automated builds and tests.</div>
+      <div class="meta">Continuous Integration (CI) is a software engineering best practice that involves frequently integrating code changes from multiple developers into a shared repository. The primary goal of CI is to identify and address integration issues early in the development cycle, enabling teams to deliver software faster and with fewer defects.</div>
 
       <section id="key-aspects">
-        <h2>Key aspects</h2>
+        <h2>Key aspects covered by the practice</h2>
         <ul>
-          <li><strong>Automated Build & Test:</strong> Automatically build and run tests on each commit.</li>
-          <li><strong>Version Control:</strong> Use Git to manage code and enable frequent commits.</li>
-          <li><strong>CI Server:</strong> Use CI tools (Jenkins, GitHub Actions, etc.) to trigger builds and tests.</li>
-          <li><strong>Small, Frequent Commits:</strong> Keep changes small to simplify integration.</li>
-          <li><strong>Automated Testing:</strong> Maintain unit, integration and acceptance tests.</li>
-          <li><strong>Continuous Feedback:</strong> Notify developers immediately about failures.</li>
+          <li><strong>Automated Build and Test:</strong> CI relies on automated processes to build the software and execute tests whenever changes are committed to the repository. These processes ensure that the code can be compiled and tested consistently across different environments, reducing the likelihood of integration issues.</li>
+          <li><strong>Version Control:</strong> CI heavily relies on version control systems (such as Git) to manage code repositories. Developers commit their changes to the shared repository frequently, enabling efficient collaboration and tracking of code modifications.</li>
+          <li><strong>Continuous Integration Server:</strong> A CI server (e.g., Jenkins, Travis CI) plays a central role in the CI process. It monitors the code repository for changes and automatically triggers the build and test processes. The CI server provides feedback to developers about the build status, test results, and any issues detected.</li>
+          <li><strong>Small, Frequent Commits:</strong> CI encourages developers to make small and frequent commits to the codebase. This practice minimizes the size of changes and makes it easier to isolate and fix issues when they occur.</li>
+          <li><strong>Automated Testing:</strong> Comprehensive test suites, including unit tests, integration tests, and acceptance tests, are crucial in CI. These tests are executed automatically to validate the integrity and functionality of the software. Test failures trigger immediate notifications, allowing developers to identify and resolve issues promptly.</li>
+          <li><strong>Continuous Feedback:</strong> CI provides rapid feedback to developers about the quality of their code changes. If a build or test fails, developers are notified promptly, enabling them to address the issues quickly. Continuous feedback fosters a culture of accountability, encouraging developers to maintain high-quality code.</li>
+          <li><strong>Continuous Deployment:</strong> CI can be extended to continuous deployment (CD), where successful builds and tests are automatically deployed to production or staging environments. CD streamlines the release process, reducing the time between development and deployment, and enabling faster iterations and feedback loops.</li>
+          <li><strong>Code Quality Practices:</strong> CI promotes the use of code quality practices, such as code reviews, static code analysis, and automated style checks. These practices help ensure code consistency, maintainability, and adherence to coding standards.</li>
+          <li><strong>Collaboration and Communication:</strong> CI encourages collaboration among team members. Developers regularly communicate about changes, discuss integration challenges, and coordinate efforts to ensure a smooth integration process. Collaborative tools, such as issue trackers and chat platforms, facilitate effective communication.</li>
+          <li><strong>Continuous Improvement:</strong> CI fosters a culture of continuous improvement. Teams learn from each build and test cycle, identifying bottlenecks, addressing issues, and optimizing the development process. Regular retrospectives and process refinements are essential to maximize the benefits of CI.</li>
         </ul>
       </section>
 
       <section id="risks">
-        <h2>Risks of not implementing CI</h2>
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <thead><tr><th>Risk Number</th><th>Title</th><th>Description</th></tr></thead>
           <tbody>
-            <tr><td>CIR-1</td><td>Code Conflicts — integration becomes harder and time-consuming.</td></tr>
-            <tr><td>CIR-2</td><td>Integration Issues — hidden problems surface late in the cycle.</td></tr>
-            <tr><td>CIR-3</td><td>Delayed Bug Detection — slow feedback increases fix cost.</td></tr>
-            <tr><td>CIR-4</td><td>Difficult Debugging — hard to trace root causes across big merges.</td></tr>
+            <tr><td>CIR-1</td><td>Code Conflicts</td><td>Without CI, developers may work on the same code simultaneously, leading to conflicts when integrating changes. This can result in wasted time and effort resolving conflicting code.</td></tr>
+            <tr><td>CIR-2</td><td>Integration Issues</td><td>Failing to integrate code frequently can lead to hidden integration issues that only surface when changes are merged together. This can cause delays in identifying and resolving problems.</td></tr>
+            <tr><td>CIR-3</td><td>Delayed Bug Detection</td><td>Without regular automated testing in place, bugs may go unnoticed for longer periods. Delayed bug detection can increase the time and effort required to fix them.</td></tr>
+            <tr><td>CIR-4</td><td>Difficult Debugging</td><td>Lack of CI can make debugging more challenging, as it becomes harder to pinpoint the source of issues when multiple changes are merged. This can slow down the debugging process.</td></tr>
+            <tr><td>CIR-5</td><td>Decreased Code Quality</td><td>Without CI's automated quality checks, code quality may suffer. Developers may inadvertently introduce coding errors or neglect coding standards, resulting in lower-quality software.</td></tr>
+            <tr><td>CIR-6</td><td>Limited Collaboration</td><td>Without CI, collaboration among team members may be hindered. Developers may face difficulties sharing code changes and coordinating efforts, leading to communication gaps and reduced productivity.</td></tr>
+            <tr><td>CIR-7</td><td>Inefficient Build Process</td><td>Not implementing CI can result in a manual and error-prone build process. This can lead to wasted time and inconsistent builds, hindering the development workflow.</td></tr>
+            <tr><td>CIR-8</td><td>Inconsistent Environments</td><td>Developers working in different environments may face compatibility issues when integrating code changes. Inconsistent environments can introduce inconsistencies and bugs during integration.</td></tr>
+            <tr><td>CIR-9</td><td>Longer Feedback Loops</td><td>Without CI, feedback loops are extended, and developers may have to wait longer to receive feedback on their code changes. This can slow down the development cycle and impede progress.</td></tr>
+            <tr><td>CIR-10</td><td>Risk of Breaking the Build</td><td>Failing to follow CI practices increases the risk of breaking the build. If developers commit faulty code that goes unnoticed, it can disrupt the development process and require additional time to fix.</td></tr>
           </tbody>
         </table>
       </section>
 
       <section id="guidelines">
-        <h2>Guidelines / Work Instructions</h2>
-        <ol>
-          <li><strong>CIG-1 - Use Version Control:</strong> Commit often and push to the central repo.</li>
-          <li><strong>CIG-2 - Automated Builds:</strong> Configure build scripts and automation.</li>
-          <li><strong>CIG-3 - Automated Tests:</strong> Integrate tests into the build pipeline.</li>
-          <li><strong>CIG-4 - Regular Integration:</strong> Merge frequently and resolve conflicts quickly.</li>
-          <li><strong>CIG-5 - Continuous Feedback:</strong> Configure notifications for build/test failures.</li>
-          <li><strong>CIG-6 - Code Reviews & Quality Gates:</strong> Enforce reviews and static checks before merging.</li>
-        </ol>
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <table>
+          <thead><tr><th>Guideline Number</th><th>Name</th><th>Purpose</th><th>Performing Method</th><th>Possible Risks if Failed</th></tr></thead>
+          <tbody>
+            <tr><td>CIG-1</td><td>Use Version Control</td><td>To manage code changes effectively and enable collaboration</td><td>1. Choose a suitable version control system (e.g., Git).<br/><br/>2. Create a central repository.<br/><br/>3. Ensure all developers use version control for code modifications.</td><td>CIR-1 - Code Conflicts<br/>CIR-5 - Decreased Code Quality</td></tr>
+
+            <tr><td>CIG-2</td><td>Establish an Automated Build Process</td><td>To ensure consistent and error-free builds</td><td>1. Set up a build script or configuration file.<br/><br/>2. Automate the build process using build tools (e.g., Maven, Gradle).<br/><br/>3. Configure the build process to compile the code and generate executable artifacts automatically.</td><td>CIR-7 - Inefficient Build Process</td></tr>
+
+            <tr><td>CIG-3</td><td>Implement Automated Testing</td><td>To validate code changes and detect bugs early</td><td>1. Develop comprehensive test suites, including unit tests, integration tests, and acceptance tests.<br/><br/>2. Integrate testing frameworks (e.g., JUnit) into the build process.<br/><br/>3. Configure the CI server to execute tests automatically upon code changes.</td><td>CIR-3 - Delayed Bug Detection<br/>CIR-4 - Difficult Debugging</td></tr>
+
+            <tr><td>CIG-4</td><td>Perform Regular Code Integration</td><td>To merge code changes frequently and identify integration issues early</td><td>1. Encourage developers to commit changes to the shared repository regularly<br/><br/>2. Configure the CI server to monitor the repository and trigger builds upon code changes.<br/><br/>3. Ensure developers update their local codebases frequently to incorporate the latest changes from the repository.</td><td>CIR-1 - Code Conflicts<br/>CIR-2 - Integration Issues</td></tr>
+
+            <tr><td>CIG-5</td><td>Enable Continuous Feedback</td><td>To provide timely feedback on code changes and build status</td><td>1. Configure the CI server to send notifications and reports about build status and test results.<br/><br/>2. Ensure developers regularly review the feedback and address any issues promptly.<br/><br/>3. Foster a culture of accountability and emphasize the importance of acting on feedback.</td><td>CIR-9 - Longer Feedback Loops</td></tr>
+
+            <tr><td>CIG-6</td><td>Conduct Code Reviews</td><td>To ensure code quality and identify potential issues early</td><td>1. Establish code review practices, such as peer code reviews or automated code review tools.<br/><br/>2. Set guidelines for reviewing code changes, focusing on code quality, style, and adherence to best practices.<br/><br/>3. Encourage constructive feedback and collaboration during code reviews.</td><td>CIR-5 - Decreased Code Quality</td></tr>
+
+            <tr><td>CIG-7</td><td>Maintain a Stable and Consistent Development Environment</td><td>To reduce compatibility issues and ensure consistent builds</td><td>1. Define and document the required development environment (e.g., specific versions of programming languages, libraries, and tools).<br/><br/>2. Use tools like virtual environments or containerization to create reproducible development environments.<br/><br/>3. Communicate and enforce the use of consistent development environments among team members.</td><td>CIR-8 - Inconsistent Environments</td></tr>
+
+            <tr><td>CIG-8</td><td>Monitor and Address Build Failures</td><td>To quickly identify and resolve build failures</td><td>1. Configure the CI server to notify developers immediately upon build failures.<br/><br/>2. Establish a process for investigating and addressing build failures promptly.<br/><br/>3. Ensure build logs and error messages are accessible and easily understandable.</td><td>CIR-10 - Risk of Breaking the Build</td></tr>
+
+            <tr><td>CIG-9</td><td>Regularly Review and Improve CI Processes</td><td>To optimize the CI workflow and address any challenges or bottlenecks</td><td>1. Conduct regular retrospectives to assess the effectiveness of the CI processes.<br/><br/>2. Identify areas for improvement and discuss potential solutions as a team.<br/><br/>3. Implement changes to the CI workflow based on the identified improvements.</td><td>CIR-7 - Inefficient Build Process<br/>CIR-6 - Limited Collaboration.</td></tr>
+          </tbody>
+        </table>
       </section>
 
       <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>

@@ -25,42 +25,229 @@
 
       <section id="key-aspects">
         <h2>Key aspects</h2>
-        <ul>
-          <li><strong>CI/CD:</strong> Integrate builds, tests and deployments into automated pipelines for reliable, frequent releases.</li>
-          <li><strong>Infrastructure as Code (IaC):</strong> Define infrastructure in code (Terraform, CloudFormation) for repeatability.</li>
-          <li><strong>Configuration Management:</strong> Use tools like Ansible, Chef or Puppet to ensure consistent environment configuration.</li>
-          <li><strong>Containerization & Orchestration:</strong> Leverage Docker and Kubernetes to package and manage applications.</li>
-          <li><strong>Release Management:</strong> Plan versioning, rollouts and rollback strategies (canary, blue/green).</li>
-          <li><strong>Automated Testing, Monitoring & Security:</strong> Run automated tests, monitoring and security scans as part of the pipeline.</li>
-        </ul>
+        <p>Continuous Integration and Continuous Deployment (CI/CD): CI/CD is a key aspect of deployment automation. It involves integrating code changes frequently, building and testing the application, and automatically deploying it to production environments. CI/CD ensures that the software is constantly updated and delivered to end-users quickly and reliably.</p>
+
+        <p>Infrastructure as Code (IaC): IaC treats infrastructure provisioning and configuration as code. By using tools like Terraform or CloudFormation, infrastructure components such as servers, networks, and databases can be defined and deployed programmatically. IaC ensures consistency, repeatability, and scalability of infrastructure, reducing manual setup and configuration tasks.</p>
+
+        <p>Configuration Management: Configuration management tools, such as Ansible, Chef, or Puppet, automate the setup and management of software configurations across different environments. They enable consistent deployment of software, eliminate configuration drift, and facilitate easy rollbacks or updates.</p>
+
+        <p>Containerization and Orchestration: Containerization technologies like Docker provide lightweight and isolated environments for deploying applications. Container orchestration platforms like Kubernetes help manage and scale containerized applications effectively. Containerization and orchestration simplify deployment and improve resource utilization, scalability, and fault tolerance.</p>
+
+        <p>Release Management: An effective release management process ensures smooth coordination between development, testing, and operations teams. It includes versioning, change management, release planning, and rollout strategies. Release management practices ensure that software updates are delivered with minimal disruption and risk to end-users.</p>
+
+        <p>Automated Testing: Automation of testing is crucial in deployment automation. Automated testing frameworks and tools, such as unit tests, integration tests, and end-to-end tests, help ensure the quality and reliability of software releases. Automated tests are executed during the CI/CD pipeline, providing fast feedback and catching potential issues early.</p>
+
+        <p>Monitoring and Logging: Monitoring tools enable real-time visibility into application performance, availability, and resource utilization. Log management solutions aggregate and analyze application logs for troubleshooting and debugging purposes. Effective monitoring and logging practices help identify and resolve issues promptly, ensuring optimal system performance.</p>
+
+        <p>Security and Compliance: Deployment automation should incorporate security and compliance practices, such as vulnerability scanning, code analysis, and access control. Automated security checks and adherence to industry standards and regulations help protect software and sensitive data, minimizing security risks and potential legal issues.</p>
       </section>
 
       <section id="risks">
-        <h2>Risks of not implementing</h2>
+        <h2>Risks of not implementing Practice</h2>
         <table>
-          <thead><tr><th>Risk</th><th>Description</th></tr></thead>
+          <thead>
+            <tr>
+              <th>Risk Number</th>
+              <th>Title</th>
+              <th>Description</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr><td>DAR-1</td><td>Manual Errors — higher chance of human mistakes during deployments.</td></tr>
-            <tr><td>DAR-2</td><td>Inconsistent Deployments — environments drift and deployments behave differently across stages.</td></tr>
-            <tr><td>DAR-3</td><td>Slow Release Cycles — manual steps slow down time-to-market.</td></tr>
-            <tr><td>DAR-4</td><td>Difficulty in Rollbacks — manual rollbacks are error-prone and slow.</td></tr>
+            <tr>
+              <td>DAR-1</td>
+              <td>Manual Errors</td>
+              <td>Increased risk of human errors during manual deployment processes.</td>
+            </tr>
+            <tr>
+              <td>DAR-2</td>
+              <td>Inconsistent Deployments</td>
+              <td>Lack of automation may lead to inconsistencies across different environments during deployments.</td>
+            </tr>
+            <tr>
+              <td>DAR-3</td>
+              <td>Slow-Release Cycles</td>
+              <td>Manual processes can cause delays in release cycles, leading to slower time-to-market.</td>
+            </tr>
+            <tr>
+              <td>DAR-4</td>
+              <td>Difficulty in Rollbacks</td>
+              <td>Without automation, rolling back to a previous version becomes more complex and error-prone.</td>
+            </tr>
+            <tr>
+              <td>DAR-5</td>
+              <td>Lack of Scalability</td>
+              <td>manual deployment processes may struggle to scale efficiently, causing challenges when deploying to multiple environments.</td>
+            </tr>
+            <tr>
+              <td>DAR-6</td>
+              <td>Resource Wastage</td>
+              <td>Inefficient resource utilization due to manual deployments, resulting in higher costs.</td>
+            </tr>
+            <tr>
+              <td>DAR-7</td>
+              <td>Dependency Management Issues</td>
+              <td>Manual tracking and management of dependencies can lead to compatibility issues and deployment failures.</td>
+            </tr>
+            <tr>
+              <td>DAR-8</td>
+              <td>Limited Testing Coverage</td>
+              <td>Manual deployments may result in inadequate testing coverage, increasing the risk of bugs and regressions in production.</td>
+            </tr>
+            <tr>
+              <td>DAR-9</td>
+              <td>Difficulty in Reproducibility</td>
+              <td>Lack of automation makes it difficult to reproduce and investigate issues encountered during deployments.</td>
+            </tr>
+            <tr>
+              <td>DAR-10</td>
+              <td>Compliance and Security Risks</td>
+              <td>Manual processes may overlook security checks and compliance requirements, exposing the system to potential vulnerabilities.</td>
+            </tr>
           </tbody>
         </table>
       </section>
 
       <section id="guidelines">
-        <h2>Guidelines / Work Instructions</h2>
-        <ol>
-          <li><strong>DAG-1 - Establish Version Control:</strong> Use Git, branching strategies and enforce PR reviews and tags.</li>
-          <li><strong>DAG-2 - Implement CI:</strong> Configure CI server to run builds and tests on each commit.</li>
-          <li><strong>DAG-3 - Automate Deployments:</strong> Script deployments and automate environment provisioning.</li>
-          <li><strong>DAG-4 - Adopt IaC:</strong> Define infrastructure as code and version it alongside application code.</li>
-          <li><strong>DAG-5 - Containerize & Orchestrate:</strong> Use containers and orchestration for consistent deployments.</li>
-          <li><strong>DAG-6 - Implement Continuous Deployment:</strong> Automate promotion of artifacts with controlled rollout strategies.</li>
-          <li><strong>DAG-7 - Monitoring & Logging:</strong> Instrument applications and pipelines for observability and alerts.</li>
-          <li><strong>DAG-8 - Security & Compliance:</strong> Add automated security scans and compliance checks into pipelines.</li>
-          <li><strong>DAG-11 - Defect Reporting:</strong> Establish defect reporting and RCA process linked to deployments.</li>
-        </ol>
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Guideline Number</th>
+              <th>Name</th>
+              <th>Purpose</th>
+              <th>Performing Method</th>
+              <th>Possible Risks if Failed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DAG-1</td>
+              <td>Establish Version Control</td>
+              <td>To track changes, enable collaboration, and ensure repeatability of deployments.</td>
+              <td>
+                1. Set up a version control system (e.g., Git).<br>
+                2. Define a branching strategy for development.<br>
+                3. Enforce code reviews and pull requests.<br>
+                4. Document versioning conventions and release tagging.
+              </td>
+              <td>DAR-2 - Inconsistent Deployments<br>DAR-4 - Difficulty in Rollbacks</td>
+            </tr>
+            <tr>
+              <td>DAG-2</td>
+              <td>Implement Continuous Integration</td>
+              <td>To integrate code changes frequently and catch integration issues early.</td>
+              <td>
+                1. Set up a CI server (e.g., Jenkins).<br>
+                2. Configure build scripts and define build triggers.<br>
+                3. Run automated tests during the build process.
+              </td>
+              <td>DAR-1 - Manual Errors<br>DAR-3 - Slow Release Cycles</td>
+            </tr>
+            <tr>
+              <td>DAG-3</td>
+              <td>Automate Deployment Scripts [ISO]</td>
+              <td>To streamline and automate the deployment process for different environments.</td>
+              <td>
+                1. Define deployment scripts using tools like Bash or PowerShell.<br>
+                2. Include necessary configuration files and environment-specific variables.<br>
+                3. Automate environment provisioning and setup.
+              </td>
+              <td>DAR-2 - Inconsistent Deployments<br>DAR-6 - Resource Wastage</td>
+            </tr>
+            <tr>
+              <td>DAG-4</td>
+              <td>Adopt Infrastructure as Code</td>
+              <td>To define and manage infrastructure programmatically.</td>
+              <td>
+                1. Select an IaC tool (e.g., Terraform).<br>
+                2. Define infrastructure components and dependencies as code.<br>
+                3. Automate infrastructure provisioning and updates.
+              </td>
+              <td>DAR-6 - Resource Wastage<br>DAR-7 - Dependency Management Issues</td>
+            </tr>
+            <tr>
+              <td>DAG-5</td>
+              <td>Utilize Containerization</td>
+              <td>To package and isolate applications for consistent deployment across environments.</td>
+              <td>
+                1. Containerize applications using technologies like Docker.<br>
+                2. Define container configurations and dependencies.<br>
+                3. Test containers locally before deployment.
+              </td>
+              <td>DAR-6 - Resource Wastage<br>DAR-8 - Limited Testing Coverage</td>
+            </tr>
+            <tr>
+              <td>DAG-6</td>
+              <td>Implement Continuous Deployment</td>
+              <td>To automate the deployment process from CI to production environments.</td>
+              <td>
+                1. Configure deployment pipelines in CI/CD tools.<br>
+                2. Automate artifact promotion and environment-specific configurations. [ISO]<br>
+                3. Use canary or blue-green deployment strategies for controlled releases.
+              </td>
+              <td>DAR-1 - Manual Errors<br>DAR-3 - Slow Release Cycles</td>
+            </tr>
+            <tr>
+              <td>DAG-7</td>
+              <td>Establish Release Management Process</td>
+              <td>To plan and coordinate software releases effectively.</td>
+              <td>
+                1. Define release policies, versioning, and change management procedures.<br>
+                2. Conduct thorough testing and validation before release.<br>
+                3. Establish proper access controls and permissions for production deployment activities.<br>
+                4. Document release notes and communicate with stakeholders.
+              </td>
+              <td>DAR-9 - Difficulty in Reproducibility<br>DAR-10 - Compliance and Security Risks</td>
+            </tr>
+            <tr>
+              <td>DAG-8</td>
+              <td>Implement Automated Testing</td>
+              <td>To ensure the quality and reliability of software releases.</td>
+              <td>
+                1. Define a comprehensive test suite (unit tests, integration tests, etc.).<br>
+                2. Automate test execution within the CI/CD pipeline.<br>
+                3. Integrate code quality and security analysis tools.
+              </td>
+              <td>DAR-5 - Lack of Scalability<br>DAR-8 - Limited Testing Coverage</td>
+            </tr>
+            <tr>
+              <td>DAG-9</td>
+              <td>Establish Monitoring and Logging</td>
+              <td>To gain visibility into application performance and troubleshoot issues.</td>
+              <td>
+                1. Set up monitoring tools to capture relevant metrics.<br>
+                2. Implement centralized log management.<br>
+                3. Configure alerts and dashboards for real-time monitoring.
+              </td>
+              <td>DAR-9 - Difficulty in Reproducibility<br>DAR-10 - Compliance and Security Risks</td>
+            </tr>
+            <tr>
+              <td>DAG-10</td>
+              <td>Incorporate Security and Compliance Checks</td>
+              <td>To ensure software security and compliance with regulations.</td>
+              <td>
+                1. Implement automated security scanning and vulnerability assessment tools.<br>
+                2. Enforce secure coding practices and code analysis.<br>
+                3. Regularly audit and review access controls and permissions.
+              </td>
+              <td>DAR-7 - Dependency Management Issues<br>DAR-10 - Compliance and Security Risks</td>
+            </tr>
+            <tr>
+              <td>DAG-11</td>
+              <td>Establish Defect Reporting Process</td>
+              <td>Streamline the reporting and analysis of production/staging defects for root cause analysis, corrective actions, and continuous improvement.</td>
+              <td>
+                1. Define a clear and accessible channel for defect reporting (e.g., bug tracking tool, dedicated email address).<br>
+                2. Develop standardized defect report templates capturing essential information.<br>
+                3. Establish a process for triaging, prioritizing, and assigning reported defects.<br>
+                4. Conduct thorough root cause analysis for each reported defect.<br>
+                5. Take corrective actions to minimize the recurrence of reported defects (e.g., creating automated/manual tests, improving code review process).<br>
+                6. Implement a feedback loop for communication and updates with stakeholders.
+              </td>
+              <td>DAR-9 - Difficulty in Reproducibility<br>DAR-10 - Compliance and Security Risks</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>

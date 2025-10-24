@@ -180,7 +180,6 @@ function App() {
                   <a href={`${process.env.PUBLIC_URL}/practices/shift-left-security-privacy.html`} className="practice-item practice-link">Shift Left on Privacy and Security</a>
                   <a href={`${process.env.PUBLIC_URL}/practices/deployment-automation.html`} className="practice-item practice-link">Deployment Automation</a>
                   <a href={`${process.env.PUBLIC_URL}/practices/continuous-delivery.html`} className="practice-item practice-link">Continuous Delivery</a>
-                  <a href={`${process.env.PUBLIC_URL}/practices/test-data-management.html`} className="practice-item practice-link">Test Data Management</a>
                   <a href={`${process.env.PUBLIC_URL}/practices/adhering-to-coding-standards.html`} className="practice-item practice-link">Coding Standards</a>
                   <a href={`${process.env.PUBLIC_URL}/practices/shift-left-on-quality.html`} className="practice-item practice-link">Shift Left on Quality</a>
                   <a href={`${process.env.PUBLIC_URL}/practices/lightweight-change-approval.html`} className="practice-item practice-link">Lightweight Change Approval</a>

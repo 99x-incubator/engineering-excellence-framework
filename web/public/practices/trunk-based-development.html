@@ -5,27 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Trunk-Based Development - 99x Engineering Excellence Framework</title>
     <style>
-      body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #0b0b0b; color: #fff; padding: 36px; }
+      body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #0a0a0a; color: #fff; padding: 40px; }
       a { color: #9b8cf0; text-decoration: none; }
-      .container { max-width: 1100px; margin: 0 auto; text-align: center; }
-      h1 { font-size: 1.8rem; margin-bottom: 6px; }
-      .meta { color: rgba(255,255,255,0.75); margin-bottom: 18px; }
-      .framework { margin-top: 18px; }
-      .framework img { max-width: 100%; height: auto; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); }
-      .back { display:inline-block; margin-bottom: 18px; }
+      .container { max-width: 900px; margin: 0 auto; }
+      h1 { font-size: 2rem; margin-bottom: 8px; }
+      .meta { color: rgba(255,255,255,0.7); margin-bottom: 24px; }
+      section { background: rgba(255,255,255,0.02); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); margin-bottom: 16px; }
+      ul { margin-left: 20px; }
+      table { width: 100%; border-collapse: collapse; color: #fff; }
+      th, td { text-align: left; padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+      .back { display:inline-block; margin-bottom: 20px; }
     </style>
   </head>
   <body>
     <div class="container">
       <a class="back" href="/">← Back to site</a>
       <h1>Trunk-Based Development</h1>
-      <div class="meta">Promote short-lived feature branches or direct commits to trunk to reduce merge conflicts and enable fast, continuous integration.</div>
+      <div class="meta">Trunk-Based Development (TBD) is a software engineering best practice that emphasizes frequent integration into a shared mainline (trunk) to reduce long-lived branches and accelerate delivery.</div>
 
-      <div class="framework">
-        <img src="/framework.jpg" alt="Framework illustration" />
-      </div>
+      <section id="overview">
+        <p>Trunk-Based Development (TBD) is a software engineering best practice that emphasizes frequent integration of code changes into a shared codebase, often referred to as the "trunk" or "mainline." This approach aims to minimize long-lived branches and promote collaboration among developers. By following Trunk-Based Development practices, development teams can reduce the complexity of branching and merging, increase collaboration, improve code quality, and accelerate the delivery of new features. However, it's important to note that the suitability of TBD may vary depending on the project's size, team structure, and specific requirements.</p>
+      </section>
 
-      <p style="margin-top:28px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>
+      <section id="key-aspects">
+        <h2>Key aspects covered by the practice</h2>
+        <ul>
+          <li><strong>Continuous Integration (CI):</strong> TBD relies heavily on continuous integration, where developers frequently integrate their changes into the main codebase. This ensures that code is constantly tested and validated, reducing the likelihood of integration issues and conflicts.</li>
+          <li><strong>Mainline as the Single Source of Truth:</strong> The mainline/trunk is considered the single source of truth for the project. All developers actively work on the same codebase, reducing the complexity that arises from maintaining multiple long-lived branches.</li>
+          <li><strong>Feature Flags:</strong> Feature flags are often used in TBD to control the visibility and activation of new features. By using feature flags, developers can merge incomplete or experimental code into the mainline without affecting the overall stability of the software.</li>
+          <li><strong>Short-Lived Branches:</strong> Instead of creating long-lived feature branches, TBD encourages developers to work on short-lived branches that are quickly merged into the mainline. This approach minimizes the time between feature development and integration, reducing the risk of merge conflicts.</li>
+          <li><strong>Continuous Delivery (CD):</strong> Trunk-Based Development complements continuous delivery practices. By integrating changes frequently, the mainline is always in a releasable state, enabling teams to deploy new features or bug fixes rapidly.</li>
+          <li><strong>Test Automation:</strong> TBD relies on extensive test automation to ensure that the codebase remains stable and reliable. Automated tests, including unit tests, integration tests, and end-to-end tests, are crucial for quickly identifying and resolving issues introduced during integration.</li>
+          <li><strong>Collaboration and Communication:</strong> TBD promotes collaboration and effective communication among developers. Since everyone works on the same codebase, it encourages developers to communicate frequently, share knowledge, and resolve conflicts together.</li>
+          <li><strong>Code Reviews:</strong> Code reviews play a vital role in TBD. Developers review each other's code to ensure code quality, identify potential issues, and maintain consistency across the codebase. Regular code reviews help catch bugs and improve the overall quality of the software.</li>
+          <li><strong>Rollbacks and Feature Toggles:</strong> TBD incorporates rollback mechanisms to quickly revert changes in case of unexpected issues. Feature toggles allow features to be easily activated or deactivated, providing the ability to roll back a new feature if necessary without affecting the stability of the system.</li>
+        </ul>
+      </section>
+
+      <section id="risks">
+        <h2>Risks of not implementing Practice</h2>
+        <table>
+          <thead><tr><th>Risk Number</th><th>Title</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>TBDR-1</td><td>Branching Complexity</td><td>Long-lived branches can lead to increased complexity in merging code changes, resulting in a higher risk of merge conflicts and difficulties in managing dependencies.</td></tr>
+            <tr><td>TBDR-2</td><td>Integration Issues</td><td>Infrequent integration of code changes can lead to integration issues that are harder to detect and resolve, resulting in delays and reduced productivity.</td></tr>
+            <tr><td>TBDR-3</td><td>Delayed Feedback</td><td>Without frequent integration, developers may not receive timely feedback on their code, making it harder to identify and fix issues early in the development process.</td></tr>
+            <tr><td>TBDR-4</td><td>Lower Code Quality</td><td>Lack of continuous integration and code review can lead to lower overall code quality, making it harder to maintain, debug, and enhance the software.</td></tr>
+            <tr><td>TBDR-5</td><td>Increased Technical Debt</td><td>Not integrating code changes frequently can lead to a higher accumulation of technical debt, making future development more challenging and time-consuming.</td></tr>
+            <tr><td>TBDR-6</td><td>Difficulty in Bug Isolation</td><td>With long-lived branches, isolating the source of bugs or issues becomes more complex, as multiple code changes may be intertwined.</td></tr>
+            <tr><td>TBDR-7</td><td>Slower Time to Market</td><td>Inefficient integration practices can delay the release of new features or bug fixes, impacting the time to market and potentially reducing competitiveness.</td></tr>
+            <tr><td>TBDR-8</td><td>Reduced Collaboration</td><td>Lack of frequent integration and shared codebase can hinder collaboration among developers, leading to siloed work and decreased knowledge sharing.</td></tr>
+            <tr><td>TBDR-9</td><td>Inconsistent Development Environment</td><td>Long-lived branches may result in inconsistent development environments across team members, making it harder to reproduce and debug issues.</td></tr>
+            <tr><td>TBDR-10</td><td>Higher Risk of Conflicts</td><td>Not integrating code changes frequently increases the risk of merge conflicts, which can be time-consuming to resolve and may introduce new bugs or issues.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="guidelines">
+        <h2>PHR Guidelines / Work Instructions</h2>
+        <table>
+          <thead><tr><th>Guideline Number</th><th>Name</th><th>Purpose</th><th>Performing Method</th><th>Possible Risks if Failed</th></tr></thead>
+          <tbody>
+            <tr><td>TBDG-1</td><td>Frequent Integration</td><td>Ensure frequent integration of code changes to minimize the complexity of merging and reduce the risk of conflicts.</td><td>
+              <ol>
+                <li>Encourage developers to integrate their changes multiple times a day.</li>
+                <li>Utilize automated CI/CD pipelines to facilitate continuous integration.</li>
+                <li>Promote a culture of regular integration and discourage long-lived branches.</li>
+              </ol>
+            </td><td>TBDR-1 - Branching Complexity<br/>TBDR-2 - Integration Issues<br/>TBDR-3 - Delayed Feedback<br/>TBDR-10 - High Risks of Conflicts</td></tr>
+
+            <tr><td>TBDG-2</td><td>Code Review and Quality Assurance</td><td>Maintain code quality through thorough code reviews and quality assurance practices.</td><td>
+              <ol>
+                <li>Enforce mandatory code reviews for all changes.</li>
+                <li>Use static code analysis tools to identify potential issues.</li>
+                <li>Perform unit testing, integration testing, and other relevant quality assurance processes.</li>
+              </ol>
+            </td><td>TBDR-4 - Lower Code Quality</td></tr>
+
+            <tr><td>TBDG-3</td><td>Feature Flags and Rollouts</td><td>Utilize feature flags and gradual rollouts to control the visibility and activation of new features.</td><td>
+              <ol>
+                <li>Implement feature flagging mechanism to enable controlled feature activation.</li>
+                <li>Gradually roll out new features to a subset of users for validation before full deployment.</li>
+              </ol>
+            </td><td>TBDR-5 - Increased Technical Debt</td></tr>
+
+            <tr><td>TBDG-4</td><td>Automated Testing</td><td>Ensure comprehensive automated testing to validate code changes and maintain system stability.</td><td>
+              <ol>
+                <li>Implement unit tests, integration tests, and end-to-end tests.</li>
+                <li>Integrate automated testing into the CI/CD pipeline.</li>
+                <li>Monitor test coverage to ensure adequate testing.</li>
+              </ol>
+            </td><td>TBDR-4 - Lower Code Quality<br/>TBDR-7 - Slower Time to Market</td></tr>
+
+            <tr><td>TBDG-5</td><td>Effective Communication and Collaboration</td><td>Encourage effective communication and collaboration among team members.</td><td>
+              <ol>
+                <li>Foster a culture of open communication and knowledge sharing.</li>
+                <li>Encourage cross-team collaboration and regular sync-ups.</li>
+                <li>Utilize collaboration tools for easy communication and coordination.</li>
+              </ol>
+            </td><td>TBDR-8 - Reduced Collaboration</td></tr>
+
+            <tr><td>TBDG-6</td><td>Short-Lived Branches</td><td>Promote the use of short-lived branches instead of long-lived branches for feature development.</td><td>
+              <ol>
+                <li>Encourage developers to create short-lived branches focused on specific features or bug fixes.</li>
+                <li>Merge branches into the mainline as soon as they are completed.</li>
+              </ol>
+            </td><td>TBDR-1 - Branching Complexity<br/>TBDR-2 - Integration Issues<br/>TBDR-6 - Difficulty in Bug Isolation</td></tr>
+
+            <tr><td>TBDG-7</td><td>Continuous Integration and Deployment</td><td>Implement continuous integration and deployment practices to always ensure a releasable codebase.</td><td>
+              <ol>
+                <li>Automate the build, testing, and deployment processes.</li>
+                <li>Maintain a stable CI/CD pipeline for smooth integration and deployment.</li>
+                <li>Continuously monitor and address CI/CD pipeline failures.</li>
+              </ol>
+            </td><td>TBDR-2 - Integration Issues<br/>TBDR-7 - Slower Time to Market</td></tr>
+
+            <tr><td>TBDG-8</td><td>Version Control Best Practices</td><td>Follow best practices for version control to facilitate collaboration and code management.</td><td>
+              <ol>
+                <li>Utilize a version control system and adhere to its best practices.</li>
+                <li>Use descriptive commit messages.</li>
+                <li>Avoid committing large, unrelated changes together.</li>
+              </ol>
+            </td><td>TBDR-1 - Branching Complexity<br/>TBDR-4 - Lower Code Quality<br/>TBDR-9 - Inconsistent Development Environment</td></tr>
+
+            <tr><td>TBDG-9</td><td>Monitoring and Rollback Mechanism</td><td>Implement monitoring and rollback mechanisms to quickly identify issues and roll back changes if necessary.</td><td>
+              <ol>
+                <li>Set up monitoring tools to track system performance and stability.</li>
+                <li>Establish a rollback plan and mechanism for quick reversion of changes.</li>
+                <li>Regularly review and test the rollback process.</li>
+              </ol>
+            </td><td>TBDR-7 - Slower Time to Market</td></tr>
+
+            <tr><td>TBDG-10</td><td>Continuous Improvement and Learning</td><td>Promote continuous improvement and learning within the team.</td><td>
+              <ol>
+                <li>Conduct retrospectives to identify areas for improvement.</li>
+                <li>Encourage knowledge sharing sessions and workshops.</li>
+                <li>Stay updated with industry trends and emerging technologies.</li>
+              </ol>
+            </td><td>TBDR-4 - Lower Code Quality<br/>TBDR-8 - Reduced Collaboration</td></tr>
+
+            <tr><td>TBDG-11</td><td>Separate Environments for Dev, Test, Stage, and Production</td><td>[ISO 4.3.3]<br/>Maintain separate environments for development, testing, staging, and production to support branch-based deployments.</td><td>
+              <ol>
+                <li>Set up dedicated environments for each stage of the development lifecycle (development, testing, staging, production).</li>
+                <li>Implement automated deployment scripts or infrastructure-as-code tools to provision and manage the environments.</li>
+                <li>Ensure proper access controls and configuration management for each environment.</li>
+              </ol>
+            </td><td>TBDR-1 - Branching Complexity<br/>TBDR-2 - Integration Issues<br/>TBDR-7 - Slower Time to Market</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <p style="margin-top:30px;color:rgba(255,255,255,0.6)">© 2025 99x Engineering Excellence Framework</p>
     </div>
   </body>
 </html>
