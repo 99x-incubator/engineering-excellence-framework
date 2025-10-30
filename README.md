@@ -1,16 +1,14 @@
-# 99x Engineering Excellence Framework — Legendary README
+# 99x Engineering Excellence Framework 
 
 ![status](https://img.shields.io/badge/status-complete-brightgreen) ![license](https://img.shields.io/badge/license-proprietary-blue)
 
-A beautifully simple website that documents the 99x Engineering Excellence Framework. This repository contains a minimal React app (Create React App) used as a shell and a collection of static, content-rich practice pages served from `public/practices/`.
+This repository contains the 99x Engineering Excellence Framework, a comprehensive framework designed to elevate engineering teams to world-class performance through proven practices and continuous improvement.
 
-Why this repo is legendary
+For presentation purposes, repository uses a minimal React app (Create React App) used as a shell and a collection of static, content-rich practice pages served from `public/practices/`.
 
-- Crisp, focused content: each engineering practice gets its own static page for easy reading and sharing.
-- Minimal dependencies: static pages avoid a heavier routing or CMS setup.
-- Instant previews: open local dev server or browse static pages directly in `public/practices/`.
+Browse [99x Engineering Excellence Framework](https://99x-incubator.github.io/engineering-excellence-framework/) 
 
-Legendary Quickstart (TL;DR)
+## Quickstart
 
 1. Install
 
@@ -29,8 +27,13 @@ Legendary Quickstart (TL;DR)
    ```bash
    npm run build
    ```
+4. Deploy to Github Pages
 
-Structure at a glance
+   ```bash
+   npm run deploy
+   ```
+
+## Structure at a glance
 
 - `public/`
   - `practices/` — standalone HTML pages (e.g., `version-control.html`)
@@ -41,14 +44,7 @@ Structure at a glance
   - `App.css` — styles
 - `package.json` — scripts and dependencies
 
-What we changed in this fork
-
-- Added practice pages for many engineering practices and linked them from the main site.
-- Replaced lifecycle cards with an illustrative `framework.jpg`.
-- Added interactive UI polish (particle hover effects, ripple on clicks, hue accent animation).
-- Converted dozens of practice entries into anchor links that point to `public/practices/*.html` files.
-
-How the practice pages are organized
+## How the practice pages are organized
 
 Each page in `public/practices/` is a simple, self-contained HTML document that includes:
 
@@ -59,30 +55,30 @@ Each page in `public/practices/` is a simple, self-contained HTML document that 
 
 Contributing
 
-This repo is maintained in `master`. To add or update practice pages:
+This repo is maintained in `main`. To add or update practice pages:
 
-1. Create or edit `public/practices/<your-practice>.html`.
-2. Update `src/App.js` to add an anchor link to the practice card section.
+1. Fork this 
 3. Commit and push. Open a PR if you want code review.
 
-Pro tip: keep practice pages self-contained and use consistent heading levels for readability.
+## 🤝 Contributing
 
-Deployment
+We love contributions! Whether it’s fixing a typo, adding a new topic, or improving an existing topic — your help makes this knowledge base smarter.  
 
-This is a static-friendly site. You can deploy the `build/` folder to GitHub Pages, Netlify, Vercel, or any static host.
+### How to Contribute
 
-Security note
+1. **Fork** this repository.  
+2. **Create a new branch** for your changes:  
+   ```bash
+   git checkout -b feature/add-new-topic
+   ```
+   
+3. Make your edits — keep things clear, factual, and consistent.
+4. Commit your changes with a clear message:
+   ```bash
+   git commit -m "Add guide on asynchronous design patterns"
+   ```
+5. Push to your branch and open a Pull Request.
 
-Run `npm audit` to inspect reported vulnerabilities and `npm audit fix` to apply safe updates.
-
-Changelog (session highlights)
-
-- Many static practice pages added (see `public/practices/`).
-- `public/framework.jpg` and `public/99xlogo.svg` added.
-- `src/App.js` updated to link to many practice pages.
-
-Credits
-
-Prepared in-session via automated edits and manually curated content.
+### Credits
 
 © 2025 99x Engineering Excellence Framework
