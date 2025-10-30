@@ -53,13 +53,6 @@ Each page in `public/practices/` is a simple, self-contained HTML document that 
 - Risks (with IDs)
 - PHR Guidelines / Work Instructions
 
-Contributing
-
-This repo is maintained in `main`. To add or update practice pages:
-
-1. Fork this 
-3. Commit and push. Open a PR if you want code review.
-
 ## 🤝 Contributing
 
 We love contributions! Whether it’s fixing a typo, adding a new topic, or improving an existing topic — your help makes this knowledge base smarter.  
