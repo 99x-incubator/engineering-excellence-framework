@@ -37,7 +37,7 @@ Browse [99x Engineering Excellence Framework](https://99x-incubator.github.io/en
 
 - `public/`
   - `practices/` — standalone HTML pages (e.g., `version-control.html`)
-  - `framework.jpg` — visual used across pages
+  - `framework.jpg` — visual representation of the framework
   - `99xlogo.svg` — inline logo used in the header
 - `src/`
   - `App.js` — site shell and list of practice cards
