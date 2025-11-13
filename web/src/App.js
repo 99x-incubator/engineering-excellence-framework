@@ -123,6 +123,7 @@ function App() {
           <div className="nav-links">
             <a href="#framework">Framework</a>
             <a href="#practices">Practices</a>
+            <a href="#contribute">Contribute</a>
           </div>
         </nav>
         <header>
@@ -211,6 +212,36 @@ function App() {
             </div>
           </div>
         </div>
+
+        <section className="contribute-section" id="contribute">
+          <div className="glass-card">
+            <div className="card-header">
+              <span className="card-icon">🤝</span>
+              <div>
+                <h2>Contribute</h2>
+                <div className="card-subtitle">Join us to make engineering bit better</div>
+              </div>
+            </div>
+            <div className="contribute-content">
+              <p>
+                We believe in continuous improvement and community collaboration. Your insights, suggestions, and contributions can help make this framework even better.
+              </p>
+              <p>
+                Have ideas for new practices? Found something that could be improved?
+              </p>
+              <div className="contribute-cta">
+                <a 
+                  href="https://github.com/99x-incubator/engineering-excellence-framework" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  Contribute on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <footer>
           <p>

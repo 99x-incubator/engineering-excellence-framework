@@ -459,6 +459,37 @@ header p {
     font-weight: 600;
 }
 
+/* Contribute Section */
+.contribute-section {
+    margin-bottom: 80px;
+}
+
+.contribute-section .glass-card {
+    padding: 35px 50px;
+}
+
+.contribute-section .card-header {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+.contribute-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contribute-content p {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.contribute-cta {
+    margin-top: 25px;
+}
+
 footer {
     text-align: center;
     padding: 60px 0;
