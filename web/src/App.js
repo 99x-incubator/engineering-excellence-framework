@@ -117,7 +117,7 @@ function App() {
           <div>
             <div className="logo">Engineering Excellence Framework</div>
             <div className="logo-subtext">
-              by <img src={`${process.env.PUBLIC_URL}/99xlogo.svg`} alt="99x" className="logo-inline" />
+              by <a href="https://99x.io/" target="_blank" rel="noopener noreferrer"><img src={`${process.env.PUBLIC_URL}/99xlogo.svg`} alt="99x" className="logo-inline" /></a>
             </div>
           </div>
           <div className="nav-links">
