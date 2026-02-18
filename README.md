@@ -1,3 +1,5 @@
+![Project Screenshot](https://drive.google.com/uc?export=view&id=1ejF5DO89VKfWsHZPx5CfCb6l1MnHMVt1)
+
 # 99x Engineering Excellence Framework 
 
 ![status](https://img.shields.io/badge/status-complete-brightgreen) ![license](https://img.shields.io/badge/license-proprietary-blue)
