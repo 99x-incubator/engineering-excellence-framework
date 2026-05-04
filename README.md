@@ -1,4 +1,6 @@
-![Project Screenshot](https://drive.google.com/uc?export=view&id=1ejF5DO89VKfWsHZPx5CfCb6l1MnHMVt1)
+<div align="center">
+<img src="logo.png" alt="FUTURA Logo" width="1000"/>
+</div>
 
 # 99x Engineering Excellence Framework 
 
